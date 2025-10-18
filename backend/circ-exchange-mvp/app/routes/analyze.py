@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, status
-from ...models import AnalyzeRequest, AnalyzeResponse
-from ...services.gemini_client import GeminiClient
-from ...store import STORE
+from ..models import AnalyzeRequest, AnalyzeResponse
+from ..services.gemini_client import GeminiClient
+from ..store import STORE
 
 router = APIRouter(prefix="/analyze", tags=["analysis"])
 

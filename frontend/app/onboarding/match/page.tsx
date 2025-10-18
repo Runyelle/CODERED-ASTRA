@@ -18,18 +18,25 @@ export default function MatchPage() {
   const [requestSent, setRequestSent] = useState(false)
 
   useEffect(() => {
-    const data = sessionStorage.getItem("wasteStreamData")
-    if (data) {
-      const parsedData = JSON.parse(data) as WasteStreamData
-      setWasteData(parsedData)
-      const matches = findMatchingCompanies(parsedData)
-      setMatchedCompanies(matches)
-      if (matches.length > 0) {
-        setSelectedCompany(matches[0])
+    const loadMatches = async () => {
+      const data = sessionStorage.getItem("wasteStreamData")
+      if (data) {
+        const parsedData = JSON.parse(data) as WasteStreamData
+        setWasteData(parsedData)
+        try {
+          const matches = await findMatchingCompanies(parsedData)
+          setMatchedCompanies(matches)
+          if (matches.length > 0) {
+            setSelectedCompany(matches[0])
+          }
+        } catch (error) {
+          console.error('Failed to fetch matching companies:', error)
+        }
+      } else {
+        router.push("/onboarding")
       }
-    } else {
-      router.push("/onboarding")
     }
+    loadMatches()
   }, [router])
 
   const handleSendRequest = () => {

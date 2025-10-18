@@ -1,11 +1,33 @@
 from fastapi import APIRouter, HTTPException, status
 from typing import List
-from ...models import Company, MatchResult
-from ...services.gemini_client import GeminiClient
-from ...store import STORE
-from ...matcher import haversine_km
+from ..models import Company, MatchResult
+from ..services.gemini_client import GeminiClient
+from ..store import STORE
+from ..matcher import haversine_km
+import json
+from pathlib import Path
 
 router = APIRouter(prefix="/companies", tags=["companies"])
+
+def load_fake_data():
+    data_file = Path(__file__).parent.parent.parent / "fakeData.json"
+    with open(data_file, "r") as f:
+        return json.load(f)
+
+@router.get("/demo", response_model=List[dict])
+async def get_demo_companies():
+    """Get all companies from the demo dataset"""
+    data = load_fake_data()
+    return data["companies"]
+
+@router.get("/demo/{company_id}")
+async def get_demo_company(company_id: int):
+    """Get a specific company from the demo dataset by ID"""
+    data = load_fake_data()
+    company = next((c for c in data["companies"] if c["id"] == company_id), None)
+    if not company:
+        raise HTTPException(status_code=404, detail="Company not found")
+    return company
 
 
 @router.post("/", response_model=Company)

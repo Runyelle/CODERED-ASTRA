@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 # Set the API key directly
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyBcYXrdM_2HKa-kBwFwIRQyEcN4DswL5sY'
+os.environ['GOOGLE_API_KEY'] = 'AIzaSyB7MD_RfrNKogch8om_iQiI9ey5QDpQSHM'
 
 # Add the current directory to Python path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -25,4 +25,4 @@ if __name__ == "__main__":
     print("🧪 Test the API with: ./api_demo.sh")
     print("=" * 60)
     
-    uvicorn.run(app, host="127.0.0.1", port=8001, reload=True)
+    uvicorn.run(app, host="127.0.0.1", port=8001, reload=False)

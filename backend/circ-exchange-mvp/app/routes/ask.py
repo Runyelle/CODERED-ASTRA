@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, status
-from ...models import AskRequest, AskResponse
-from ...services.gemini_client import GeminiClient
+from ..models import AskRequest, AskResponse
+from ..services.gemini_client import GeminiClient
 
 router = APIRouter(prefix="/ask", tags=["ai"])
 

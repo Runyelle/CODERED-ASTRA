@@ -1,3 +1,6 @@
+import { getAllCompanies } from './api';
+import type { Company as BackendCompany } from '@/types/company';
+
 export interface Company {
   id: string
   name: string
@@ -9,59 +12,6 @@ export interface Company {
   rating: number
 }
 
-export const mockCompanies: Company[] = [
-  {
-    id: "1",
-    name: "EcoRecycle Solutions",
-    industry: "Waste Management",
-    location: "Houston, TX",
-    wasteCapacity: 50000,
-    acceptedWasteTypes: ["Chemical", "Industrial", "Hazardous"],
-    certifications: ["EPA Certified", "ISO 14001", "RCRA Permitted"],
-    rating: 4.8,
-  },
-  {
-    id: "2",
-    name: "GreenTech Disposal",
-    industry: "Environmental Services",
-    location: "Denver, CO",
-    wasteCapacity: 35000,
-    acceptedWasteTypes: ["Chemical", "Organic", "Industrial"],
-    certifications: ["EPA Certified", "ISO 14001"],
-    rating: 4.6,
-  },
-  {
-    id: "3",
-    name: "Industrial Waste Partners",
-    industry: "Waste Management",
-    location: "Midland, TX",
-    wasteCapacity: 75000,
-    acceptedWasteTypes: ["Hazardous", "Chemical", "Petroleum"],
-    certifications: ["EPA Certified", "RCRA Permitted", "DOT Certified"],
-    rating: 4.9,
-  },
-  {
-    id: "4",
-    name: "Sustainable Solutions Inc",
-    industry: "Environmental Services",
-    location: "Oklahoma City, OK",
-    wasteCapacity: 40000,
-    acceptedWasteTypes: ["Industrial", "Chemical", "Non-Hazardous"],
-    certifications: ["EPA Certified", "ISO 14001"],
-    rating: 4.5,
-  },
-  {
-    id: "5",
-    name: "CleanStream Environmental",
-    industry: "Waste Management",
-    location: "Tulsa, OK",
-    wasteCapacity: 60000,
-    acceptedWasteTypes: ["Chemical", "Hazardous", "Industrial", "Petroleum"],
-    certifications: ["EPA Certified", "RCRA Permitted", "ISO 14001", "DOT Certified"],
-    rating: 4.7,
-  },
-]
-
 export interface WasteStreamData {
   companyName: string
   wasteType: string
@@ -72,15 +22,65 @@ export interface WasteStreamData {
   currentDisposal: string
 }
 
-export function getRandomCompany(): Company {
-  return mockCompanies[Math.floor(Math.random() * mockCompanies.length)]
+// Convert backend company format to frontend format
+function convertCompany(backendCompany: BackendCompany): Company {
+  const isProducer = backendCompany.type === 'producer';
+  const wasteTypes: string[] = [];
+  const certifications: string[] = [];
+  
+  if (isProducer && backendCompany.waste_stream) {
+    wasteTypes.push(backendCompany.waste_stream.category);
+    certifications.push(...backendCompany.waste_stream.certifications);
+  } else if (backendCompany.material_needs) {
+    wasteTypes.push(backendCompany.material_needs.category);
+    certifications.push(...backendCompany.material_needs.certifications_required);
+  }
+  
+  return {
+    id: backendCompany.id.toString(),
+    name: backendCompany.name,
+    industry: backendCompany.industry,
+    location: `${backendCompany.location.city}, ${backendCompany.location.state}`,
+    wasteCapacity: isProducer 
+      ? (backendCompany.waste_stream?.quantity_tons_year || 0)
+      : (backendCompany.material_needs?.quantity_tons_year || 0),
+    acceptedWasteTypes: wasteTypes,
+    certifications: certifications,
+    rating: 4.5 + Math.random() * 0.5, // Generate rating between 4.5-5.0
+  };
 }
 
-export function findMatchingCompanies(wasteData: WasteStreamData): Company[] {
-  return mockCompanies
+export async function getRandomCompany(): Promise<Company> {
+  const companies = await getAllCompanies();
+  const converted = companies.map(convertCompany);
+  return converted[Math.floor(Math.random() * converted.length)];
+}
+
+export async function findMatchingCompanies(wasteData: WasteStreamData): Promise<Company[]> {
+  const companies = await getAllCompanies();
+  const converted = companies.map(convertCompany);
+  
+  return converted
     .filter((company) =>
-      company.acceptedWasteTypes.some((type) => wasteData.wasteType.toLowerCase().includes(type.toLowerCase())),
+      company.acceptedWasteTypes.some((type) => 
+        wasteData.wasteType.toLowerCase().includes(type.toLowerCase()) ||
+        type.toLowerCase().includes(wasteData.wasteType.toLowerCase())
+      ),
     )
     .sort((a, b) => b.rating - a.rating)
-    .slice(0, 3)
+    .slice(0, 3);
+}
+
+// Export mock companies for backward compatibility, but fetch from backend
+export let mockCompanies: Company[] = [];
+
+// Initialize mock companies from backend
+if (typeof window !== 'undefined') {
+  getAllCompanies()
+    .then(companies => {
+      mockCompanies = companies.map(convertCompany);
+    })
+    .catch(err => {
+      console.error('Failed to load companies from backend:', err);
+    });
 }
