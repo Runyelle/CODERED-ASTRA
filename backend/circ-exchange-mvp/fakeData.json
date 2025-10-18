@@ -1,0 +1,304 @@
+{
+    "companies": [
+      {
+        "id": 1,
+        "name": "SteelCo Manufacturing",
+        "type": "producer",
+        "industry": "Steel Production",
+        "location": {
+          "address": "4500 Industrial Pkwy",
+          "city": "Houston",
+          "state": "TX",
+          "zip": "77032",
+          "coordinates": {
+            "lat": 29.7604,
+            "lng": -95.3698
+          }
+        },
+        "contact": {
+          "name": "John Mitchell",
+          "title": "Environmental Manager",
+          "email": "j.mitchell@steelco.com",
+          "phone": "(713) 555-0142"
+        },
+        "waste_stream": {
+          "material": "Steel Slag",
+          "category": "Industrial Byproduct",
+          "quantity_tons_year": 5000,
+          "availability": "Continuous",
+          "composition": {
+            "CaO": 40,
+            "SiO2": 35,
+            "FeO": 15,
+            "MgO": 10
+          },
+          "physical_properties": {
+            "state": "Solid",
+            "color": "Dark gray",
+            "particle_size": "0-50mm",
+            "moisture_content": "2-5%"
+          },
+          "current_disposal": {
+            "method": "Landfill",
+            "cost_per_ton": 50,
+            "annual_cost": 250000,
+            "hauling_distance_miles": 35
+          },
+          "certifications": ["Non-hazardous", "ASTM C989"],
+          "description": "Byproduct from basic oxygen furnace steel production. High calcium and silicon content makes it suitable for cement applications."
+        }
+      },
+      {
+        "id": 2,
+        "name": "ChemTech Industries",
+        "type": "producer",
+        "industry": "Chemical Manufacturing",
+        "location": {
+          "address": "7800 Chemical Row",
+          "city": "Houston",
+          "state": "TX",
+          "zip": "77015",
+          "coordinates": {
+            "lat": 29.8000,
+            "lng": -95.4000
+          }
+        },
+        "contact": {
+          "name": "Sarah Chen",
+          "title": "Sustainability Director",
+          "email": "s.chen@chemtech.com",
+          "phone": "(713) 555-0287"
+        },
+        "waste_stream": {
+          "material": "Spent Solvents",
+          "category": "Chemical Waste",
+          "quantity_tons_year": 2400,
+          "availability": "Monthly batches",
+          "composition": {
+            "Acetone": 45,
+            "Ethanol": 30,
+            "Toluene": 25
+          },
+          "physical_properties": {
+            "state": "Liquid",
+            "color": "Clear to light yellow",
+            "flash_point": "12°C",
+            "purity": "85-90%"
+          },
+          "current_disposal": {
+            "method": "Incineration",
+            "cost_per_ton": 650,
+            "annual_cost": 156000,
+            "hauling_distance_miles": 45
+          },
+          "certifications": ["RCRA Non-hazardous", "Distillation residue"],
+          "description": "Used solvents from pharmaceutical synthesis. Still contains significant usable solvent content suitable for paint and coating industries."
+        }
+      },
+      {
+        "id": 3,
+        "name": "BioPlastics Corp",
+        "type": "producer",
+        "industry": "Bioplastics Manufacturing",
+        "location": {
+          "address": "9200 Green Tech Dr",
+          "city": "Houston",
+          "state": "TX",
+          "zip": "77041",
+          "coordinates": {
+            "lat": 29.7200,
+            "lng": -95.4000
+          }
+        },
+        "contact": {
+          "name": "Maria Rodriguez",
+          "title": "Operations Manager",
+          "email": "m.rodriguez@bioplastics.com",
+          "phone": "(713) 555-0391"
+        },
+        "waste_stream": {
+          "material": "Organic Process Waste",
+          "category": "Biodegradable Organic",
+          "quantity_tons_year": 1800,
+          "availability": "Continuous",
+          "composition": {
+            "Cellulose": 50,
+            "Starch": 30,
+            "Proteins": 15,
+            "Other_organics": 5
+          },
+          "physical_properties": {
+            "state": "Semi-solid slurry",
+            "color": "Light brown",
+            "moisture_content": "60-70%",
+            "pH": "5.5-6.5"
+          },
+          "current_disposal": {
+            "method": "Composting facility",
+            "cost_per_ton": 50,
+            "annual_cost": 90000,
+            "hauling_distance_miles": 25
+          },
+          "certifications": ["Organic", "Non-GMO"],
+          "description": "Organic byproducts from corn-based bioplastic production. High energy content suitable for anaerobic digestion and biogas production."
+        }
+      },
+      {
+        "id": 4,
+        "name": "Cement Industries Inc",
+        "type": "consumer",
+        "industry": "Cement Production",
+        "location": {
+          "address": "3300 Cement Plant Rd",
+          "city": "Houston",
+          "state": "TX",
+          "zip": "77029",
+          "coordinates": {
+            "lat": 29.7800,
+            "lng": -95.3500
+          }
+        },
+        "contact": {
+          "name": "Robert Thompson",
+          "title": "Procurement Manager",
+          "email": "r.thompson@cementindustries.com",
+          "phone": "(713) 555-0523"
+        },
+        "material_needs": {
+          "material": "Calcium & Silicon Sources",
+          "category": "Raw Materials",
+          "quantity_tons_year": 4000,
+          "frequency": "Continuous supply needed",
+          "composition_needed": {
+            "CaO": 35,
+            "SiO2": 30,
+            "FeO": 10,
+            "Al2O3": 5
+          },
+          "specifications": {
+            "form": "Granular or powder",
+            "max_moisture": "10%",
+            "particle_size": "0-100mm acceptable",
+            "quality_standard": "ASTM C150"
+          },
+          "current_sourcing": {
+            "primary_source": "Limestone quarry",
+            "cost_per_ton": 120,
+            "annual_cost": 480000,
+            "transport_distance_miles": 60
+          },
+          "certifications_required": ["Non-hazardous", "ASTM certified"],
+          "description": "Seeking alternative calcium and silicon sources to reduce limestone mining. Interested in industrial byproducts that meet cement raw material specifications."
+        }
+      },
+      {
+        "id": 5,
+        "name": "PaintPro Manufacturing",
+        "type": "consumer",
+        "industry": "Paint & Coatings",
+        "location": {
+          "address": "6100 Painter's Way",
+          "city": "Houston",
+          "state": "TX",
+          "zip": "77020",
+          "coordinates": {
+            "lat": 29.7900,
+            "lng": -95.4200
+          }
+        },
+        "contact": {
+          "name": "David Park",
+          "title": "Supply Chain Director",
+          "email": "d.park@paintpro.com",
+          "phone": "(713) 555-0634"
+        },
+        "material_needs": {
+          "material": "Industrial Solvents",
+          "category": "Chemical Feedstock",
+          "quantity_tons_year": 2000,
+          "frequency": "Monthly deliveries",
+          "composition_needed": {
+            "Acetone": 40,
+            "Ethanol": 35,
+            "Toluene": 25
+          },
+          "specifications": {
+            "form": "Liquid",
+            "purity_minimum": "80%",
+            "water_content": "<5%",
+            "quality_standard": "Industrial grade"
+          },
+          "current_sourcing": {
+            "primary_source": "Chemical distributor",
+            "cost_per_ton": 800,
+            "annual_cost": 1600000,
+            "transport_distance_miles": 120
+          },
+          "certifications_required": ["Safety Data Sheet", "Industrial grade"],
+          "description": "Large consumer of industrial solvents for paint thinning and cleaning. Open to using recycled/recovered solvents if quality standards are met."
+        }
+      },
+      {
+        "id": 6,
+        "name": "Energy Solutions LLC",
+        "type": "consumer",
+        "industry": "Renewable Energy",
+        "location": {
+          "address": "8500 Biogas Blvd",
+          "city": "Houston",
+          "state": "TX",
+          "zip": "77033",
+          "coordinates": {
+            "lat": 29.7300,
+            "lng": -95.3900
+          }
+        },
+        "contact": {
+          "name": "Jennifer Lee",
+          "title": "Feedstock Manager",
+          "email": "j.lee@energysolutions.com",
+          "phone": "(713) 555-0745"
+        },
+        "material_needs": {
+          "material": "Organic Biomass",
+          "category": "Biogas Feedstock",
+          "quantity_tons_year": 1500,
+          "frequency": "Weekly deliveries",
+          "composition_needed": {
+            "Cellulose": 40,
+            "Starch": 30,
+            "Proteins": 20,
+            "Lipids": 10
+          },
+          "specifications": {
+            "form": "Any organic waste",
+            "moisture_content": "50-80% acceptable",
+            "contamination": "Minimal plastics/metals",
+            "biodegradability": "High"
+          },
+          "current_sourcing": {
+            "primary_source": "Agricultural waste",
+            "cost_per_ton": 50,
+            "annual_cost": 75000,
+            "transport_distance_miles": 90
+          },
+          "certifications_required": ["Organic source", "Non-hazardous"],
+          "description": "Anaerobic digestion facility producing renewable natural gas. Seeking diverse organic feedstocks to optimize biogas production and reduce sourcing costs."
+        }
+      }
+    ],
+    "metadata": {
+      "version": "1.0",
+      "last_updated": "2025-01-15",
+      "total_companies": 6,
+      "geographic_focus": "Houston, TX Metropolitan Area",
+      "data_source": "Simulated for MVP demonstration",
+      "production_integration": [
+        "EPA Toxics Release Inventory (TRI)",
+        "EPA RCRAInfo",
+        "PubChem Database",
+        "State Environmental Agency Data"
+      ],
+      "notes": "This dataset represents realistic industrial scenarios designed to demonstrate AI matching capabilities. All company names and specific details are fictional."
+    }
+  }

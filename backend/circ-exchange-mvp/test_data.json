@@ -1,0 +1,41 @@
+{
+  "analyze_request": {
+    "company_a": {
+      "id": "test-steel",
+      "name": "Test Steel Company",
+      "latitude": 29.7604,
+      "longitude": -95.3698,
+      "waste_streams": [
+        {
+          "name": "Steel Slag",
+          "composition": {
+            "CaO": 0.45,
+            "SiO2": 0.25,
+            "Fe2O3": 0.15
+          }
+        }
+      ],
+      "quantity": 1000,
+      "disposal_cost": 25
+    },
+    "company_b": {
+      "id": "test-cement",
+      "name": "Test Cement Company",
+      "latitude": 29.4241,
+      "longitude": -95.2444,
+      "needs": [
+        {
+          "name": "Raw Materials",
+          "composition": {
+            "CaO": 0.4,
+            "SiO2": 0.3,
+            "Al2O3": 0.2
+          }
+        }
+      ]
+    }
+  },
+  "ask_request": {
+    "question": "What are the benefits of using steel slag in cement production?"
+  }
+}
