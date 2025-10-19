@@ -331,8 +331,10 @@ export default function OrdersPage() {
                     </div>
                     
                     <div className="flex gap-2">
-                      <Button size="sm" variant="outline">
-                        View Details
+                      <Button size="sm" variant="outline" asChild>
+                        <Link href={`/orders/${order.id}`}>
+                          View Details
+                        </Link>
                       </Button>
                       {order.status === 'pending' && (
                         <Button 

@@ -17,7 +17,8 @@ import {
   MapPin,
   Calendar,
   Package,
-  DollarSign
+  DollarSign,
+  ShoppingCart
 } from "lucide-react"
 import { getSellerListings, getBuyerListings, updateSellerListingStatus, updateBuyerListingStatus } from "@/lib/data-storage"
 import { createNotification, addNotification } from "@/components/notifications"
@@ -33,6 +34,7 @@ export default function AgreementPage() {
   const [agreementAccepted, setAgreementAccepted] = useState(false)
   const [termsAccepted, setTermsAccepted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
+  const [isBuyListing, setIsBuyListing] = useState(false)
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -44,6 +46,12 @@ export default function AgreementPage() {
     const foundListing = allListings.find(l => l.id === listingId)
     
     if (foundListing) {
+      // Check if it's a buy listing
+      if (foundListing.type !== 'seller') {
+        setIsBuyListing(true)
+        setListing(null)
+        return
+      }
       setListing(foundListing)
     }
     setLoading(false)
@@ -118,9 +126,10 @@ export default function AgreementPage() {
   }
 
   const downloadAgreement = () => {
-    // Create a sample agreement PDF content
+    // Create a generic waste material agreement template
     const agreementContent = `
-WASTE MATERIAL AGREEMENT
+WASTE MATERIAL SALES AGREEMENT
+TEMPLATE DOCUMENT
 
 Company: ${listing?.companyName}
 Contact: ${listing?.contactName}
@@ -129,23 +138,24 @@ Phone: ${listing?.phone}
 Location: ${listing?.location}
 
 MATERIAL DETAILS:
-${listing?.type === 'seller' ? `Waste Type: ${(listing as SellerListing).wasteType}` : `Material Type: ${(listing as BuyerListing).materialType}`}
+Waste Type: ${(listing as SellerListing).wasteType}
 Quantity: ${listing?.quantity} ${listing?.unit}
 Frequency: ${listing?.frequency}
+Disposal Cost: $${(listing as SellerListing).disposalCost}/ton
 
-TERMS AND CONDITIONS:
-1. All materials must meet specified quality standards
-2. Delivery schedule must be adhered to as agreed
-3. Payment terms: Net 30 days from delivery
-4. Quality inspection required before acceptance
-5. Environmental compliance is mandatory
-6. Insurance coverage required for transportation
-7. Force majeure clauses apply
-8. Dispute resolution through arbitration
-9. Confidentiality of business information
-10. Compliance with all applicable regulations
+GENERIC TERMS AND CONDITIONS:
+1. All waste materials must meet specified quality standards and environmental regulations
+2. Delivery schedule must be adhered to as agreed upon in the contract
+3. Payment terms: Net 30 days from delivery and acceptance of materials
+4. Quality inspection required before acceptance of any waste materials
+5. Environmental compliance is mandatory for all parties involved
+6. Insurance coverage required for transportation and liability
+7. Force majeure clauses apply for circumstances beyond control
+8. Dispute resolution through binding arbitration
+9. Confidentiality of business information must be maintained
+10. Compliance with all applicable local, state, and federal regulations
 
-This agreement is binding upon acceptance by both parties.
+IMPORTANT: This is a template agreement. In production, this would be a legally binding PDF document prepared by legal counsel.
 
 Generated on: ${new Date().toLocaleDateString()}
     `
@@ -154,7 +164,7 @@ Generated on: ${new Date().toLocaleDateString()}
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `agreement-${listing?.companyName}-${new Date().toISOString().split('T')[0]}.txt`
+    a.download = `waste-agreement-template-${listing?.companyName}-${new Date().toISOString().split('T')[0]}.txt`
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)
@@ -177,13 +187,37 @@ Generated on: ${new Date().toLocaleDateString()}
       <div className="min-h-screen bg-gradient-to-br from-background to-muted/20 flex items-center justify-center">
         <Card className="w-full max-w-md">
           <CardContent className="pt-6 text-center">
-            <AlertCircle className="h-12 w-12 text-destructive mx-auto mb-4" />
-            <h2 className="text-xl font-semibold mb-2">Agreement Not Found</h2>
-            <p className="text-muted-foreground mb-4">The requested agreement could not be found.</p>
-            <Button onClick={() => router.push('/dashboard')}>
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Dashboard
-            </Button>
+            {isBuyListing ? (
+              <>
+                <ShoppingCart className="h-12 w-12 text-blue-500 mx-auto mb-4" />
+                <h2 className="text-xl font-semibold mb-2">Buy Listing - No Agreement Required</h2>
+                <p className="text-muted-foreground mb-4">
+                  Buy listings do not require waste material sales agreements. 
+                  You can proceed directly to create an order.
+                </p>
+                <div className="flex gap-2 justify-center">
+                  <Button onClick={() => router.push('/dashboard')} variant="outline">
+                    <ArrowLeft className="h-4 w-4 mr-2" />
+                    Back to Dashboard
+                  </Button>
+                  <Button onClick={() => router.push(`/orders/create/${listingId}`)}>
+                    Create Order
+                  </Button>
+                </div>
+              </>
+            ) : (
+              <>
+                <AlertCircle className="h-12 w-12 text-destructive mx-auto mb-4" />
+                <h2 className="text-xl font-semibold mb-2">Agreement Not Available</h2>
+                <p className="text-muted-foreground mb-4">
+                  Agreements are only available for sell listings. Buy listings do not require waste material sales agreements.
+                </p>
+                <Button onClick={() => router.push('/dashboard')}>
+                  <ArrowLeft className="h-4 w-4 mr-2" />
+                  Back to Dashboard
+                </Button>
+              </>
+            )}
           </CardContent>
         </Card>
       </div>
@@ -196,9 +230,9 @@ Generated on: ${new Date().toLocaleDateString()}
         <Card className="w-full max-w-md">
           <CardContent className="pt-6 text-center">
             <CheckCircle2 className="h-12 w-12 text-green-500 mx-auto mb-4" />
-            <h2 className="text-xl font-semibold mb-2">Agreement Accepted!</h2>
+            <h2 className="text-xl font-semibold mb-2">Template Accepted!</h2>
             <p className="text-muted-foreground mb-4">
-              You have successfully accepted the agreement. You will be redirected to the dashboard.
+              You have successfully accepted the waste material sales agreement template. You will be redirected to the dashboard.
             </p>
             <Button onClick={() => router.push('/dashboard')}>
               Return to Dashboard
@@ -228,7 +262,7 @@ Generated on: ${new Date().toLocaleDateString()}
             <h1 className="text-3xl font-bold">Agreement Details</h1>
           </div>
           <p className="text-muted-foreground">
-            Review and accept the terms and conditions for this {listing.type} listing
+            Review and accept the waste material sales agreement template for this sell listing
           </p>
         </div>
 
@@ -239,10 +273,10 @@ Generated on: ${new Date().toLocaleDateString()}
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <FileText className="h-5 w-5" />
-                  Agreement Document
+                  Waste Material Sales Agreement (Template)
                 </CardTitle>
                 <CardDescription>
-                  Please review the terms and conditions below
+                  This is a template agreement for waste material sales. In production, this would be a legally binding PDF document.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -311,11 +345,11 @@ Generated on: ${new Date().toLocaleDateString()}
 
                 {/* Terms and Conditions */}
                 <div className="space-y-4">
-                  <h3 className="text-lg font-semibold">Terms and Conditions</h3>
+                  <h3 className="text-lg font-semibold">Generic Terms and Conditions (Template)</h3>
                   <div className="bg-muted/20 p-4 rounded-lg space-y-3 text-sm">
                     <div className="flex items-start gap-2">
                       <span className="font-medium">1.</span>
-                      <span>All materials must meet specified quality standards and environmental regulations.</span>
+                      <span>All waste materials must meet specified quality standards and environmental regulations.</span>
                     </div>
                     <div className="flex items-start gap-2">
                       <span className="font-medium">2.</span>
@@ -327,7 +361,7 @@ Generated on: ${new Date().toLocaleDateString()}
                     </div>
                     <div className="flex items-start gap-2">
                       <span className="font-medium">4.</span>
-                      <span>Quality inspection required before acceptance of any materials.</span>
+                      <span>Quality inspection required before acceptance of any waste materials.</span>
                     </div>
                     <div className="flex items-start gap-2">
                       <span className="font-medium">5.</span>
@@ -354,13 +388,26 @@ Generated on: ${new Date().toLocaleDateString()}
                       <span>Compliance with all applicable local, state, and federal regulations.</span>
                     </div>
                   </div>
+                  
+                  <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                    <div className="flex items-start gap-2">
+                      <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5" />
+                      <div>
+                        <p className="font-medium text-yellow-800">Template Agreement Notice</p>
+                        <p className="text-sm text-yellow-700 mt-1">
+                          This is a generic template agreement. In production, this would be a legally binding PDF document 
+                          prepared by legal counsel with specific terms tailored to the waste material type and business requirements.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Agreement Actions */}
                 <div className="flex gap-4 pt-4 border-t">
                   <Button onClick={downloadAgreement} variant="outline">
                     <Download className="h-4 w-4 mr-2" />
-                    Download Agreement
+                    Download Template
                   </Button>
                 </div>
               </CardContent>
@@ -371,9 +418,9 @@ Generated on: ${new Date().toLocaleDateString()}
           <div className="space-y-6">
             <Card className="glass-card border-border/40">
               <CardHeader>
-                <CardTitle>Agreement Actions</CardTitle>
+                <CardTitle>Template Agreement Actions</CardTitle>
                 <CardDescription>
-                  Review and accept the terms to proceed
+                  Review and accept the template terms to proceed
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -384,8 +431,8 @@ Generated on: ${new Date().toLocaleDateString()}
                     onCheckedChange={(checked) => setTermsAccepted(checked as boolean)}
                   />
                   <label htmlFor="terms" className="text-sm leading-relaxed">
-                    I have read and agree to the terms and conditions outlined in this agreement. 
-                    I understand that this is a binding contract and will be held accountable for compliance.
+                    I have read and agree to the template terms and conditions outlined in this waste material sales agreement. 
+                    I understand that this is a template and in production would be a legally binding PDF document.
                   </label>
                 </div>
 
@@ -403,7 +450,7 @@ Generated on: ${new Date().toLocaleDateString()}
                     ) : (
                       <>
                         <CheckCircle2 className="h-4 w-4 mr-2" />
-                        Accept Agreement
+                        Accept Template
                       </>
                     )}
                   </Button>

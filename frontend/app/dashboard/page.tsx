@@ -606,11 +606,6 @@ export default function DashboardPage() {
                     </div>
                       </div>
                       <div className="flex gap-2">
-                        <Button size="sm" variant="outline" asChild>
-                          <Link href={`/agreement/${listing.id}`}>
-                            View Agreement
-                          </Link>
-                        </Button>
                         <Button size="sm" variant="default" asChild>
                           <Link href={`/orders/create/${listing.id}`}>
                             Create Order
@@ -843,11 +838,6 @@ export default function DashboardPage() {
                           </div>
                         </div>
                         <div className="flex gap-2">
-                          <Button size="sm" variant="outline" asChild>
-                            <Link href={`/agreement/${listing.id}`}>
-                              View Agreement
-                            </Link>
-                          </Button>
                           <Button size="sm" variant="default" asChild>
                             <Link href={`/orders/create/${listing.id}`}>
                               Create Order

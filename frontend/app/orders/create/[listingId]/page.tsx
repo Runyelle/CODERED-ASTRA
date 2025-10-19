@@ -22,9 +22,10 @@ import {
   Package,
   DollarSign,
   FileText,
-  Truck
+  Truck,
+  Leaf
 } from "lucide-react"
-import { getSellerListings, getBuyerListings } from "@/lib/data-storage"
+import { getSellerListings, getBuyerListings, searchListings } from "@/lib/data-storage"
 import { createOrder } from "@/lib/order-storage"
 import { createNotification, addNotification } from "@/components/notifications"
 import type { SellerListing, BuyerListing } from "@/lib/data-storage"
@@ -47,33 +48,49 @@ export default function CreateOrderPage() {
     deliveryAddress: '',
     billingAddress: '',
     paymentTerms: 'Net 30',
-    expectedDelivery: ''
+    expectedDelivery: '',
+    termsAccepted: false
   })
 
   useEffect(() => {
     if (typeof window === 'undefined') return
     
-    // Load listing data
-    const sellers = getSellerListings()
-    const buyers = getBuyerListings()
-    const allListings = [...sellers, ...buyers]
-    const foundListing = allListings.find(l => l.id === listingId)
-    
-    if (foundListing) {
-      setListing(foundListing)
-      // Set default delivery address to company location
-      setOrderData(prev => ({
-        ...prev,
-        deliveryAddress: foundListing.location,
-        billingAddress: foundListing.location,
-        expectedDelivery: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
-      }))
+    const loadListing = async () => {
+      try {
+        // First try to find in localStorage
+        const sellers = getSellerListings()
+        const buyers = getBuyerListings()
+        const allListings = [...sellers, ...buyers]
+        let foundListing = allListings.find(l => l.id === listingId)
+        
+        // If not found in localStorage, try API search
+        if (!foundListing) {
+          const apiResults = await searchListings('', undefined, undefined, undefined)
+          foundListing = apiResults.find(l => l.id === listingId)
+        }
+        
+        if (foundListing) {
+          setListing(foundListing)
+          // Set default delivery address to company location
+          setOrderData(prev => ({
+            ...prev,
+            deliveryAddress: foundListing.location,
+            billingAddress: foundListing.location,
+            expectedDelivery: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+          }))
+        }
+      } catch (error) {
+        console.error('Error loading listing:', error)
+      } finally {
+        setLoading(false)
+      }
     }
-    setLoading(false)
+    
+    loadListing()
   }, [listingId])
 
   const handleCreateOrder = async () => {
-    if (!listing) return
+    if (!listing || !orderData.termsAccepted) return
     
     setSubmitting(true)
     
@@ -101,9 +118,9 @@ export default function CreateOrderPage() {
       
       setOrderCreated(true)
       
-      // Redirect to orders page after success
+      // Redirect to detailed order view after success
       setTimeout(() => {
-        router.push('/orders')
+        router.push(`/orders/${order.id}`)
       }, 2000)
     } catch (error) {
       console.error('Error creating order:', error)
@@ -144,17 +161,87 @@ export default function CreateOrderPage() {
 
   if (orderCreated) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-background to-muted/20 flex items-center justify-center">
-        <Card className="w-full max-w-md">
-          <CardContent className="pt-6 text-center">
-            <CheckCircle2 className="h-12 w-12 text-green-500 mx-auto mb-4" />
-            <h2 className="text-xl font-semibold mb-2">Order Created Successfully!</h2>
-            <p className="text-muted-foreground mb-4">
-              Your order has been created and is now being processed. You will be redirected to the orders page.
-            </p>
-            <Button onClick={() => router.push('/orders')}>
-              View Orders
-            </Button>
+      <div className="min-h-screen bg-gradient-to-br from-background to-muted/20 flex items-center justify-center p-4">
+        <Card className="w-full max-w-2xl">
+          <CardContent className="pt-6">
+            <div className="text-center mb-6">
+              <CheckCircle2 className="h-16 w-16 text-green-500 mx-auto mb-4" />
+              <h2 className="text-2xl font-bold mb-2">Order Created Successfully!</h2>
+              <p className="text-muted-foreground">
+                Your order has been created and is now being processed.
+              </p>
+            </div>
+
+            {/* Order Details */}
+            <div className="space-y-4 mb-6">
+              <div className="bg-muted/20 p-4 rounded-lg">
+                <h3 className="font-semibold mb-3">Order Summary</h3>
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <span className="text-muted-foreground">Order ID:</span>
+                    <p className="font-medium">#{listingId.slice(-8)}</p>
+                  </div>
+                  <div>
+                    <span className="text-muted-foreground">Company:</span>
+                    <p className="font-medium">{listing.companyName}</p>
+                  </div>
+                  <div>
+                    <span className="text-muted-foreground">Material:</span>
+                    <p className="font-medium">{materialType}</p>
+                  </div>
+                  <div>
+                    <span className="text-muted-foreground">Quantity:</span>
+                    <p className="font-medium">{listing.quantity} {listing.unit}</p>
+                  </div>
+                  <div>
+                    <span className="text-muted-foreground">Total Value:</span>
+                    <p className="font-medium text-lg">${totalPrice.toFixed(2)}</p>
+                  </div>
+                  <div>
+                    <span className="text-muted-foreground">Priority:</span>
+                    <Badge variant={orderData.priority === 'urgent' ? 'destructive' : 'secondary'}>
+                      {orderData.priority}
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+                <h3 className="font-semibold text-green-800 mb-2 flex items-center gap-2">
+                  <Leaf className="h-4 w-4" />
+                  Environmental Impact
+                </h3>
+                <div className="grid grid-cols-2 gap-4 text-sm text-green-700">
+                  <div>
+                    <span>CO₂ Reduction:</span>
+                    <p className="font-medium">~{Math.round(parseFloat(listing.quantity || '0') * 0.5)} kg</p>
+                  </div>
+                  <div>
+                    <span>Waste Diverted:</span>
+                    <p className="font-medium">{listing.quantity} {listing.unit}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                <h3 className="font-semibold text-blue-800 mb-2">Next Steps</h3>
+                <ul className="text-sm text-blue-700 space-y-1">
+                  <li>• Order confirmation will be sent to your email</li>
+                  <li>• Seller will be notified of your order request</li>
+                  <li>• You can track order status in your dashboard</li>
+                  <li>• Delivery arrangements will be coordinated</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex gap-3 justify-center">
+              <Button onClick={() => router.push('/orders')} variant="outline">
+                View All Orders
+              </Button>
+              <Button onClick={() => router.push('/dashboard')}>
+                Back to Dashboard
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>
@@ -311,11 +398,128 @@ export default function CreateOrderPage() {
                   </div>
                 </div>
 
+                {/* Terms and Conditions */}
+                <div className="space-y-4">
+                  <h3 className="text-lg font-semibold">Terms and Conditions</h3>
+                  <div className="bg-muted/20 p-4 rounded-lg space-y-3 text-sm max-h-96 overflow-y-auto">
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-base mb-2">Material Quality & Specifications</h4>
+                        <div className="space-y-2 ml-4">
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">1.</span>
+                            <span>All waste materials must meet specified quality standards and environmental regulations as outlined in the material specifications.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">2.</span>
+                            <span>Quality inspection required before acceptance of any waste materials. Buyer reserves the right to reject materials that do not meet specifications.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">3.</span>
+                            <span>Material contamination levels must not exceed EPA and local regulatory limits.</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold text-base mb-2">Delivery & Logistics</h4>
+                        <div className="space-y-2 ml-4">
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">4.</span>
+                            <span>Delivery schedule must be adhered to as agreed upon in the contract. Delays may result in additional charges.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">5.</span>
+                            <span>Proper packaging and labeling required for all waste materials in accordance with DOT regulations.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">6.</span>
+                            <span>Insurance coverage required for transportation and liability. Minimum coverage: $1M per occurrence.</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold text-base mb-2">Payment & Financial Terms</h4>
+                        <div className="space-y-2 ml-4">
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">7.</span>
+                            <span>Payment terms: Net 30 days from delivery and acceptance of materials, unless otherwise specified.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">8.</span>
+                            <span>Late payment fees: 1.5% per month on outstanding balances after 30 days.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">9.</span>
+                            <span>Price adjustments may apply based on market conditions and material quality variations.</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold text-base mb-2">Environmental & Regulatory Compliance</h4>
+                        <div className="space-y-2 ml-4">
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">10.</span>
+                            <span>Environmental compliance is mandatory for all parties involved. All activities must comply with EPA, OSHA, and local regulations.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">11.</span>
+                            <span>Proper waste handling and disposal procedures must be followed at all times.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">12.</span>
+                            <span>Environmental impact assessments may be required for large volume transactions.</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold text-base mb-2">Legal & Dispute Resolution</h4>
+                        <div className="space-y-2 ml-4">
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">13.</span>
+                            <span>Force majeure clauses apply for circumstances beyond control including natural disasters, government actions, and pandemics.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">14.</span>
+                            <span>Dispute resolution through binding arbitration in accordance with American Arbitration Association rules.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">15.</span>
+                            <span>Confidentiality of business information must be maintained. Non-disclosure agreements apply to all parties.</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="font-medium">16.</span>
+                            <span>Compliance with all applicable local, state, and federal regulations including but not limited to RCRA, CERCLA, and TSCA.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg border border-primary/20">
+                    <input
+                      type="checkbox"
+                      id="terms"
+                      checked={orderData.termsAccepted}
+                      onChange={(e) => setOrderData(prev => ({ ...prev, termsAccepted: e.target.checked }))}
+                      className="mt-1 h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
+                    />
+                    <label htmlFor="terms" className="text-sm leading-relaxed font-medium">
+                      I have read and agree to the comprehensive terms and conditions outlined above. 
+                      I understand that this order is subject to the waste material sales agreement terms and that 
+                      I am legally bound by these conditions upon order submission.
+                    </label>
+                  </div>
+                </div>
+
                 {/* Order Actions */}
                 <div className="flex gap-4 pt-4 border-t">
                   <Button 
                     onClick={handleCreateOrder}
-                    disabled={submitting}
+                    disabled={submitting || !orderData.termsAccepted}
                     className="flex-1"
                   >
                     {submitting ? (
@@ -413,6 +617,63 @@ export default function CreateOrderPage() {
                   <div className="flex justify-between">
                     <span>Created:</span>
                     <span>{new Date().toLocaleDateString()}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Order ID:</span>
+                    <span className="font-mono text-xs">#{listingId.slice(-8)}</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Material Specifications */}
+            <Card className="glass-card border-border/40">
+              <CardHeader>
+                <CardTitle className="text-sm">Material Specifications</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3 text-sm">
+                  <div>
+                    <span className="font-medium">Material Type:</span>
+                    <p className="text-muted-foreground">{materialType}</p>
+                  </div>
+                  <div>
+                    <span className="font-medium">Quantity:</span>
+                    <p className="text-muted-foreground">{listing.quantity} {listing.unit}</p>
+                  </div>
+                  <div>
+                    <span className="font-medium">Quality Standards:</span>
+                    <p className="text-muted-foreground">EPA compliant, contamination-free</p>
+                  </div>
+                  <div>
+                    <span className="font-medium">Packaging:</span>
+                    <p className="text-muted-foreground">DOT approved containers</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Environmental Impact */}
+            <Card className="glass-card border-border/40">
+              <CardHeader>
+                <CardTitle className="text-sm flex items-center gap-2">
+                  <Leaf className="h-4 w-4 text-green-500" />
+                  Environmental Impact
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3 text-sm">
+                  <div className="flex justify-between">
+                    <span>CO₂ Reduction:</span>
+                    <span className="text-green-600 font-medium">~{Math.round(parseFloat(listing.quantity || '0') * 0.5)} kg</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Waste Diverted:</span>
+                    <span className="text-green-600 font-medium">{listing.quantity} {listing.unit}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Recycling Rate:</span>
+                    <span className="text-green-600 font-medium">95%</span>
                   </div>
                 </div>
               </CardContent>
