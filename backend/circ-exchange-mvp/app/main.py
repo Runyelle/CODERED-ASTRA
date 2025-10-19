@@ -8,6 +8,7 @@ from .store import STORE
 from .matcher import haversine_km, weighted_jaccard, score_match
 from .routes import analyze, companies, ask
 from .sample_data import load_sample_data
+from .sample_data_new import load_fake_data
 
 # Load .env for GOOGLE_API_KEY (Gemini)
 load_dotenv()
@@ -38,9 +39,9 @@ def root():
 
 @app.post("/load-sample-data")
 def load_sample_data_endpoint():
-    """Load sample Texas companies into the database."""
+    """Load sample companies from fakeData.json into the database."""
     try:
-        count = load_sample_data()
+        count = load_fake_data()
         return {"message": f"Loaded {count} sample companies", "count": count}
     except Exception as e:
         raise HTTPException(

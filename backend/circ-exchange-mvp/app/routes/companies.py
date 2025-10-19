@@ -20,6 +20,20 @@ async def get_demo_companies():
     data = load_fake_data()
     return data["companies"]
 
+@router.get("/new")
+async def get_new_companies():
+    """Get companies using the new data structure"""
+    try:
+        companies = STORE.list_companies()
+        # Filter for dict objects (new structure)
+        new_companies = [company for company in companies if isinstance(company, dict)]
+        return new_companies
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to get new companies: {str(e)}"
+        )
+
 @router.get("/demo/{company_id}")
 async def get_demo_company(company_id: int):
     """Get a specific company from the demo dataset by ID"""
@@ -51,13 +65,31 @@ async def add_company(company: Company):
         )
 
 
-@router.get("/", response_model=List[Company])
+@router.get("/")
 async def list_companies():
     """
     List all companies in the database.
     """
     try:
-        return STORE.list_companies()
+        companies = STORE.list_companies()
+        # Return raw dictionary data if available, otherwise convert Company objects
+        result = []
+        for company in companies:
+            if isinstance(company, dict):
+                result.append(company)
+            else:
+                # Convert Company object to dict
+                result.append({
+                    "id": company.id,
+                    "name": company.name,
+                    "latitude": company.latitude,
+                    "longitude": company.longitude,
+                    "waste_streams": [{"name": ws.name, "composition": ws.composition} for ws in company.waste_streams],
+                    "needs": [{"name": need.name, "composition": need.composition} for need in company.needs],
+                    "quantity": company.quantity,
+                    "disposal_cost": company.disposal_cost
+                })
+        return result
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,

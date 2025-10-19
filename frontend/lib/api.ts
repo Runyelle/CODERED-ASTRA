@@ -162,7 +162,7 @@ class ApiClient {
 
   // Get all companies
   async getCompanies(): Promise<Company[]> {
-    return this.request('/companies/')
+    return this.request('/companies/demo')
   }
 
   // Get company matches
