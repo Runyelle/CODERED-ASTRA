@@ -9,13 +9,15 @@ import { Label } from "@/components/ui/label"
 import { FileText, Shield, AlertTriangle, Upload, File, X } from "lucide-react"
 import { useState } from "react"
 
+interface FormData {
+  agreementAccepted: boolean
+  agreementFile?: File
+  agreementFileName?: string
+}
+
 interface AgreementStepProps {
-  formData: {
-    agreementAccepted: boolean
-    agreementFile?: File
-    agreementFileName?: string
-  }
-  updateFormData: (data: Partial<typeof formData>) => void
+  formData: FormData
+  updateFormData: (data: Partial<FormData>) => void
   nextStep: () => void
   prevStep: () => void
 }

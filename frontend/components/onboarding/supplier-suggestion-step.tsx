@@ -8,11 +8,13 @@ import { useCompanies } from "@/hooks/use-api"
 import { useMemo } from "react"
 import { Loader2, Building2, TrendingUp, Package, Zap, Recycle } from "lucide-react"
 
+interface FormData {
+  selectedSuppliers: string[]
+}
+
 interface SupplierSuggestionStepProps {
-  formData: {
-    selectedSuppliers: string[]
-  }
-  updateFormData: (data: Partial<typeof formData>) => void
+  formData: FormData
+  updateFormData: (data: Partial<FormData>) => void
   nextStep: () => void
   prevStep: () => void
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import type React from "react"
+import React, { useState } from "react"
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ArrowRight, ArrowLeft } from "lucide-react"
+import { states, statesAndCities } from "@/lib/location-data"
 
 interface QuantityLocationStepProps {
   formData: any
@@ -17,6 +18,18 @@ interface QuantityLocationStepProps {
 }
 
 export function QuantityLocationStep({ formData, updateFormData, nextStep, prevStep }: QuantityLocationStepProps) {
+  const [selectedState, setSelectedState] = useState(formData.state || "")
+  const availableCities = selectedState ? statesAndCities[selectedState] : []
+
+  const handleStateChange = (value: string) => {
+    setSelectedState(value)
+    updateFormData({ state: value, city: "" }) // Reset city when state changes
+  }
+
+  const handleCityChange = (value: string) => {
+    updateFormData({ city: value })
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     nextStep()
@@ -55,16 +68,41 @@ export function QuantityLocationStep({ formData, updateFormData, nextStep, prevS
             </Select>
           </div>
         </div>
-        <div className="space-y-2">
-          <Label htmlFor="location">Location *</Label>
-          <Input
-            id="location"
-            value={formData.location}
-            onChange={(e) => updateFormData({ location: e.target.value })}
-            placeholder="City, State/Province, Country"
-            required
-            className="bg-background/50"
-          />
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="space-y-2">
+            <Label htmlFor="state">State *</Label>
+            <Select value={selectedState} onValueChange={handleStateChange}>
+              <SelectTrigger className="bg-background/50">
+                <SelectValue placeholder="Select state" />
+              </SelectTrigger>
+              <SelectContent className="max-h-[300px]">
+                {states.map((state) => (
+                  <SelectItem key={state} value={state}>
+                    {state}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="city">City *</Label>
+            <Select 
+              value={formData.city} 
+              onValueChange={handleCityChange}
+              disabled={!selectedState}
+            >
+              <SelectTrigger className="bg-background/50">
+                <SelectValue placeholder={selectedState ? "Select city" : "Select state first"} />
+              </SelectTrigger>
+              <SelectContent className="max-h-[300px]">
+                {availableCities.map((city) => (
+                  <SelectItem key={city} value={city}>
+                    {city}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
         </div>
         <div className="space-y-2">
           <Label htmlFor="frequency">Generation Frequency *</Label>
