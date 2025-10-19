@@ -2634,6 +2634,494 @@
         ],
         "description": "Recovered solvents for blending/storage at Kinder Morgan - Houston Terminal."
       }
+      },
+      {
+      "id": 54,
+      "name": "Tesla Fremont Factory",
+      "type": "producer",
+      "industry": "Automotive Manufacturing",
+      "location": {
+        "address": "45500 Fremont Blvd",
+        "city": "Fremont",
+        "state": "CA",
+        "zip": "94538",
+        "coordinates": {
+          "lat": 37.4933,
+          "lng": -121.944
+        }
+      },
+      "contact": {
+        "name": "Jordan Alvarez",
+        "title": "Environmental Manager",
+        "email": "j.alvarez@teslamotors.com",
+        "phone": "(510) 555-5233"
+      },
+      "waste_stream": {
+        "material": "Aluminum Scrap",
+        "category": "Metal Byproduct",
+        "quantity_tons_year": 9500,
+        "availability": "Continuous",
+        "composition": {
+          "Aluminum": 98,
+          "Other_metals": 2
+        },
+        "physical_properties": {
+          "state": "Solid",
+          "color": "Silver",
+          "particle_size": "5-20mm",
+          "moisture_content": "<1%"
+        },
+        "current_disposal": {
+          "method": "Recycling",
+          "cost_per_ton": 0,
+          "annual_cost": 0,
+          "hauling_distance_miles": 10
+        },
+        "certifications": [
+          "Non-hazardous",
+          "Recyclable metal"
+        ],
+        "description": "Clean aluminum scrap generated from stamping and machining operations."
+      }
+    },
+    {
+      "id": 55,
+      "name": "U.S. Steel - Gary Works",
+      "type": "producer",
+      "industry": "Steel Manufacturing",
+      "location": {
+        "address": "1 N Broadway",
+        "city": "Gary",
+        "state": "IN",
+        "zip": "46402",
+        "coordinates": {
+          "lat": 41.602,
+          "lng": -87.338
+        }
+      },
+      "contact": {
+        "name": "Rebecca Collins",
+        "title": "Sustainability Coordinator",
+        "email": "r.collins@ussteel.com",
+        "phone": "(219) 555-9021"
+      },
+      "waste_stream": {
+        "material": "Steel Slag",
+        "category": "Industrial Byproduct",
+        "quantity_tons_year": 14000,
+        "availability": "Continuous",
+        "composition": {
+          "CaO": 35,
+          "SiO2": 30,
+          "FeO": 20,
+          "Al2O3": 10,
+          "MgO": 5
+        },
+        "physical_properties": {
+          "state": "Solid aggregate",
+          "color": "Dark gray",
+          "particle_size": "0-75mm",
+          "moisture_content": "3-7%"
+        },
+        "current_disposal": {
+          "method": "Reuse in construction",
+          "cost_per_ton": -10,
+          "annual_cost": -140000,
+          "hauling_distance_miles": 20
+        },
+        "certifications": [
+          "ASTM C989"
+        ],
+        "description": "Slag from electric arc furnace steel production reused in construction materials."
+      }
+    },
+    {
+      "id": 56,
+      "name": "Procter & Gamble - Cincinnati",
+      "type": "producer",
+      "industry": "Consumer Goods Manufacturing",
+      "location": {
+        "address": "1 Procter & Gamble Plz",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zip": "45202",
+        "coordinates": {
+          "lat": 39.1031,
+          "lng": -84.512
+        }
+      },
+      "contact": {
+        "name": "Daniel Wong",
+        "title": "Waste Operations Manager",
+        "email": "d.wong@pg.com",
+        "phone": "(513) 555-7612"
+      },
+      "waste_stream": {
+        "material": "Packaging Residue",
+        "category": "Plastic Waste",
+        "quantity_tons_year": 6200,
+        "availability": "Monthly",
+        "composition": {
+          "PET": 50,
+          "HDPE": 40,
+          "Other": 10
+        },
+        "physical_properties": {
+          "state": "Solid",
+          "color": "Mixed",
+          "particle_size": "Shredded",
+          "moisture_content": "<2%"
+        },
+        "current_disposal": {
+          "method": "Recycling",
+          "cost_per_ton": 25,
+          "annual_cost": 155000,
+          "hauling_distance_miles": 15
+        },
+        "certifications": [
+          "Non-hazardous"
+        ],
+        "description": "Plastic residues from packaging lines suitable for recycling."
+      }
+    },
+    {
+      "id": 57,
+      "name": "PepsiCo - Orlando Bottling",
+      "type": "producer",
+      "industry": "Food & Beverage Manufacturing",
+      "location": {
+        "address": "2400 Premier Row",
+        "city": "Orlando",
+        "state": "FL",
+        "zip": "32809",
+        "coordinates": {
+          "lat": 28.4491,
+          "lng": -81.3965
+        }
+      },
+      "contact": {
+        "name": "Kimberly Hart",
+        "title": "Environmental Supervisor",
+        "email": "k.hart@pepsico.com",
+        "phone": "(407) 555-2144"
+      },
+      "waste_stream": {
+        "material": "Food Waste and Plastics",
+        "category": "Organic Byproduct",
+        "quantity_tons_year": 3200,
+        "availability": "Daily",
+        "composition": {
+          "Organic": 60,
+          "Plastics": 40
+        },
+        "physical_properties": {
+          "state": "Mixed solid",
+          "color": "Varied",
+          "particle_size": "Variable",
+          "moisture_content": "40-60%"
+        },
+        "current_disposal": {
+          "method": "Composting",
+          "cost_per_ton": 20,
+          "annual_cost": 64000,
+          "hauling_distance_miles": 25
+        },
+        "certifications": [
+          "Food-grade"
+        ],
+        "description": "Mixed food and plastic waste from beverage production suitable for composting and recycling."
+      }
+    },
+    {
+      "id": 58,
+      "name": "Georgia-Pacific - Savannah River Mill",
+      "type": "producer",
+      "industry": "Paper Manufacturing",
+      "location": {
+        "address": "437 Old Augusta Rd S",
+        "city": "Savannah",
+        "state": "GA",
+        "zip": "31419",
+        "coordinates": {
+          "lat": 32.0021,
+          "lng": -81.1253
+        }
+      },
+      "contact": {
+        "name": "Alex Grant",
+        "title": "Sustainability Lead",
+        "email": "a.grant@gapac.com",
+        "phone": "(912) 555-8321"
+      },
+      "waste_stream": {
+        "material": "Paper Sludge",
+        "category": "Industrial Byproduct",
+        "quantity_tons_year": 11000,
+        "availability": "Continuous",
+        "composition": {
+          "Fiber": 45,
+          "Ash": 30,
+          "Moisture": 25
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Gray",
+          "particle_size": "Fine",
+          "moisture_content": "50-70%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 60,
+          "annual_cost": 660000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": [
+          "Non-hazardous"
+        ],
+        "description": "Paper sludge generated during tissue and paperboard production."
+      }
+    },
+    {
+      "id": 59,
+      "name": "Holcim - Dundee Cement Plant",
+      "type": "consumer",
+      "industry": "Cement Manufacturing",
+      "location": {
+        "address": "7225 Scofield Rd",
+        "city": "Dundee",
+        "state": "MI",
+        "zip": "48131",
+        "coordinates": {
+          "lat": 41.9589,
+          "lng": -83.6595
+        }
+      },
+      "contact": {
+        "name": "Elena Martinez",
+        "title": "Alternative Fuels Manager",
+        "email": "e.martinez@holcim.com",
+        "phone": "(734) 555-8891"
+      },
+      "material_needs": {
+        "material": "High-BTU Waste Fuels",
+        "category": "Alternative Fuel",
+        "quantity_tons_year": 20000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "BTU_content": "8000+",
+          "Moisture": "<25%",
+          "Ash": "<30%",
+          "Sulfur": "<3%"
+        },
+        "specifications": {
+          "form": "Pelletized",
+          "particle_size": "<50mm",
+          "contamination": "No metals"
+        },
+        "current_sourcing": {
+          "primary_source": "Coal and petcoke",
+          "cost_per_ton": 90,
+          "annual_cost": 1800000,
+          "transport_distance_miles": 120
+        },
+        "certifications_required": [
+          "EPA approved"
+        ],
+        "description": "Seeks alternative waste fuels for kiln energy recovery."
+      }
+    },
+    {
+      "id": 60,
+      "name": "Republic Services - Philadelphia Recycling",
+      "type": "consumer",
+      "industry": "Waste Management & Recycling",
+      "location": {
+        "address": "3901 N Delaware Ave",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zip": "19137",
+        "coordinates": {
+          "lat": 39.9923,
+          "lng": -75.0678
+        }
+      },
+      "contact": {
+        "name": "Thomas Lee",
+        "title": "Procurement Manager",
+        "email": "t.lee@republicservices.com",
+        "phone": "(215) 555-0945"
+      },
+      "material_needs": {
+        "material": "Mixed Recyclable Plastics",
+        "category": "Recycling Feedstock",
+        "quantity_tons_year": 9000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "HDPE": 30,
+          "PET": 25,
+          "PP": 25,
+          "Mixed": 20
+        },
+        "specifications": {
+          "form": "Baled",
+          "purity_minimum": "85%",
+          "contamination": "<15%"
+        },
+        "current_sourcing": {
+          "primary_source": "Municipal programs",
+          "cost_per_ton": 120,
+          "annual_cost": 1080000,
+          "transport_distance_miles": 25
+        },
+        "certifications_required": [
+          "Clean",
+          "Sorted by resin"
+        ],
+        "description": "Accepts mixed plastics from regional facilities for reprocessing."
+      }
+    },
+    {
+      "id": 61,
+      "name": "Schnitzer Steel - Albany Facility",
+      "type": "consumer",
+      "industry": "Metal Recycling",
+      "location": {
+        "address": "2997 Pacific Blvd SW",
+        "city": "Albany",
+        "state": "OR",
+        "zip": "97321",
+        "coordinates": {
+          "lat": 44.6217,
+          "lng": -123.1121
+        }
+      },
+      "contact": {
+        "name": "Nathan Brooks",
+        "title": "Feedstock Coordinator",
+        "email": "n.brooks@schnitzersteel.com",
+        "phone": "(541) 555-6532"
+      },
+      "material_needs": {
+        "material": "Ferrous Scrap",
+        "category": "Recycling Feedstock",
+        "quantity_tons_year": 15000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "Iron": 90,
+          "Other": 10
+        },
+        "specifications": {
+          "form": "Loose or baled",
+          "contamination": "<5%"
+        },
+        "current_sourcing": {
+          "primary_source": "Local manufacturers",
+          "cost_per_ton": 80,
+          "annual_cost": 1200000,
+          "transport_distance_miles": 50
+        },
+        "certifications_required": [
+          "Sorted",
+          "Non-hazardous"
+        ],
+        "description": "Purchases and processes ferrous scrap for remelting operations."
+      }
+    },
+    {
+      "id": 62,
+      "name": "Recology - Seattle MRF",
+      "type": "consumer",
+      "industry": "Waste Processing & Recycling",
+      "location": {
+        "address": "801 S Fidalgo St",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98108",
+        "coordinates": {
+          "lat": 47.5431,
+          "lng": -122.3225
+        }
+      },
+      "contact": {
+        "name": "Lauren Diaz",
+        "title": "Materials Manager",
+        "email": "l.diaz@recology.com",
+        "phone": "(206) 555-2451"
+      },
+      "material_needs": {
+        "material": "Mixed Recyclables",
+        "category": "Recycling Feedstock",
+        "quantity_tons_year": 12000,
+        "frequency": "Daily",
+        "composition_needed": {
+          "Paper": 40,
+          "Plastics": 30,
+          "Metals": 30
+        },
+        "specifications": {
+          "form": "Loose or baled",
+          "purity_minimum": "80%",
+          "contamination": "<10%"
+        },
+        "current_sourcing": {
+          "primary_source": "Regional collection",
+          "cost_per_ton": 100,
+          "annual_cost": 1200000,
+          "transport_distance_miles": 40
+        },
+        "certifications_required": [
+          "Non-hazardous"
+        ],
+        "description": "Accepts regional recyclables for processing and resale."
+      }
+    },
+    {
+      "id": 63,
+      "name": "CalPortland - Phoenix Cement Plant",
+      "type": "consumer",
+      "industry": "Cement Production",
+      "location": {
+        "address": "3000 W Cement Plant Rd",
+        "city": "Rillito",
+        "state": "AZ",
+        "zip": "85654",
+        "coordinates": {
+          "lat": 32.3745,
+          "lng": -111.1557
+        }
+      },
+      "contact": {
+        "name": "Olivia Chen",
+        "title": "Procurement Manager",
+        "email": "o.chen@calportland.com",
+        "phone": "(520) 555-9981"
+      },
+      "material_needs": {
+        "material": "High-BTU Waste Fuels",
+        "category": "Alternative Fuel",
+        "quantity_tons_year": 18000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "BTU_content": "7500+",
+          "Moisture": "<25%",
+          "Ash": "<20%",
+          "Sulfur": "<2%"
+        },
+        "specifications": {
+          "form": "Pelletized or shredded",
+          "contamination": "No metals"
+        },
+        "current_sourcing": {
+          "primary_source": "Coal/petcoke",
+          "cost_per_ton": 85,
+          "annual_cost": 1530000,
+          "transport_distance_miles": 100
+        },
+        "certifications_required": [
+          "EPA approved"
+        ],
+        "description": "Utilizes alternative fuels for kiln heating in cement production."
+      }
     }
   ]
 }
