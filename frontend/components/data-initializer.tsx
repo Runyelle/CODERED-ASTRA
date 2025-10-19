@@ -7,8 +7,16 @@ import { Loader2, CheckCircle, AlertCircle } from "lucide-react"
 export function DataInitializer() {
   const { loadSampleData, loading, error } = useLoadSampleData()
   const [initialized, setInitialized] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  // Ensure component is mounted on client side
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
+    if (!mounted) return
+
     const initializeData = async (retries = 5) => {
       try {
         console.log('Attempting to load sample data...')
@@ -36,13 +44,18 @@ export function DataInitializer() {
     } else {
       setInitialized(true)
     }
-  }, [loadSampleData])
+  }, [loadSampleData, mounted])
 
   useEffect(() => {
-    if (initialized) {
+    if (initialized && mounted) {
       localStorage.setItem('data-initialized', 'true')
     }
-  }, [initialized])
+  }, [initialized, mounted])
+
+  // Don't render anything during SSR
+  if (!mounted) {
+    return null
+  }
 
   if (loading) {
     return (

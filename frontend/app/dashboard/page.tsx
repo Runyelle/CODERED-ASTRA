@@ -57,6 +57,9 @@ export default function DashboardPage() {
 
   // Load data on component mount
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return
+
     const sellers = getSellerListings()
     const buyers = getBuyerListings()
     setSellerListings(sellers)
@@ -64,21 +67,26 @@ export default function DashboardPage() {
     
     // Test API connection and initialize search
     const initializeSearch = async () => {
-      // Test API connection first
-      const connected = await testApiConnection()
-      setApiConnected(connected)
-      
-      if (connected) {
-        const results = await searchListings("", undefined, undefined, undefined)
-        setFilteredListings(results)
+      try {
+        // Test API connection first
+        const connected = await testApiConnection()
+        setApiConnected(connected)
         
-        // Load materials and locations for dropdowns
-        const materials = await getUniqueMaterials()
-        const locations = await getUniqueLocations()
-        setAvailableMaterials(materials)
-        setAvailableLocations(locations)
-      } else {
-        console.error('Backend API is not accessible. Please ensure the backend server is running on http://localhost:8001')
+        if (connected) {
+          const results = await searchListings("", undefined, undefined, undefined)
+          setFilteredListings(results)
+          
+          // Load materials and locations for dropdowns
+          const materials = await getUniqueMaterials()
+          const locations = await getUniqueLocations()
+          setAvailableMaterials(materials)
+          setAvailableLocations(locations)
+        } else {
+          console.error('Backend API is not accessible. Please ensure the backend server is running on http://localhost:8001')
+        }
+      } catch (error) {
+        console.error('Error initializing search:', error)
+        setApiConnected(false)
       }
     }
     initializeSearch()
@@ -86,14 +94,22 @@ export default function DashboardPage() {
 
   // Update filtered listings when search criteria change
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return
+
     const performSearch = async () => {
-      const results = await searchListings(
-        searchQuery,
-        selectedMaterial === "all" ? undefined : selectedMaterial,
-        selectedLocation === "all" ? undefined : selectedLocation,
-        selectedListingType === "all" ? undefined : selectedListingType
-      )
-      setFilteredListings(results)
+      try {
+        const results = await searchListings(
+          searchQuery,
+          selectedMaterial === "all" ? undefined : selectedMaterial,
+          selectedLocation === "all" ? undefined : selectedLocation,
+          selectedListingType === "all" ? undefined : selectedListingType
+        )
+        setFilteredListings(results)
+      } catch (error) {
+        console.error('Error performing search:', error)
+        setFilteredListings([])
+      }
     }
     
     performSearch()
@@ -112,24 +128,28 @@ export default function DashboardPage() {
   }
 
   const refreshData = async () => {
-    const sellers = getSellerListings()
-    const buyers = getBuyerListings()
-    setSellerListings(sellers)
-    setBuyerListings(buyers)
-    
-    // Refresh search results and dropdown data
-    const results = await searchListings(
-      searchQuery,
-      selectedMaterial === "all" ? undefined : selectedMaterial,
-      selectedLocation === "all" ? undefined : selectedLocation,
-      selectedListingType === "all" ? undefined : selectedListingType
-    )
-    setFilteredListings(results)
-    
-    const materials = await getUniqueMaterials()
-    const locations = await getUniqueLocations()
-    setAvailableMaterials(materials)
-    setAvailableLocations(locations)
+    try {
+      const sellers = getSellerListings()
+      const buyers = getBuyerListings()
+      setSellerListings(sellers)
+      setBuyerListings(buyers)
+      
+      // Refresh search results and dropdown data
+      const results = await searchListings(
+        searchQuery,
+        selectedMaterial === "all" ? undefined : selectedMaterial,
+        selectedLocation === "all" ? undefined : selectedLocation,
+        selectedListingType === "all" ? undefined : selectedListingType
+      )
+      setFilteredListings(results)
+      
+      const materials = await getUniqueMaterials()
+      const locations = await getUniqueLocations()
+      setAvailableMaterials(materials)
+      setAvailableLocations(locations)
+    } catch (error) {
+      console.error('Error refreshing data:', error)
+    }
   }
 
   const getStatusBadge = (status: string) => {

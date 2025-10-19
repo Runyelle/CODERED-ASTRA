@@ -65,9 +65,12 @@ const initializeStorage = () => {
   }
 }
 
-// Initialize on module load
+// Initialize on module load - only on client side
 if (typeof window !== 'undefined') {
-  initializeStorage()
+  // Use setTimeout to ensure this runs after React hydration
+  setTimeout(() => {
+    initializeStorage()
+  }, 0)
 }
 
 // Test API connection
