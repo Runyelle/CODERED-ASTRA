@@ -6,20 +6,68 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, CheckCircle2, Send } from "lucide-react"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import { saveSellerListing, saveBuyerListing, SellerListing, BuyerListing } from "@/lib/data-storage"
 
 interface SendRequestStepProps {
   formData: any
   prevStep: () => void
+  listingType?: 'seller' | 'buyer'
 }
 
-export function SendRequestStep({ formData, prevStep }: SendRequestStepProps) {
+export function SendRequestStep({ formData, prevStep, listingType = 'seller' }: SendRequestStepProps) {
   const [submitted, setSubmitted] = useState(false)
   const router = useRouter()
 
   const handleSubmit = () => {
-    // Here you would send the data to your backend
-    console.log("[v0] Submitting onboarding data:", formData)
-    setSubmitted(true)
+    try {
+      if (listingType === 'seller') {
+        const sellerData: Omit<SellerListing, 'id' | 'status' | 'createdAt' | 'updatedAt'> = {
+          type: 'seller',
+          companyName: formData.companyName,
+          contactName: formData.contactName,
+          email: formData.email,
+          phone: formData.phone,
+          location: formData.location,
+          wasteType: formData.wasteType,
+          wasteDescription: formData.wasteDescription,
+          chemicalComposition: formData.chemicalComposition || [],
+          quantity: formData.quantity,
+          unit: formData.unit,
+          frequency: formData.frequency,
+          currentDisposal: formData.currentDisposal,
+          disposalCost: formData.disposalCost,
+          selectedCompanies: formData.selectedCompanies || [],
+          agreementFile: formData.agreementFile,
+          agreementFileName: formData.agreementFileName,
+        }
+        saveSellerListing(sellerData)
+      } else {
+        const buyerData: Omit<BuyerListing, 'id' | 'status' | 'createdAt' | 'updatedAt'> = {
+          type: 'buyer',
+          companyName: formData.companyName,
+          contactName: formData.contactName,
+          email: formData.email,
+          phone: formData.phone,
+          location: formData.location,
+          materialType: formData.materialType,
+          materialDescription: formData.materialDescription,
+          materialSpecs: formData.materialSpecs || [],
+          quantity: formData.quantity,
+          unit: formData.unit,
+          frequency: formData.frequency,
+          currentSourcing: formData.currentSourcing,
+          sourcingCost: formData.sourcingCost,
+          selectedSuppliers: formData.selectedSuppliers || [],
+        }
+        saveBuyerListing(buyerData)
+      }
+      
+      console.log(`[v0] Submitting ${listingType} onboarding data:`, formData)
+      setSubmitted(true)
+    } catch (error) {
+      console.error('Error saving listing:', error)
+      alert('Error saving your listing. Please try again.')
+    }
   }
 
   const handleReturnToDashboard = () => {
