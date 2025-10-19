@@ -153,7 +153,7 @@ def explain_match(req: ExplainRequest):
     )
 
     # Use the simple higher-level generate API; model choice per spec.
-    model = "gemini-2.5-flash"
+    model = "gemini-1.5-flash"
     try:
         res = genai.generate_text(model=model, text_prompt=prompt)
         text = res.text if hasattr(res, "text") else str(res)

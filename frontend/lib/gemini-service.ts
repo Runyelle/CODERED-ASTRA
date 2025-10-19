@@ -3,28 +3,6 @@ import { GoogleGenerativeAI } from '@google/generative-ai'
 // Initialize Gemini AI
 const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_API_KEY || '')
 
-// Simple rate limiter to prevent quota exhaustion
-let lastRequestTime = 0
-const MIN_REQUEST_INTERVAL = 7000 // 7 seconds between requests (to stay under 10/minute limit)
-
-// Simple cache to reduce API calls
-const cache = new Map<string, EnvironmentalImpact>()
-const CACHE_DURATION = 5 * 60 * 1000 // 5 minutes
-
-async function rateLimitedRequest<T>(requestFn: () => Promise<T>): Promise<T> {
-  const now = Date.now()
-  const timeSinceLastRequest = now - lastRequestTime
-  
-  if (timeSinceLastRequest < MIN_REQUEST_INTERVAL) {
-    const waitTime = MIN_REQUEST_INTERVAL - timeSinceLastRequest
-    console.log(`Rate limiting: waiting ${waitTime}ms before next request`)
-    await new Promise(resolve => setTimeout(resolve, waitTime))
-  }
-  
-  lastRequestTime = Date.now()
-  return requestFn()
-}
-
 export interface EnvironmentalImpact {
   wasteProcessed: {
     total: number
@@ -60,18 +38,8 @@ export async function calculateEnvironmentalImpact(
   companyData: CompanyData,
   timePeriod: 'monthly' | 'quarterly' | 'yearly' = 'monthly'
 ): Promise<EnvironmentalImpact> {
-  // Create cache key
-  const cacheKey = `${companyData.companyName}-${companyData.industry}-${companyData.size}-${timePeriod}`
-  
-  // Check cache first
-  const cached = cache.get(cacheKey)
-  if (cached) {
-    console.log('Using cached environmental impact data')
-    return cached
-  }
-  
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
     
     const prompt = `
     As an environmental sustainability expert, calculate the environmental impact metrics for ${companyData.companyName}, 
@@ -116,40 +84,22 @@ export async function calculateEnvironmentalImpact(
     }
     `
 
-    // Use rate-limited request to prevent quota exhaustion
-    const result = await rateLimitedRequest(async () => {
-      return await model.generateContent(prompt)
-    })
-    
+    const result = await model.generateContent(prompt)
     const response = await result.response
     const text = response.text()
     
     // Extract JSON from the response
     const jsonMatch = text.match(/\{[\s\S]*\}/)
     if (jsonMatch) {
-      const result = JSON.parse(jsonMatch[0])
-      // Cache the successful result
-      cache.set(cacheKey, result)
-      return result
+      return JSON.parse(jsonMatch[0])
     }
     
     // Fallback calculations if Gemini fails
-    const fallbackResult = getFallbackCalculations(companyData, timePeriod)
-    cache.set(cacheKey, fallbackResult)
-    return fallbackResult
+    return getFallbackCalculations(companyData, timePeriod)
     
   } catch (error) {
     console.error('Error calculating environmental impact:', error)
-    
-    // Check if it's a quota error
-    if (error instanceof Error && error.message.includes('quota')) {
-      console.warn('Gemini API quota exceeded, using fallback calculations')
-    }
-    
-    // Always return fallback calculations on any error
-    const fallbackResult = getFallbackCalculations(companyData, timePeriod)
-    cache.set(cacheKey, fallbackResult)
-    return fallbackResult
+    return getFallbackCalculations(companyData, timePeriod)
   }
 }
 
