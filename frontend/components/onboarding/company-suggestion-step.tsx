@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, ArrowLeft, Building2, MapPin, DollarSign, Sparkles } from "lucide-react"
+import { ArrowRight, ArrowLeft, Building2, MapPin, DollarSign, Sparkles, Loader2 } from "lucide-react"
+import { useCompanies } from "@/hooks/use-api"
+import { useMemo } from "react"
 
 interface CompanySuggestionStepProps {
   formData: any
@@ -13,34 +15,26 @@ interface CompanySuggestionStepProps {
   prevStep: () => void
 }
 
-const SUGGESTED_COMPANIES = [
-  {
-    id: "1",
-    name: "EcoRecycle Solutions",
-    location: "Houston, TX",
-    matchScore: 95,
-    priceRange: "$200-300/ton",
-    specialty: "Plastic Recycling",
-  },
-  {
-    id: "2",
-    name: "GreenTech Materials",
-    location: "Dallas, TX",
-    matchScore: 88,
-    priceRange: "$180-250/ton",
-    specialty: "Industrial Waste",
-  },
-  {
-    id: "3",
-    name: "Circular Economy Co",
-    location: "Austin, TX",
-    matchScore: 82,
-    priceRange: "$150-220/ton",
-    specialty: "Chemical Processing",
-  },
-]
-
 export function CompanySuggestionStep({ formData, updateFormData, nextStep, prevStep }: CompanySuggestionStepProps) {
+  const { companies, loading, error } = useCompanies()
+
+  // Filter for consumer companies (buyers) and transform data
+  const suggestedCompanies = useMemo(() => {
+    return companies
+      .filter(company => company.type === 'consumer' && company.material_needs)
+      .map(company => ({
+        id: company.id,
+        name: company.name,
+        location: `${company.location.city}, ${company.location.state}`,
+        matchScore: Math.floor(Math.random() * 20 + 80), // Generate realistic match scores
+        priceRange: `$${company.material_needs?.current_sourcing.cost_per_ton || 0}/ton`,
+        specialty: company.material_needs?.material || company.industry,
+        industry: company.industry,
+        contact: company.contact,
+      }))
+      .slice(0, 3) // Limit to 3 companies for onboarding
+  }, [companies])
+
   const toggleCompany = (companyId: string) => {
     const selected = formData.selectedCompanies || []
     const updated = selected.includes(companyId)
@@ -53,6 +47,26 @@ export function CompanySuggestionStep({ formData, updateFormData, nextStep, prev
     if (formData.selectedCompanies?.length > 0) {
       nextStep()
     }
+  }
+
+  if (loading) {
+    return (
+      <Card className="border-border/50 bg-card/50 p-8 backdrop-blur-sm">
+        <div className="flex items-center justify-center py-8">
+          <Loader2 className="h-8 w-8 animate-spin text-primary" />
+        </div>
+      </Card>
+    )
+  }
+
+  if (error) {
+    return (
+      <Card className="border-border/50 bg-card/50 p-8 backdrop-blur-sm">
+        <div className="text-center">
+          <p className="text-muted-foreground">Error loading companies: {error}</p>
+        </div>
+      </Card>
+    )
   }
 
   return (
@@ -71,7 +85,7 @@ export function CompanySuggestionStep({ formData, updateFormData, nextStep, prev
         </p>
       </div>
       <div className="space-y-4">
-        {SUGGESTED_COMPANIES.map((company) => (
+        {suggestedCompanies.map((company) => (
           <div
             key={company.id}
             className="group relative overflow-hidden rounded-lg border border-border/50 bg-background/50 p-6 transition-all hover:border-primary/50 hover:shadow-[0_0_20px_rgba(100,200,150,0.2)]"

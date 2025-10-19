@@ -59,18 +59,18 @@ class GeminiClient:
         """
         prompt = f"""
         You are an expert in industrial symbiosis, waste management, and circular economy.
-        Answer the following question with practical, actionable advice:
+        Answer the following question BRIEFLY and CONCISELY (max 2-3 sentences):
         
         Question: {question}
         
-        Provide a clear, concise answer that demonstrates your expertise in:
-        - Waste stream analysis
-        - Chemical compatibility
-        - Regulatory considerations
-        - Cost optimization
-        - Environmental benefits
+        Guidelines:
+        - Keep responses under 100 words
+        - Be direct and actionable
+        - Focus on key benefits or facts
+        - Avoid lengthy explanations
+        - Use bullet points if helpful
         
-        Keep your response conversational but professional.
+        Answer:
         """
         
         try:

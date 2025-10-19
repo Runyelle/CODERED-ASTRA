@@ -1,59 +1,69 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Building2, TrendingUp, Package, Zap, Recycle } from "lucide-react"
+import { Building2, TrendingUp, Package, Zap, Recycle, Loader2 } from "lucide-react"
+import { useCompanies } from "@/hooks/use-api"
+import { useMemo } from "react"
 
 export function BuyerCompanies() {
-  const companies = [
-    {
-      name: "LyondellBasell",
-      material: "Plastic Waste (HDPE, PP)",
-      quantity: "500 tons/year",
-      price: "$450/ton",
-      match: "94%",
-      icon: Building2,
-    },
-    {
-      name: "Waste Management Inc",
-      material: "Mixed Recyclables",
-      quantity: "1,200 tons/year",
-      price: "$180/ton",
-      match: "89%",
-      icon: Recycle,
-    },
-    {
-      name: "Republic Services",
-      material: "Cardboard & Paper",
-      quantity: "800 tons/year",
-      price: "$120/ton",
-      match: "92%",
-      icon: Package,
-    },
-    {
-      name: "Covanta Energy",
-      material: "Organic Waste",
-      quantity: "2,000 tons/year",
-      price: "$85/ton",
-      match: "87%",
-      icon: Zap,
-    },
-    {
-      name: "Veolia North America",
-      material: "Metal Scrap",
-      quantity: "600 tons/year",
-      price: "$320/ton",
-      match: "91%",
-      icon: TrendingUp,
-    },
-    {
-      name: "Suez Recycling",
-      material: "Glass & Bottles",
-      quantity: "400 tons/year",
-      price: "$95/ton",
-      match: "88%",
-      icon: Building2,
-    },
-  ]
+  const { companies, loading, error } = useCompanies()
+
+  // Filter for consumer companies (buyers) and transform data
+  const buyerCompanies = useMemo(() => {
+    return companies
+      .filter(company => company.type === 'consumer' && company.material_needs)
+      .map(company => ({
+        id: company.id,
+        name: company.name,
+        material: company.material_needs?.material || 'Various Materials',
+        quantity: `${company.material_needs?.quantity_tons_year.toLocaleString() || 0} tons/year`,
+        price: `$${company.material_needs?.current_sourcing.cost_per_ton || 0}/ton`,
+        match: Math.floor(Math.random() * 20 + 80) + '%', // Generate realistic match scores
+        location: `${company.location.city}, ${company.location.state}`,
+        industry: company.industry,
+        icon: getIconForIndustry(company.industry),
+        contact: company.contact,
+        description: company.material_needs?.description || '',
+      }))
+      .slice(0, 6) // Limit to 6 companies for display
+  }, [companies])
+
+  function getIconForIndustry(industry: string) {
+    if (industry.toLowerCase().includes('recycling')) return Recycle
+    if (industry.toLowerCase().includes('cement')) return Building2
+    if (industry.toLowerCase().includes('organic') || industry.toLowerCase().includes('composting')) return Zap
+    if (industry.toLowerCase().includes('chemical')) return Package
+    return TrendingUp
+  }
+
+  if (loading) {
+    return (
+      <section className="relative py-16 lg:py-24">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-4xl font-bold text-foreground lg:text-5xl">Active Buyers in Your Area</h2>
+            <p className="text-lg text-muted-foreground">Loading companies...</p>
+          </div>
+          <div className="flex justify-center">
+            <Loader2 className="h-8 w-8 animate-spin text-primary" />
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  if (error) {
+    return (
+      <section className="relative py-16 lg:py-24">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-4xl font-bold text-foreground lg:text-5xl">Active Buyers in Your Area</h2>
+            <p className="text-lg text-muted-foreground">Error loading companies: {error}</p>
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section className="relative py-16 lg:py-24">
@@ -64,11 +74,11 @@ export function BuyerCompanies() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {companies.map((company, index) => {
+          {buyerCompanies.map((company, index) => {
             const Icon = company.icon
             return (
               <div
-                key={index}
+                key={company.id}
                 className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition-all duration-300 hover:border-primary/30 hover:bg-white/10 hover:shadow-[0_0_30px_rgba(100,200,150,0.2)]"
               >
                 <div className="mb-4 flex items-start justify-between">
@@ -90,6 +100,7 @@ export function BuyerCompanies() {
                   <div>
                     <div className="text-sm text-muted-foreground">Material</div>
                     <div className="font-medium text-foreground">{company.material}</div>
+                    <div className="text-xs text-muted-foreground">{company.industry}</div>
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div>
@@ -100,6 +111,9 @@ export function BuyerCompanies() {
                       <div className="text-sm text-muted-foreground">Price</div>
                       <div className="font-medium text-primary">{company.price}</div>
                     </div>
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    <div className="text-muted-foreground">Location: {company.location}</div>
                   </div>
                   <div className="flex items-center justify-between pt-2">
                     <div className="text-sm">
