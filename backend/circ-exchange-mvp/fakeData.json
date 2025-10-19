@@ -765,6 +765,5795 @@
         "certifications_required": ["Organic", "Non-GMO", "Food-grade"],
         "description": "Biofuel production facility seeking organic waste streams for conversion into renewable energy and biofuels."
       }
+    },
+    {
+      "id": 17,
+      "name": "Intel Chandler Campus",
+      "type": "producer",
+      "industry": "Semiconductor Manufacturing",
+      "location": {
+        "address": "5000 W Chandler Blvd",
+        "city": "Chandler",
+        "state": "AZ",
+        "zip": "85226",
+        "coordinates": {
+          "lat": 33.2598,
+          "lng": -111.8910
+        }
+      },
+      "contact": {
+        "name": "Priya Sharma",
+        "title": "Environmental Health & Safety Manager",
+        "email": "priya.sharma@intel.com",
+        "phone": "(480) 555-0234"
+      },
+      "waste_stream": {
+        "material": "Copper Sulfate Solution",
+        "category": "Process Waste",
+        "quantity_tons_year": 2800,
+        "availability": "Weekly batches",
+        "composition": {
+          "CuSO4": 12,
+          "H2SO4": 8,
+          "Water": 78,
+          "Trace_metals": 2
+        },
+        "physical_properties": {
+          "state": "Liquid solution",
+          "color": "Blue",
+          "particle_size": "N/A",
+          "moisture_content": "N/A"
+        },
+        "current_disposal": {
+          "method": "Chemical treatment + disposal",
+          "cost_per_ton": 890,
+          "annual_cost": 2492000,
+          "hauling_distance_miles": 45
+        },
+        "certifications": ["RCRA listed", "Copper recovery potential"],
+        "description": "Spent copper sulfate etchant from semiconductor wafer processing. High copper content suitable for electroplating recovery or copper sulfate regeneration."
+      }
+    },
+    {
+      "id": 18,
+      "name": "Georgia-Pacific - Toledo Mill",
+      "type": "producer",
+      "industry": "Paper Manufacturing",
+      "location": {
+        "address": "1 Papermill Rd",
+        "city": "Toledo",
+        "state": "OR",
+        "zip": "97391",
+        "coordinates": {
+          "lat": 44.6212,
+          "lng": -123.9376
+        }
+      },
+      "contact": {
+        "name": "Brian Foster",
+        "title": "Waste Reduction Coordinator",
+        "email": "b.foster@gapac.com",
+        "phone": "(541) 555-0678"
+      },
+      "waste_stream": {
+        "material": "Paper Mill Sludge",
+        "category": "Pulp & Paper Waste",
+        "quantity_tons_year": 14500,
+        "availability": "Continuous",
+        "composition": {
+          "Cellulose_fibers": 45,
+          "Lignin": 20,
+          "Calcium_carbonate": 15,
+          "Water": 15,
+          "Clay": 5
+        },
+        "physical_properties": {
+          "state": "Wet sludge",
+          "color": "Brown/gray",
+          "particle_size": "Fine fibers",
+          "moisture_content": "65-75%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 65,
+          "annual_cost": 942500,
+          "hauling_distance_miles": 35
+        },
+        "certifications": ["Non-hazardous", "Biodegradable"],
+        "description": "Dewatered paper mill sludge from pulp processing. High cellulose content suitable for composting, fuel pellets, or soil amendment applications."
+      }
+    },
+    {
+      "id": 19,
+      "name": "Archer Daniels Midland - Decatur Complex",
+      "type": "producer",
+      "industry": "Agricultural Processing",
+      "location": {
+        "address": "4666 Faries Pkwy",
+        "city": "Decatur",
+        "state": "IL",
+        "zip": "62526",
+        "coordinates": {
+          "lat": 39.8403,
+          "lng": -88.9548
+        }
+      },
+      "contact": {
+        "name": "Laura Bennett",
+        "title": "Sustainability Operations Lead",
+        "email": "l.bennett@adm.com",
+        "phone": "(217) 555-0891"
+      },
+      "waste_stream": {
+        "material": "Corn Steep Liquor",
+        "category": "Agricultural Byproduct",
+        "quantity_tons_year": 9800,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 18,
+          "Lactic_acid": 15,
+          "Sugars": 12,
+          "Minerals": 8,
+          "Water": 47
+        },
+        "physical_properties": {
+          "state": "Viscous liquid",
+          "color": "Dark brown",
+          "particle_size": "N/A",
+          "moisture_content": "50-55%"
+        },
+        "current_disposal": {
+          "method": "Animal feed sale",
+          "cost_per_ton": -25,
+          "annual_cost": -245000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": ["Food-grade", "Non-GMO available", "Organic certified"],
+        "description": "Concentrated byproduct from corn wet milling. Rich in nutrients and amino acids, valuable for animal feed, fertilizer, or fermentation media."
+      }
+    },
+    {
+      "id": 20,
+      "name": "Boeing - Everett Factory",
+      "type": "producer",
+      "industry": "Aerospace Manufacturing",
+      "location": {
+        "address": "8415 Paine Field Blvd",
+        "city": "Everett",
+        "state": "WA",
+        "zip": "98203",
+        "coordinates": {
+          "lat": 47.9265,
+          "lng": -122.2817
+        }
+      },
+      "contact": {
+        "name": "Raymond Chen",
+        "title": "Waste Management Engineer",
+        "email": "raymond.t.chen@boeing.com",
+        "phone": "(425) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Aluminum Scrap & Chips",
+        "category": "Metal Waste",
+        "quantity_tons_year": 6700,
+        "availability": "Continuous",
+        "composition": {
+          "Aluminum_7075": 40,
+          "Aluminum_6061": 35,
+          "Aluminum_2024": 20,
+          "Other_alloys": 5
+        },
+        "physical_properties": {
+          "state": "Solid chips and trim",
+          "color": "Silver/gray",
+          "particle_size": "Varied chips",
+          "moisture_content": "< 5% (cutting fluid)"
+        },
+        "current_disposal": {
+          "method": "Metal recycler sale",
+          "cost_per_ton": -1200,
+          "annual_cost": -8040000,
+          "hauling_distance_miles": 20
+        },
+        "certifications": ["Aerospace grade", "Alloy certified", "ISO 9001"],
+        "description": "High-grade aluminum machining scrap from aircraft component manufacturing. Premium aerospace alloys suitable for remelting and secondary aluminum production."
+      }
+    },
+    {
+      "id": 21,
+      "name": "Molson Coors - Golden Brewery",
+      "type": "producer",
+      "industry": "Beverage Manufacturing",
+      "location": {
+        "address": "311 10th St",
+        "city": "Golden",
+        "state": "CO",
+        "zip": "80401",
+        "coordinates": {
+          "lat": 39.7555,
+          "lng": -105.2211
+        }
+      },
+      "contact": {
+        "name": "Jessica Reynolds",
+        "title": "Environmental Manager",
+        "email": "jessica.reynolds@molsoncoors.com",
+        "phone": "(303) 555-0723"
+      },
+      "waste_stream": {
+        "material": "Spent Yeast",
+        "category": "Organic Byproduct",
+        "quantity_tons_year": 1850,
+        "availability": "Weekly batches",
+        "composition": {
+          "Protein": 48,
+          "B_vitamins": 8,
+          "Nucleotides": 6,
+          "Moisture": 35,
+          "Ash": 3
+        },
+        "physical_properties": {
+          "state": "Wet paste",
+          "color": "Cream/tan",
+          "particle_size": "Cellular",
+          "moisture_content": "70-80%"
+        },
+        "current_disposal": {
+          "method": "Food supplement sale",
+          "cost_per_ton": -80,
+          "annual_cost": -148000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Food-grade", "Non-GMO", "Vegan suitable"],
+        "description": "Spent brewer's yeast from beer fermentation. High protein and B-vitamin content, valuable for nutritional supplements, animal feed, or yeast extract production."
+      }
+    },
+    {
+      "id": 22,
+      "name": "U.S. Steel - Gary Works",
+      "type": "producer",
+      "industry": "Steel Manufacturing",
+      "location": {
+        "address": "1 N Broadway",
+        "city": "Gary",
+        "state": "IN",
+        "zip": "46402",
+        "coordinates": {
+          "lat": 41.5892,
+          "lng": -87.3465
+        }
+      },
+      "contact": {
+        "name": "Marcus Washington",
+        "title": "Byproducts Manager",
+        "email": "m.washington@uss.com",
+        "phone": "(219) 555-0556"
+      },
+      "waste_stream": {
+        "material": "Blast Furnace Slag",
+        "category": "Steel Production Byproduct",
+        "quantity_tons_year": 28000,
+        "availability": "Continuous",
+        "composition": {
+          "CaO": 38,
+          "SiO2": 34,
+          "Al2O3": 12,
+          "MgO": 10,
+          "FeO": 6
+        },
+        "physical_properties": {
+          "state": "Granular aggregate",
+          "color": "Light gray",
+          "particle_size": "0-50mm",
+          "moisture_content": "5-10%"
+        },
+        "current_disposal": {
+          "method": "Cement plant sale",
+          "cost_per_ton": -15,
+          "annual_cost": -420000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": ["ASTM C989", "LEED eligible", "Non-hazardous"],
+        "description": "Granulated blast furnace slag from iron production. Excellent pozzolanic properties for Portland cement replacement, concrete aggregate, and road base."
+      }
+    },
+    {
+      "id": 23,
+      "name": "Gerdau - Tampa Steel Mill",
+      "type": "consumer",
+      "industry": "Steel Recycling",
+      "location": {
+        "address": "4301 N 50th St",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33610",
+        "coordinates": {
+          "lat": 27.9881,
+          "lng": -82.4276
+        }
+      },
+      "contact": {
+        "name": "Antonio Silva",
+        "title": "Scrap Procurement Manager",
+        "email": "a.silva@gerdau.com",
+        "phone": "(813) 555-0912"
+      },
+      "material_needs": {
+        "material": "Ferrous Scrap Metal",
+        "category": "Steel Production Feedstock",
+        "quantity_tons_year": 45000,
+        "frequency": "Daily deliveries",
+        "composition_needed": {
+          "Steel": 85,
+          "Iron": 10,
+          "Alloys": 5
+        },
+        "specifications": {
+          "form": "Shredded, baled, or bundled",
+          "contamination": "< 3% non-ferrous",
+          "size": "Prepared scrap",
+          "quality_standard": "ISRI specifications"
+        },
+        "current_sourcing": {
+          "primary_source": "Scrap dealers",
+          "cost_per_ton": 350,
+          "annual_cost": 15750000,
+          "transport_distance_miles": 50
+        },
+        "certifications_required": ["ISRI certified", "Radiation scanned"],
+        "description": "Mini-mill seeking ferrous scrap for electric arc furnace steelmaking. Can process automotive, structural, industrial, and demolition scrap."
+      }
+    },
+    {
+      "id": 24,
+      "name": "Procter & Gamble - Lima Plant",
+      "type": "producer",
+      "industry": "Consumer Goods Manufacturing",
+      "location": {
+        "address": "1 Procter & Gamble Plaza",
+        "city": "Lima",
+        "state": "OH",
+        "zip": "45801",
+        "coordinates": {
+          "lat": 40.7425,
+          "lng": -84.1052
+        }
+      },
+      "contact": {
+        "name": "Emily Crawford",
+        "title": "Environmental Coordinator",
+        "email": "crawford.em@pg.com",
+        "phone": "(419) 555-0334"
+      },
+      "waste_stream": {
+        "material": "Rejected Paper Packaging",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 3200,
+        "availability": "Weekly batches",
+        "composition": {
+          "Corrugated_cardboard": 60,
+          "Coated_paperboard": 25,
+          "Flexible_packaging": 10,
+          "Mixed_paper": 5
+        },
+        "physical_properties": {
+          "state": "Solid sheets/rolls",
+          "color": "Various printed",
+          "particle_size": "Sheet/roll form",
+          "moisture_content": "< 5%"
+        },
+        "current_disposal": {
+          "method": "Baled for recycling",
+          "cost_per_ton": -45,
+          "annual_cost": -144000,
+          "hauling_distance_miles": 25
+        },
+        "certifications": ["Clean paper", "Recyclable", "FSC sources"],
+        "description": "Off-spec and rejected packaging materials from consumer product manufacturing. Clean paper and cardboard suitable for recycled fiber production."
+      }
+    },
+    {
+      "id": 25,
+      "name": "LafargeHolcim - Ste. Genevieve Plant",
+      "type": "consumer",
+      "industry": "Cement Manufacturing",
+      "location": {
+        "address": "7100 Quarry Rd",
+        "city": "Ste. Genevieve",
+        "state": "MO",
+        "zip": "63670",
+        "coordinates": {
+          "lat": 37.9812,
+          "lng": -90.0417
+        }
+      },
+      "contact": {
+        "name": "Daniel Schmidt",
+        "title": "Alternative Raw Materials Manager",
+        "email": "daniel.schmidt@lafargeholcim.com",
+        "phone": "(573) 555-0789"
+      },
+      "material_needs": {
+        "material": "Industrial Byproducts (Slag, Ash, etc.)",
+        "category": "Cement Raw Material",
+        "quantity_tons_year": 35000,
+        "frequency": "Regular deliveries",
+        "composition_needed": {
+          "SiO2": 20,
+          "CaO": 30,
+          "Al2O3": 15,
+          "Fe2O3": 10,
+          "Other": 25
+        },
+        "specifications": {
+          "form": "Dry or granular",
+          "particle_size": "< 100mm",
+          "moisture": "< 20%",
+          "quality_standard": "Cement kiln feed spec"
+        },
+        "current_sourcing": {
+          "primary_source": "Natural minerals",
+          "cost_per_ton": 25,
+          "annual_cost": 875000,
+          "transport_distance_miles": 100
+        },
+        "certifications_required": ["Chemical analysis", "Non-hazardous"],
+        "description": "Seeking industrial byproducts containing calcium, silica, and alumina as partial replacement for virgin limestone and clay in cement production."
+      }
+    },
+    {
+      "id": 26,
+      "name": "Tesla Gigafactory Texas",
+      "type": "producer",
+      "industry": "Automotive Manufacturing",
+      "location": {
+        "address": "1 Tesla Rd",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "78725",
+        "coordinates": {
+          "lat": 30.2306,
+          "lng": -97.6106
+        }
+      },
+      "contact": {
+        "name": "Samantha Lee",
+        "title": "Sustainability Program Manager",
+        "email": "slee@tesla.com",
+        "phone": "(512) 555-0678"
+      },
+      "waste_stream": {
+        "material": "Lithium Battery Scrap",
+        "category": "Manufacturing Byproduct",
+        "quantity_tons_year": 2400,
+        "availability": "Monthly batches",
+        "composition": {
+          "Lithium_compounds": 8,
+          "Cobalt": 12,
+          "Nickel": 15,
+          "Graphite": 20,
+          "Copper": 10,
+          "Aluminum": 15,
+          "Steel": 15,
+          "Plastics": 5
+        },
+        "physical_properties": {
+          "state": "Solid cells/modules",
+          "color": "Black/metallic",
+          "particle_size": "Cell-sized",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "Battery recycler",
+          "cost_per_ton": -500,
+          "annual_cost": -1200000,
+          "hauling_distance_miles": 200
+        },
+        "certifications": ["DOT approved", "Battery recycling certified"],
+        "description": "Manufacturing scrap and defective lithium-ion battery cells. Valuable for metal recovery including lithium, cobalt, nickel, and copper recycling."
+      }
+    },
+    {
+      "id": 27,
+      "name": "Pfizer - Kalamazoo Manufacturing",
+      "type": "producer",
+      "industry": "Pharmaceutical Manufacturing",
+      "location": {
+        "address": "7000 Portage Rd",
+        "city": "Kalamazoo",
+        "state": "MI",
+        "zip": "49001",
+        "coordinates": {
+          "lat": 42.2917,
+          "lng": -85.5872
+        }
+      },
+      "contact": {
+        "name": "Dr. Rachel Morrison",
+        "title": "EHS & Sustainability Director",
+        "email": "rachel.morrison@pfizer.com",
+        "phone": "(269) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Pharmaceutical Grade Ethanol",
+        "category": "Solvent Waste",
+        "quantity_tons_year": 1650,
+        "availability": "Bi-weekly batches",
+        "composition": {
+          "Ethanol": 92,
+          "Water": 6,
+          "Trace_organics": 2
+        },
+        "physical_properties": {
+          "state": "Liquid",
+          "color": "Clear",
+          "particle_size": "N/A",
+          "moisture_content": "N/A"
+        },
+        "current_disposal": {
+          "method": "Solvent recycler",
+          "cost_per_ton": 420,
+          "annual_cost": 693000,
+          "hauling_distance_miles": 85
+        },
+        "certifications": ["USP grade origin", "Distillation suitable", "Non-hazardous"],
+        "description": "Spent pharmaceutical-grade ethanol from API production and equipment cleaning. High purity suitable for redistillation to industrial or fuel-grade ethanol."
+      }
+    },
+    {
+      "id": 28,
+      "name": "Tyson Foods - Springdale Complex",
+      "type": "producer",
+      "industry": "Food Processing",
+      "location": {
+        "address": "2200 W Don Tyson Pkwy",
+        "city": "Springdale",
+        "state": "AR",
+        "zip": "72762",
+        "coordinates": {
+          "lat": 36.1867,
+          "lng": -94.1588
+        }
+      },
+      "contact": {
+        "name": "Brandon Tucker",
+        "title": "Sustainability Operations Manager",
+        "email": "brandon.tucker@tyson.com",
+        "phone": "(479) 555-0892"
+      },
+      "waste_stream": {
+        "material": "Poultry Feathers",
+        "category": "Agricultural Byproduct",
+        "quantity_tons_year": 12500,
+        "availability": "Daily",
+        "composition": {
+          "Keratin_protein": 85,
+          "Moisture": 10,
+          "Lipids": 3,
+          "Ash": 2
+        },
+        "physical_properties": {
+          "state": "Solid bulk",
+          "color": "White/yellow",
+          "particle_size": "Whole feathers",
+          "moisture_content": "8-12%"
+        },
+        "current_disposal": {
+          "method": "Rendering",
+          "cost_per_ton": 35,
+          "annual_cost": 437500,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Non-hazardous", "USDA approved source"],
+        "description": "Poultry feathers from chicken processing. High keratin content valuable for animal feed meal, fertilizer, or bioplastic production."
+      }
+    },
+    {
+      "id": 29,
+      "name": "Corning Incorporated - Harrodsburg Plant",
+      "type": "producer",
+      "industry": "Glass Manufacturing",
+      "location": {
+        "address": "Highway 127 S",
+        "city": "Harrodsburg",
+        "state": "KY",
+        "zip": "40330",
+        "coordinates": {
+          "lat": 37.7623,
+          "lng": -84.8433
+        }
+      },
+      "contact": {
+        "name": "Steven Park",
+        "title": "Environmental Engineering Manager",
+        "email": "parks2@corning.com",
+        "phone": "(859) 555-0567"
+      },
+      "waste_stream": {
+        "material": "Ceramic Glass Cullet",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 5400,
+        "availability": "Continuous",
+        "composition": {
+          "SiO2": 68,
+          "Al2O3": 15,
+          "B2O3": 10,
+          "Alkali_oxides": 7
+        },
+        "physical_properties": {
+          "state": "Solid chips/powder",
+          "color": "Clear/white",
+          "particle_size": "0.5-25mm",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 55,
+          "annual_cost": 297000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": ["Non-hazardous", "High-purity glass"],
+        "description": "Off-spec ceramic glass and cullet from specialty glass production. Suitable for glass batch material, abrasives, or ceramic applications."
+      }
+    },
+    {
+      "id": 30,
+      "name": "3M - Cottage Grove Facility",
+      "type": "producer",
+      "industry": "Diversified Manufacturing",
+      "location": {
+        "address": "8001 E Point Douglas Rd S",
+        "city": "Cottage Grove",
+        "state": "MN",
+        "zip": "55016",
+        "coordinates": {
+          "lat": 44.8280,
+          "lng": -92.9360
+        }
+      },
+      "contact": {
+        "name": "Nicole Anderson",
+        "title": "Waste Reduction Engineer",
+        "email": "nanderson3@mmm.com",
+        "phone": "(651) 555-0734"
+      },
+      "waste_stream": {
+        "material": "Adhesive Backing Liner",
+        "category": "Manufacturing Scrap",
+        "quantity_tons_year": 3800,
+        "availability": "Weekly batches",
+        "composition": {
+          "Silicone_coated_paper": 70,
+          "Polyester_film": 25,
+          "Adhesive_residue": 5
+        },
+        "physical_properties": {
+          "state": "Solid rolls/sheets",
+          "color": "White/clear",
+          "particle_size": "Sheet form",
+          "moisture_content": "< 3%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 95,
+          "annual_cost": 361000,
+          "hauling_distance_miles": 45
+        },
+        "certifications": ["Clean", "Sorted by type"],
+        "description": "Release liner waste from tape and label manufacturing. Silicone-coated paper suitable for energy recovery or specialized paper recycling."
+      }
+    },
+    {
+      "id": 31,
+      "name": "Republic Services - Phoenix Recycling",
+      "type": "consumer",
+      "industry": "Waste Management & Recycling",
+      "location": {
+        "address": "2222 W Durango St",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85009",
+        "coordinates": {
+          "lat": 33.4484,
+          "lng": -112.1067
+        }
+      },
+      "contact": {
+        "name": "Carlos Mendoza",
+        "title": "Material Recovery Manager",
+        "email": "c.mendoza@republicservices.com",
+        "phone": "(602) 555-0889"
+      },
+      "material_needs": {
+        "material": "Cardboard & Paper Products",
+        "category": "Recycling Feedstock",
+        "quantity_tons_year": 22000,
+        "frequency": "Daily intake",
+        "composition_needed": {
+          "Corrugated_cardboard": 50,
+          "Mixed_paper": 30,
+          "Newsprint": 15,
+          "Magazines": 5
+        },
+        "specifications": {
+          "form": "Baled preferred",
+          "contamination": "< 10%",
+          "moisture": "< 15%",
+          "quality_standard": "PS-2017 standards"
+        },
+        "current_sourcing": {
+          "primary_source": "Commercial/Residential",
+          "cost_per_ton": 85,
+          "annual_cost": 1870000,
+          "transport_distance_miles": 35
+        },
+        "certifications_required": ["Sorted", "Baled to spec"],
+        "description": "MRF seeking clean paper and cardboard for processing and resale to paper mills. Can handle commercial, industrial, and post-consumer sources."
+      }
+    },
+    {
+      "id": 32,
+      "name": "Coca-Cola - Atlanta Bottling",
+      "type": "producer",
+      "industry": "Beverage Manufacturing",
+      "location": {
+        "address": "1 Coca-Cola Plaza",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30313",
+        "coordinates": {
+          "lat": 33.7630,
+          "lng": -84.3983
+        }
+      },
+      "contact": {
+        "name": "Tiffany Roberts",
+        "title": "Environmental Affairs Manager",
+        "email": "troberts@coca-cola.com",
+        "phone": "(404) 555-0612"
+      },
+      "waste_stream": {
+        "material": "PET Bottle Scrap",
+        "category": "Plastic Waste",
+        "quantity_tons_year": 4500,
+        "availability": "Continuous",
+        "composition": {
+          "PET_clear": 75,
+          "PET_colored": 20,
+          "Labels_caps": 5
+        },
+        "physical_properties": {
+          "state": "Solid bottles/preforms",
+          "color": "Clear/green/blue",
+          "particle_size": "Whole bottles",
+          "moisture_content": "< 2%"
+        },
+        "current_disposal": {
+          "method": "Recycler sale",
+          "cost_per_ton": -180,
+          "annual_cost": -810000,
+          "hauling_distance_miles": 25
+        },
+        "certifications": ["Food-grade PET", "Clean", "Sorted by color"],
+        "description": "Post-industrial PET bottle scrap from bottling operations. Clean material suitable for bottle-to-bottle recycling or fiber production."
+      }
+    },
+    {
+      "id": 33,
+      "name": "Cargill - Blair Corn Milling",
+      "type": "producer",
+      "industry": "Agricultural Processing",
+      "location": {
+        "address": "1200 Cargill Rd",
+        "city": "Blair",
+        "state": "NE",
+        "zip": "68008",
+        "coordinates": {
+          "lat": 41.5447,
+          "lng": -96.1289
+        }
+      },
+      "contact": {
+        "name": "Justin Miller",
+        "title": "Co-Products Manager",
+        "email": "justin_miller@cargill.com",
+        "phone": "(402) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Corn Gluten Feed",
+        "category": "Agricultural Byproduct",
+        "quantity_tons_year": 18500,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 21,
+          "Fiber": 35,
+          "Fat": 3,
+          "Moisture": 10,
+          "Ash": 6,
+          "NFE": 25
+        },
+        "physical_properties": {
+          "state": "Dry pellets/meal",
+          "color": "Golden brown",
+          "particle_size": "2-6mm pellets",
+          "moisture_content": "10-12%"
+        },
+        "current_disposal": {
+          "method": "Animal feed sale",
+          "cost_per_ton": -140,
+          "annual_cost": -2590000,
+          "hauling_distance_miles": 100
+        },
+        "certifications": ["Feed-grade", "Non-GMO available", "Organic certified"],
+        "description": "Corn gluten feed from wet milling operations. Valuable livestock feed ingredient high in digestible fiber and protein."
+      }
+    },
+    {
+      "id": 34,
+      "name": "Ford - Dearborn Truck Plant",
+      "type": "producer",
+      "industry": "Automotive Manufacturing",
+      "location": {
+        "address": "3001 Miller Rd",
+        "city": "Dearborn",
+        "state": "MI",
+        "zip": "48120",
+        "coordinates": {
+          "lat": 42.3042,
+          "lng": -83.1653
+        }
+      },
+      "contact": {
+        "name": "Gregory Hamilton",
+        "title": "Waste & Recycling Coordinator",
+        "email": "ghamilto@ford.com",
+        "phone": "(313) 555-0778"
+      },
+      "waste_stream": {
+        "material": "Mixed Metal Scrap",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 8900,
+        "availability": "Continuous",
+        "composition": {
+          "Steel_scrap": 65,
+          "Aluminum": 20,
+          "Copper_brass": 8,
+          "Stainless_steel": 5,
+          "Other_metals": 2
+        },
+        "physical_properties": {
+          "state": "Solid scrap",
+          "color": "Mixed metallic",
+          "particle_size": "Varied",
+          "moisture_content": "< 3%"
+        },
+        "current_disposal": {
+          "method": "Scrap metal sale",
+          "cost_per_ton": -420,
+          "annual_cost": -3738000,
+          "hauling_distance_miles": 15
+        },
+        "certifications": ["Sorted by type", "Clean scrap"],
+        "description": "Stamping scrap and machining waste from truck manufacturing. Mixed metals suitable for recycling into new automotive or construction materials."
+      }
+    },
+    {
+      "id": 35,
+      "name": "Smithfield Foods - Tar Heel Plant",
+      "type": "producer",
+      "industry": "Meat Processing",
+      "location": {
+        "address": "5670 NC-87",
+        "city": "Tar Heel",
+        "state": "NC",
+        "zip": "28392",
+        "coordinates": {
+          "lat": 34.7321,
+          "lng": -78.7936
+        }
+      },
+      "contact": {
+        "name": "Angela White",
+        "title": "Environmental Services Manager",
+        "email": "awhite@smithfield.com",
+        "phone": "(910) 555-0523"
+      },
+      "waste_stream": {
+        "material": "Pork Meat & Bone Meal",
+        "category": "Rendering Byproduct",
+        "quantity_tons_year": 7800,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 50,
+          "Fat": 12,
+          "Ash": 28,
+          "Moisture": 8,
+          "Calcium": 10,
+          "Phosphorus": 5
+        },
+        "physical_properties": {
+          "state": "Dry meal/powder",
+          "color": "Brown/tan",
+          "particle_size": "< 2mm",
+          "moisture_content": "8-10%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/fertilizer sale",
+          "cost_per_ton": -90,
+          "annual_cost": -702000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": ["Rendered", "AAFCO compliant", "Pathogen-free"],
+        "description": "Rendered meat and bone meal from pork processing. High protein content suitable for pet food, aquaculture feed, or organic fertilizer."
+      }
+    },
+    {
+      "id": 36,
+      "name": "Covanta - Fairfax Energy Center",
+      "type": "consumer",
+      "industry": "Waste-to-Energy",
+      "location": {
+        "address": "10800 Furnace Rd",
+        "city": "Lorton",
+        "state": "VA",
+        "zip": "22079",
+        "coordinates": {
+          "lat": 38.6851,
+          "lng": -77.2028
+        }
+      },
+      "contact": {
+        "name": "Robert Chen",
+        "title": "Fuel Procurement Manager",
+        "email": "robert.chen@covanta.com",
+        "phone": "(703) 555-0934"
+      },
+      "material_needs": {
+        "material": "Municipal Solid Waste",
+        "category": "WTE Fuel",
+        "quantity_tons_year": 85000,
+        "frequency": "Daily intake",
+        "composition_needed": {
+          "Combustibles": 70,
+          "Moisture": 25,
+          "Ash": 5
+        },
+        "specifications": {
+          "form": "Mixed MSW",
+          "BTU_content": "4500+ BTU/lb",
+          "contamination": "No hazmat or batteries",
+          "quality_standard": "EPA combustion spec"
+        },
+        "current_sourcing": {
+          "primary_source": "Municipal waste",
+          "cost_per_ton": -75,
+          "annual_cost": -6375000,
+          "transport_distance_miles": 40
+        },
+        "certifications_required": ["Non-hazardous", "Pre-screened"],
+        "description": "Waste-to-energy facility converting municipal waste into electricity. Can process commercial, residential, and institutional waste streams."
+      }
+    },
+    {
+      "id": 37,
+      "name": "Apple - Austin Campus",
+      "type": "producer",
+      "industry": "Electronics Manufacturing",
+      "location": {
+        "address": "12545 Riata Vista Cir",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "78727",
+        "coordinates": {
+          "lat": 30.3850,
+          "lng": -97.7268
+        }
+      },
+      "contact": {
+        "name": "Sarah Zhang",
+        "title": "Environmental Program Manager",
+        "email": "s_zhang@apple.com",
+        "phone": "(512) 555-0891"
+      },
+      "waste_stream": {
+        "material": "Electronic Component Scrap",
+        "category": "E-waste",
+        "quantity_tons_year": 1250,
+        "availability": "Monthly batches",
+        "composition": {
+          "Printed_circuit_boards": 40,
+          "Plastics": 25,
+          "Aluminum": 15,
+          "Copper": 10,
+          "Steel": 5,
+          "Rare_earth_elements": 3,
+          "Other": 2
+        },
+        "physical_properties": {
+          "state": "Solid components",
+          "color": "Various",
+          "particle_size": "Component-sized",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "Certified e-waste recycler",
+          "cost_per_ton": 650,
+          "annual_cost": 812500,
+          "hauling_distance_miles": 120
+        },
+        "certifications": ["R2 certified disposal", "Data security cleared"],
+        "description": "Manufacturing scrap from Mac computer assembly. Contains recoverable precious metals, copper, and rare earth elements suitable for electronics recycling."
+      }
+    },
+    {
+      "id": 38,
+      "name": "Chevron - Richmond Refinery",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "841 Chevron Way",
+        "city": "Richmond",
+        "state": "CA",
+        "zip": "94802",
+        "coordinates": {
+          "lat": 37.9297,
+          "lng": -122.3878
+        }
+      },
+      "contact": {
+        "name": "Michael Torres",
+        "title": "Byproducts Coordinator",
+        "email": "mtorres@chevron.com",
+        "phone": "(510) 555-0623"
+      },
+      "waste_stream": {
+        "material": "Spent Catalyst",
+        "category": "Refinery Waste",
+        "quantity_tons_year": 4200,
+        "availability": "Quarterly batches",
+        "composition": {
+          "Alumina": 45,
+          "Silica": 25,
+          "Molybdenum": 8,
+          "Nickel": 5,
+          "Vanadium": 4,
+          "Carbon": 10,
+          "Other": 3
+        },
+        "physical_properties": {
+          "state": "Solid pellets",
+          "color": "Dark gray/black",
+          "particle_size": "2-5mm",
+          "moisture_content": "5-8%"
+        },
+        "current_disposal": {
+          "method": "Metal recovery facility",
+          "cost_per_ton": -220,
+          "annual_cost": -924000,
+          "hauling_distance_miles": 150
+        },
+        "certifications": ["RCRA exempt", "Metal recovery certified"],
+        "description": "Spent hydroprocessing catalyst from crude oil refining. Contains recoverable molybdenum, nickel, and vanadium suitable for catalyst regeneration."
+      }
+    },
+    {
+      "id": 39,
+      "name": "Weyerhaeuser - Longview Mill",
+      "type": "producer",
+      "industry": "Lumber & Wood Products",
+      "location": {
+        "address": "800 Weyerhaeuser Way",
+        "city": "Longview",
+        "state": "WA",
+        "zip": "98632",
+        "coordinates": {
+          "lat": 46.1382,
+          "lng": -122.9382
+        }
+      },
+      "contact": {
+        "name": "Jennifer McKenzie",
+        "title": "Mill Residuals Manager",
+        "email": "jennifer.mckenzie@weyerhaeuser.com",
+        "phone": "(360) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Wood Chips & Sawdust",
+        "category": "Wood Processing Byproduct",
+        "quantity_tons_year": 32000,
+        "availability": "Continuous",
+        "composition": {
+          "Cellulose": 50,
+          "Lignin": 25,
+          "Hemicellulose": 20,
+          "Extractives": 3,
+          "Ash": 2
+        },
+        "physical_properties": {
+          "state": "Solid chips/powder",
+          "color": "Light brown",
+          "particle_size": "5-50mm chips, < 5mm sawdust",
+          "moisture_content": "35-45%"
+        },
+        "current_disposal": {
+          "method": "Biomass fuel sale",
+          "cost_per_ton": -35,
+          "annual_cost": -1120000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Clean wood", "FSC certified source"],
+        "description": "Clean wood chips and sawdust from lumber milling. Suitable for biomass energy, particleboard manufacturing, animal bedding, or landscape mulch."
+      }
+    },
+    {
+      "id": 40,
+      "name": "Alcoa - Massena Operations",
+      "type": "producer",
+      "industry": "Aluminum Production",
+      "location": {
+        "address": "84 Church St",
+        "city": "Massena",
+        "state": "NY",
+        "zip": "13662",
+        "coordinates": {
+          "lat": 44.9281,
+          "lng": -74.8918
+        }
+      },
+      "contact": {
+        "name": "David Sullivan",
+        "title": "Environmental Manager",
+        "email": "david.sullivan@alcoa.com",
+        "phone": "(315) 555-0778"
+      },
+      "waste_stream": {
+        "material": "Aluminum Dross",
+        "category": "Smelting Byproduct",
+        "quantity_tons_year": 5600,
+        "availability": "Weekly batches",
+        "composition": {
+          "Metallic_aluminum": 35,
+          "Aluminum_oxide": 50,
+          "Aluminum_nitride": 10,
+          "Salt_flux": 5
+        },
+        "physical_properties": {
+          "state": "Solid chunks",
+          "color": "Gray/silver",
+          "particle_size": "Varied chunks",
+          "moisture_content": "< 2%"
+        },
+        "current_disposal": {
+          "method": "Dross processor",
+          "cost_per_ton": -180,
+          "annual_cost": -1008000,
+          "hauling_distance_miles": 200
+        },
+        "certifications": ["Aluminum recovery potential", "Non-hazardous"],
+        "description": "Aluminum dross from primary smelting operations. Contains recoverable metallic aluminum and aluminum oxide suitable for secondary aluminum production."
+      }
+    },
+    {
+      "id": 41,
+      "name": "Nike - Memphis Distribution",
+      "type": "producer",
+      "industry": "Apparel & Footwear",
+      "location": {
+        "address": "2850 Directors Row",
+        "city": "Memphis",
+        "state": "TN",
+        "zip": "38131",
+        "coordinates": {
+          "lat": 35.0664,
+          "lng": -89.9770
+        }
+      },
+      "contact": {
+        "name": "Keisha Williams",
+        "title": "Sustainability Coordinator",
+        "email": "keisha.williams@nike.com",
+        "phone": "(901) 555-0534"
+      },
+      "waste_stream": {
+        "material": "Textile Waste & Trim",
+        "category": "Manufacturing Scrap",
+        "quantity_tons_year": 2100,
+        "availability": "Weekly batches",
+        "composition": {
+          "Polyester": 40,
+          "Cotton": 30,
+          "Nylon": 15,
+          "Rubber": 10,
+          "Mixed_materials": 5
+        },
+        "physical_properties": {
+          "state": "Solid fabric/trim",
+          "color": "Various",
+          "particle_size": "Fabric pieces",
+          "moisture_content": "< 5%"
+        },
+        "current_disposal": {
+          "method": "Textile recycler",
+          "cost_per_ton": 125,
+          "annual_cost": 262500,
+          "hauling_distance_miles": 75
+        },
+        "certifications": ["Clean textile", "Sorted by fiber"],
+        "description": "Post-industrial textile waste from footwear and apparel distribution. Clean materials suitable for fiber recycling, insulation, or carpet backing."
+      }
+    },
+    {
+      "id": 42,
+      "name": "Mosaic Company - Riverview Plant",
+      "type": "producer",
+      "industry": "Fertilizer Manufacturing",
+      "location": {
+        "address": "13858 US Highway 41",
+        "city": "Riverview",
+        "state": "FL",
+        "zip": "33569",
+        "coordinates": {
+          "lat": 27.8294,
+          "lng": -82.3265
+        }
+      },
+      "contact": {
+        "name": "Patricia Rodriguez",
+        "title": "Byproduct Sales Manager",
+        "email": "patricia.rodriguez@mosaicco.com",
+        "phone": "(813) 555-0923"
+      },
+      "waste_stream": {
+        "material": "Phosphogypsum",
+        "category": "Mining Byproduct",
+        "quantity_tons_year": 125000,
+        "availability": "Continuous",
+        "composition": {
+          "Calcium_sulfate": 85,
+          "Water": 10,
+          "Impurities": 3,
+          "Phosphates": 2
+        },
+        "physical_properties": {
+          "state": "Wet solid/slurry",
+          "color": "White/gray",
+          "particle_size": "Fine particles",
+          "moisture_content": "25-35%"
+        },
+        "current_disposal": {
+          "method": "Stack storage",
+          "cost_per_ton": 8,
+          "annual_cost": 1000000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["NORM monitored", "EPA regulated"],
+        "description": "Gypsum byproduct from phosphoric acid production. Contains calcium sulfate suitable for wallboard, cement additive, or soil amendment after processing."
+      }
+    },
+    {
+      "id": 43,
+      "name": "Ball Corporation - Golden Can Plant",
+      "type": "producer",
+      "industry": "Packaging Manufacturing",
+      "location": {
+        "address": "9300 W 108th Cir",
+        "city": "Westminster",
+        "state": "CO",
+        "zip": "80021",
+        "coordinates": {
+          "lat": 39.8878,
+          "lng": -105.1050
+        }
+      },
+      "contact": {
+        "name": "Christopher Lee",
+        "title": "Operations Environmental Lead",
+        "email": "clee@ball.com",
+        "phone": "(303) 555-0612"
+      },
+      "waste_stream": {
+        "material": "Aluminum Can Scrap",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 3400,
+        "availability": "Daily",
+        "composition": {
+          "Aluminum_3104": 95,
+          "Coatings": 3,
+          "Inks": 2
+        },
+        "physical_properties": {
+          "state": "Solid trim/rejects",
+          "color": "Silver with printing",
+          "particle_size": "Sheet/can form",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "Aluminum smelter sale",
+          "cost_per_ton": -1450,
+          "annual_cost": -4930000,
+          "hauling_distance_miles": 80
+        },
+        "certifications": ["Clean aluminum", "Alloy 3104"],
+        "description": "Manufacturing scrap from beverage can production. High-quality aluminum suitable for remelting into new can stock with minimal downcycling."
+      }
+    },
+    {
+      "id": 44,
+      "name": "Constellation Brands - Nava Brewery",
+      "type": "producer",
+      "industry": "Beverage Manufacturing",
+      "location": {
+        "address": "Carretera 57",
+        "city": "Nava",
+        "state": "TX",
+        "zip": "78648",
+        "coordinates": {
+          "lat": 28.4178,
+          "lng": -100.7678
+        }
+      },
+      "contact": {
+        "name": "Ricardo Valdez",
+        "title": "Sustainability Manager",
+        "email": "ricardo.valdez@cbrands.com",
+        "phone": "(830) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Glass Cullet",
+        "category": "Packaging Waste",
+        "quantity_tons_year": 6800,
+        "availability": "Continuous",
+        "composition": {
+          "Soda_lime_glass": 98,
+          "Labels_residue": 2
+        },
+        "physical_properties": {
+          "state": "Solid glass",
+          "color": "Amber/green/clear",
+          "particle_size": "Bottle sized to crushed",
+          "moisture_content": "< 2%"
+        },
+        "current_disposal": {
+          "method": "Glass recycler sale",
+          "cost_per_ton": -35,
+          "annual_cost": -238000,
+          "hauling_distance_miles": 120
+        },
+        "certifications": ["Clean glass", "Color sorted"],
+        "description": "Broken bottles and manufacturing cullet from beer production. Clean glass suitable for remelt into new bottles or fiberglass production."
+      }
+    },
+    {
+      "id": 45,
+      "name": "Renewable Energy Group - Geismar Biorefinery",
+      "type": "consumer",
+      "industry": "Biofuel Production",
+      "location": {
+        "address": "8770 Highway 30",
+        "city": "Geismar",
+        "state": "LA",
+        "zip": "70734",
+        "coordinates": {
+          "lat": 30.2281,
+          "lng": -90.9989
+        }
+      },
+      "contact": {
+        "name": "Amanda Foster",
+        "title": "Feedstock Procurement Manager",
+        "email": "amanda.foster@regi.com",
+        "phone": "(225) 555-0778"
+      },
+      "material_needs": {
+        "material": "Used Cooking Oil & Animal Fats",
+        "category": "Biodiesel Feedstock",
+        "quantity_tons_year": 28000,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "Triglycerides": 85,
+          "Free_fatty_acids": 10,
+          "Water": 3,
+          "Impurities": 2
+        },
+        "specifications": {
+          "form": "Liquid fats/oils",
+          "FFA": "< 15%",
+          "moisture": "< 5%",
+          "quality_standard": "Biodiesel grade feedstock"
+        },
+        "current_sourcing": {
+          "primary_source": "Restaurant aggregators",
+          "cost_per_ton": 650,
+          "annual_cost": 18200000,
+          "transport_distance_miles": 200
+        },
+        "certifications_required": ["Food-grade origin", "Rendered if animal fat"],
+        "description": "Biodiesel production facility seeking waste oils and fats for conversion to renewable diesel. Can process yellow grease, brown grease, and rendered animal fats."
+      }
+    },
+    {
+      "id": 46,
+      "name": "Owens Corning - Delmar Plant",
+      "type": "consumer",
+      "industry": "Building Materials",
+      "location": {
+        "address": "Highway 49 S",
+        "city": "Delmar",
+        "state": "NY",
+        "zip": "12054",
+        "coordinates": {
+          "lat": 42.6198,
+          "lng": -73.9604
+        }
+      },
+      "contact": {
+        "name": "Thomas Mitchell",
+        "title": "Raw Materials Manager",
+        "email": "thomas.mitchell@owenscorning.com",
+        "phone": "(518) 555-0634"
+      },
+      "material_needs": {
+        "material": "Recycled Glass",
+        "category": "Fiberglass Feedstock",
+        "quantity_tons_year": 18500,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "SiO2": 70,
+          "Na2O": 13,
+          "CaO": 10,
+          "Other_oxides": 7
+        },
+        "specifications": {
+          "form": "Crushed cullet",
+          "particle_size": "< 50mm",
+          "contamination": "< 3%",
+          "quality_standard": "Fiberglass grade"
+        },
+        "current_sourcing": {
+          "primary_source": "Virgin sand & soda ash",
+          "cost_per_ton": 75,
+          "annual_cost": 1387500,
+          "transport_distance_miles": 100
+        },
+        "certifications_required": ["Clean glass", "Chemical analysis"],
+        "description": "Fiberglass insulation manufacturing seeking recycled glass cullet to reduce virgin raw material usage. Can utilize container glass and flat glass."
+      }
+    },
+    {
+      "id": 47,
+      "name": "General Mills - Cedar Rapids Plant",
+      "type": "producer",
+      "industry": "Food Manufacturing",
+      "location": {
+        "address": "4800 Edgewood Rd NE",
+        "city": "Cedar Rapids",
+        "state": "IA",
+        "zip": "52499",
+        "coordinates": {
+          "lat": 42.0447,
+          "lng": -91.6344
+        }
+      },
+      "contact": {
+        "name": "Michelle Chen",
+        "title": "Sustainability Lead",
+        "email": "michelle.chen@genmills.com",
+        "phone": "(319) 555-0891"
+      },
+      "waste_stream": {
+        "material": "Oat Hulls",
+        "category": "Agricultural Byproduct",
+        "quantity_tons_year": 4800,
+        "availability": "Daily",
+        "composition": {
+          "Fiber": 75,
+          "Protein": 8,
+          "Moisture": 10,
+          "Ash": 5,
+          "Other": 2
+        },
+        "physical_properties": {
+          "state": "Dry solid",
+          "color": "Light brown",
+          "particle_size": "Flake-sized",
+          "moisture_content": "10-12%"
+        },
+        "current_disposal": {
+          "method": "Animal feed sale",
+          "cost_per_ton": -25,
+          "annual_cost": -120000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": ["Non-GMO", "Food-grade origin", "Organic available"],
+        "description": "Oat hulls removed during cereal production. High fiber content valuable for ruminant feed, biomass fuel, or industrial absorbent applications."
+      }
+    },
+    {
+      "id": 48,
+      "name": "Marathon Petroleum - Garyville Refinery",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "3800 Highway 75",
+        "city": "Garyville",
+        "state": "LA",
+        "zip": "70051",
+        "coordinates": {
+          "lat": 30.0569,
+          "lng": -90.6162
+        }
+      },
+      "contact": {
+        "name": "James Franklin",
+        "title": "Waste Operations Supervisor",
+        "email": "jfranklin@marathonpetroleum.com",
+        "phone": "(985) 555-0723"
+      },
+      "waste_stream": {
+        "material": "Oil Contaminated Soil",
+        "category": "Remediation Waste",
+        "quantity_tons_year": 3600,
+        "availability": "Quarterly batches",
+        "composition": {
+          "Soil_solids": 85,
+          "Petroleum_hydrocarbons": 12,
+          "Water": 3
+        },
+        "physical_properties": {
+          "state": "Solid/semi-solid",
+          "color": "Dark brown",
+          "particle_size": "Soil-sized",
+          "moisture_content": "15-25%"
+        },
+        "current_disposal": {
+          "method": "Thermal desorption",
+          "cost_per_ton": 280,
+          "annual_cost": 1008000,
+          "hauling_distance_miles": 90
+        },
+        "certifications": ["RCRA non-hazardous", "TPH levels documented"],
+        "description": "Petroleum-impacted soil from refinery maintenance and spill cleanup. Suitable for thermal treatment, bioremediation, or use as alternative fuel after processing."
+      }
+    },
+    {
+      "id": 49,
+      "name": "Kimberly-Clark - Neenah Mill",
+      "type": "producer",
+      "industry": "Paper Products Manufacturing",
+      "location": {
+        "address": "1400 Holmgren Way",
+        "city": "Neenah",
+        "state": "WI",
+        "zip": "54956",
+        "coordinates": {
+          "lat": 44.1858,
+          "lng": -88.4626
+        }
+      },
+      "contact": {
+        "name": "Karen Anderson",
+        "title": "Environmental Manager",
+        "email": "karen.anderson@kcc.com",
+        "phone": "(920) 555-0556"
+      },
+      "waste_stream": {
+        "material": "Paper Mill Broke",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 5200,
+        "availability": "Continuous",
+        "composition": {
+          "Cellulose_fibers": 90,
+          "Water": 8,
+          "Fillers": 2
+        },
+        "physical_properties": {
+          "state": "Wet pulp",
+          "color": "White",
+          "particle_size": "Fibrous",
+          "moisture_content": "50-60%"
+        },
+        "current_disposal": {
+          "method": "Reprocess internally",
+          "cost_per_ton": 15,
+          "annual_cost": 78000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["Clean fiber", "Virgin pulp origin"],
+        "description": "Off-spec paper and trim from tissue production. Clean white fiber suitable for repulping into new paper products or cellulose applications."
+      }
+    },
+    {
+      "id": 50,
+      "name": "Nestlé - Modesto Plant",
+      "type": "producer",
+      "industry": "Food Manufacturing",
+      "location": {
+        "address": "1900 S Carpenter Rd",
+        "city": "Modesto",
+        "state": "CA",
+        "zip": "95351",
+        "coordinates": {
+          "lat": 37.6191,
+          "lng": -120.9829
+        }
+      },
+      "contact": {
+        "name": "Victoria Sanchez",
+        "title": "Waste Reduction Manager",
+        "email": "victoria.sanchez@nestle.com",
+        "phone": "(209) 555-0834"
+      },
+      "waste_stream": {
+        "material": "Coffee Grounds & Chaff",
+        "category": "Food Processing Waste",
+        "quantity_tons_year": 2900,
+        "availability": "Daily",
+        "composition": {
+          "Organic_matter": 92,
+          "Moisture": 6,
+          "Ash": 2
+        },
+        "physical_properties": {
+          "state": "Solid grounds/chaff",
+          "color": "Dark brown",
+          "particle_size": "Fine to medium",
+          "moisture_content": "45-55%"
+        },
+        "current_disposal": {
+          "method": "Composting",
+          "cost_per_ton": 40,
+          "annual_cost": 116000,
+          "hauling_distance_miles": 35
+        },
+        "certifications": ["Organic", "Food-grade origin", "Compostable"],
+        "description": "Spent coffee grounds and roasting chaff from instant coffee production. Rich in nitrogen, suitable for composting, soil amendment, or biofuel production."
+      }
+    },
+    {
+      "id": 51,
+      "name": "Clearwater Paper - Lewiston Mill",
+      "type": "consumer",
+      "industry": "Paper Manufacturing",
+      "location": {
+        "address": "803 Main St",
+        "city": "Lewiston",
+        "state": "ID",
+        "zip": "83501",
+        "coordinates": {
+          "lat": 46.4165,
+          "lng": -117.0177
+        }
+      },
+      "contact": {
+        "name": "Brian Foster",
+        "title": "Fiber Procurement Manager",
+        "email": "brian.foster@clearwaterpaper.com",
+        "phone": "(208) 555-0445"
+      },
+      "material_needs": {
+        "material": "Recycled Paper & Cardboard",
+        "category": "Pulp Feedstock",
+        "quantity_tons_year": 35000,
+        "frequency": "Daily deliveries",
+        "composition_needed": {
+          "Corrugated": 50,
+          "Mixed_paper": 30,
+          "Kraft_paper": 15,
+          "Newsprint": 5
+        },
+        "specifications": {
+          "form": "Baled",
+          "contamination": "< 2%",
+          "moisture": "< 12%",
+          "quality_standard": "PS-2017 Grade A"
+        },
+        "current_sourcing": {
+          "primary_source": "Regional MRFs",
+          "cost_per_ton": 95,
+          "annual_cost": 3325000,
+          "transport_distance_miles": 150
+        },
+        "certifications_required": ["Baled to spec", "Quality certified"],
+        "description": "Pulp mill seeking high-quality recycled fiber for paperboard production. Can process commercial and post-consumer recovered paper."
+      }
+    },
+    {
+      "id": 52,
+      "name": "Caterpillar - Decatur Manufacturing",
+      "type": "producer",
+      "industry": "Heavy Equipment Manufacturing",
+      "location": {
+        "address": "800 SW 4th St",
+        "city": "Decatur",
+        "state": "IL",
+        "zip": "62523",
+        "coordinates": {
+          "lat": 39.8403,
+          "lng": -88.9370
+        }
+      },
+      "contact": {
+        "name": "Robert Hayes",
+        "title": "Environmental Compliance Manager",
+        "email": "hayes_robert_j@cat.com",
+        "phone": "(217) 555-0912"
+      },
+      "waste_stream": {
+        "material": "Steel Fabrication Scrap",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 15600,
+        "availability": "Daily",
+        "composition": {
+          "Carbon_steel": 75,
+          "Alloy_steel": 15,
+          "Stainless_steel": 8,
+          "Cutting_fluids": 2
+        },
+        "physical_properties": {
+          "state": "Solid scrap",
+          "color": "Metallic",
+          "particle_size": "Varied sizes",
+          "moisture_content": "< 5%"
+        },
+        "current_disposal": {
+          "method": "Scrap dealer sale",
+          "cost_per_ton": -320,
+          "annual_cost": -4992000,
+          "hauling_distance_miles": 25
+        },
+        "certifications": ["Sorted by grade", "Clean scrap"],
+        "description": "Heavy steel scrap from earthmoving equipment manufacturing. High-quality steel suitable for recycling into new structural steel or rebar."
+      }
+    },
+    {
+      "id": 53,
+      "name": "CalPortland - Rillito Plant",
+      "type": "consumer",
+      "industry": "Cement Manufacturing",
+      "location": {
+        "address": "4545 W Ina Rd",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85743",
+        "coordinates": {
+          "lat": 32.3398,
+          "lng": -111.0731
+        }
+      },
+      "contact": {
+        "name": "Maria Lopez",
+        "title": "Alternative Fuels Coordinator",
+        "email": "mlopez@calportland.com",
+        "phone": "(520) 555-0678"
+      },
+      "material_needs": {
+        "material": "Tire Derived Fuel",
+        "category": "Alternative Fuel",
+        "quantity_tons_year": 12000,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "Rubber": 60,
+          "Steel_wire": 15,
+          "Fabric": 15,
+          "Carbon_black": 10
+        },
+        "specifications": {
+          "form": "Chips or shreds",
+          "particle_size": "1-3 inch chips",
+          "BTU_content": "14000+ BTU/lb",
+          "quality_standard": "TDF Grade A"
+        },
+        "current_sourcing": {
+          "primary_source": "Tire processors",
+          "cost_per_ton": 45,
+          "annual_cost": 540000,
+          "transport_distance_miles": 120
+        },
+        "certifications_required": ["Wire removed or reduced", "EPA approved"],
+        "description": "Cement kiln seeking tire-derived fuel as coal replacement. High BTU content reduces fossil fuel consumption and provides beneficial use for scrap tires."
+      }
+    },
+    {
+      "id": 54,
+      "name": "Frito-Lay - Casa Grande Plant",
+      "type": "producer",
+      "industry": "Snack Food Manufacturing",
+      "location": {
+        "address": "2000 N Frito-Lay Dr",
+        "city": "Casa Grande",
+        "state": "AZ",
+        "zip": "85122",
+        "coordinates": {
+          "lat": 32.9095,
+          "lng": -111.7573
+        }
+      },
+      "contact": {
+        "name": "Lisa Martinez",
+        "title": "Sustainability Manager",
+        "email": "lisa.martinez@fritolay.com",
+        "phone": "(520) 555-0523"
+      },
+      "waste_stream": {
+        "material": "Potato Peel Waste",
+        "category": "Food Processing Waste",
+        "quantity_tons_year": 8200,
+        "availability": "Daily",
+        "composition": {
+          "Starch": 35,
+          "Fiber": 25,
+          "Protein": 8,
+          "Moisture": 28,
+          "Other_organics": 4
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Brown",
+          "particle_size": "Peel-sized",
+          "moisture_content": "75-80%"
+        },
+        "current_disposal": {
+          "method": "Cattle feed",
+          "cost_per_ton": -15,
+          "annual_cost": -123000,
+          "hauling_distance_miles": 45
+        },
+        "certifications": ["Food-grade origin", "Non-GMO available"],
+        "description": "Potato peels from chip manufacturing. High starch content suitable for animal feed, anaerobic digestion, or starch extraction."
+      }
+    },
+    {
+      "id": 55,
+      "name": "Domtar - Ashdown Mill",
+      "type": "producer",
+      "industry": "Paper Manufacturing",
+      "location": {
+        "address": "400 Domtar Dr",
+        "city": "Ashdown",
+        "state": "AR",
+        "zip": "71822",
+        "coordinates": {
+          "lat": 33.6745,
+          "lng": -94.1305
+        }
+      },
+      "contact": {
+        "name": "Timothy Brooks",
+        "title": "Byproducts Manager",
+        "email": "timothy.brooks@domtar.com",
+        "phone": "(870) 555-0789"
+      },
+      "waste_stream": {
+        "material": "Black Liquor Solids",
+        "category": "Pulping Byproduct",
+        "quantity_tons_year": 42000,
+        "availability": "Continuous",
+        "composition": {
+          "Lignin": 40,
+          "Sodium_compounds": 25,
+          "Hemicellulose": 20,
+          "Extractives": 10,
+          "Other_organics": 5
+        },
+        "physical_properties": {
+          "state": "Viscous liquid",
+          "color": "Black/brown",
+          "particle_size": "N/A",
+          "moisture_content": "N/A"
+        },
+        "current_disposal": {
+          "method": "Recovery boiler fuel",
+          "cost_per_ton": -40,
+          "annual_cost": -1680000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["High BTU", "Chemical recovery potential"],
+        "description": "Black liquor from kraft pulping process. High energy content used internally for steam/power, or can be processed for lignin extraction and specialty chemicals."
+      }
+    },
+    {
+      "id": 56,
+      "name": "AES Corporation - Indianapolis Power Plant",
+      "type": "consumer",
+      "industry": "Power Generation",
+      "location": {
+        "address": "2950 Harding St",
+        "city": "Indianapolis",
+        "state": "IN",
+        "zip": "46221",
+        "coordinates": {
+          "lat": 39.7392,
+          "lng": -86.2439
+        }
+      },
+      "contact": {
+        "name": "Gregory Wilson",
+        "title": "Fuel Procurement Manager",
+        "email": "gregory.wilson@aes.com",
+        "phone": "(317) 555-0845"
+      },
+      "material_needs": {
+        "material": "Biomass & Wood Waste",
+        "category": "Power Plant Fuel",
+        "quantity_tons_year": 55000,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "Wood_chips": 50,
+          "Sawdust": 25,
+          "Agricultural_waste": 20,
+          "Other_biomass": 5
+        },
+        "specifications": {
+          "form": "Chipped or ground",
+          "moisture_content": "< 35%",
+          "BTU_content": "7000+ BTU/lb",
+          "quality_standard": "Utility biomass spec"
+        },
+        "current_sourcing": {
+          "primary_source": "Coal",
+          "cost_per_ton": 65,
+          "annual_cost": 3575000,
+          "transport_distance_miles": 200
+        },
+        "certifications_required": ["Clean wood", "No treated lumber"],
+        "description": "Coal-fired power plant transitioning to biomass co-firing. Seeking wood waste and agricultural residues for renewable energy generation."
+      }
+    },
+    {
+      "id": 57,
+      "name": "ArcelorMittal - Cleveland Works",
+      "type": "producer",
+      "industry": "Steel Manufacturing",
+      "location": {
+        "address": "3060 Eggers Rd",
+        "city": "Cleveland",
+        "state": "OH",
+        "zip": "44105",
+        "coordinates": {
+          "lat": 41.4530,
+          "lng": -81.6387
+        }
+      },
+      "contact": {
+        "name": "Jonathan Pierce",
+        "title": "Byproducts Sales Manager",
+        "email": "jonathan.pierce@arcelormittal.com",
+        "phone": "(216) 555-0734"
+      },
+      "waste_stream": {
+        "material": "Steel Mill Scale",
+        "category": "Rolling Mill Byproduct",
+        "quantity_tons_year": 16500,
+        "availability": "Continuous",
+        "composition": {
+          "Iron_oxides": 70,
+          "Metallic_iron": 25,
+          "Other_oxides": 5
+        },
+        "physical_properties": {
+          "state": "Solid flakes",
+          "color": "Blue-black",
+          "particle_size": "Flake to powder",
+          "moisture_content": "< 5%"
+        },
+        "current_disposal": {
+          "method": "Iron recovery sale",
+          "cost_per_ton": -85,
+          "annual_cost": -1402500,
+          "hauling_distance_miles": 50
+        },
+        "certifications": ["High iron content", "Non-hazardous"],
+        "description": "Mill scale from hot rolling operations. High iron oxide content suitable for sinter feed, cement production, or iron recovery in blast furnaces."
+      }
+    },
+    {
+      "id": 58,
+      "name": "Pilgrim's Pride - Sanford Complex",
+      "type": "producer",
+      "industry": "Poultry Processing",
+      "location": {
+        "address": "1770 Pumping Station Rd",
+        "city": "Sanford",
+        "state": "NC",
+        "zip": "27330",
+        "coordinates": {
+          "lat": 35.4795,
+          "lng": -79.1803
+        }
+      },
+      "contact": {
+        "name": "Teresa Johnson",
+        "title": "Sustainability Coordinator",
+        "email": "teresa.johnson@pilgrims.com",
+        "phone": "(919) 555-0612"
+      },
+      "waste_stream": {
+        "material": "Poultry Litter & Manure",
+        "category": "Agricultural Waste",
+        "quantity_tons_year": 14200,
+        "availability": "Weekly batches",
+        "composition": {
+          "Organic_matter": 65,
+          "Nitrogen": 3,
+          "Phosphorus": 2,
+          "Potassium": 2,
+          "Moisture": 25,
+          "Bedding_material": 3
+        },
+        "physical_properties": {
+          "state": "Solid/semi-solid",
+          "color": "Brown",
+          "particle_size": "Mixed",
+          "moisture_content": "25-35%"
+        },
+        "current_disposal": {
+          "method": "Composting/land application",
+          "cost_per_ton": 25,
+          "annual_cost": 355000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Composted", "Pathogen reduced"],
+        "description": "Poultry litter from broiler operations. Rich in nutrients, suitable for fertilizer production, composting, or biomass energy applications."
+      }
+    },
+    {
+      "id": 59,
+      "name": "Vulcan Materials - Waco Quarry",
+      "type": "producer",
+      "industry": "Aggregate & Mining",
+      "location": {
+        "address": "2401 S Loop 340",
+        "city": "Waco",
+        "state": "TX",
+        "zip": "76706",
+        "coordinates": {
+          "lat": 31.5085,
+          "lng": -97.1885
+        }
+      },
+      "contact": {
+        "name": "Daniel Foster",
+        "title": "Operations Manager",
+        "email": "daniel.foster@vulcanmaterials.com",
+        "phone": "(254) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Limestone Fines",
+        "category": "Quarry Byproduct",
+        "quantity_tons_year": 22000,
+        "availability": "Continuous",
+        "composition": {
+          "CaCO3": 92,
+          "SiO2": 4,
+          "MgCO3": 2,
+          "Other_minerals": 2
+        },
+        "physical_properties": {
+          "state": "Solid powder",
+          "color": "White/gray",
+          "particle_size": "< 2mm",
+          "moisture_content": "3-8%"
+        },
+        "current_disposal": {
+          "method": "Stockpiled/low-value sale",
+          "cost_per_ton": -8,
+          "annual_cost": -176000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": ["High purity", "Food-grade potential"],
+        "description": "Fine limestone dust from aggregate crushing. High calcium carbonate content suitable for agricultural lime, animal feed supplement, or industrial filler."
+      }
+    },
+    {
+      "id": 60,
+      "name": "Bridgestone - LaVergne Plant",
+      "type": "producer",
+      "industry": "Tire Manufacturing",
+      "location": {
+        "address": "1 Bridgestone Park",
+        "city": "LaVergne",
+        "state": "TN",
+        "zip": "37086",
+        "coordinates": {
+          "lat": 36.0156,
+          "lng": -86.5819
+        }
+      },
+      "contact": {
+        "name": "Richard Matthews",
+        "title": "Environmental Manager",
+        "email": "richard.matthews@bridgestone.com",
+        "phone": "(615) 555-0823"
+      },
+      "waste_stream": {
+        "material": "Tire Buffing Dust",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 3800,
+        "availability": "Weekly batches",
+        "composition": {
+          "Rubber": 85,
+          "Carbon_black": 10,
+          "Steel_wire_fragments": 3,
+          "Textile_fibers": 2
+        },
+        "physical_properties": {
+          "state": "Fine powder",
+          "color": "Black",
+          "particle_size": "< 1mm",
+          "moisture_content": "< 2%"
+        },
+        "current_disposal": {
+          "method": "Rubber recycler",
+          "cost_per_ton": 95,
+          "annual_cost": 361000,
+          "hauling_distance_miles": 80
+        },
+        "certifications": ["Clean rubber", "No contaminants"],
+        "description": "Rubber dust from tire retreading and buffing operations. Fine powder suitable for rubberized asphalt, playground surfacing, or molded rubber products."
+      }
+    },
+    {
+      "id": 61,
+      "name": "Mondelez - Chicago Bakery",
+      "type": "producer",
+      "industry": "Food Manufacturing",
+      "location": {
+        "address": "7300 S Kedzie Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60629",
+        "coordinates": {
+          "lat": 41.7597,
+          "lng": -87.7035
+        }
+      },
+      "contact": {
+        "name": "Angela Davis",
+        "title": "Sustainability Manager",
+        "email": "angela.davis@mdlz.com",
+        "phone": "(773) 555-0567"
+      },
+      "waste_stream": {
+        "material": "Expired Baked Goods",
+        "category": "Food Waste",
+        "quantity_tons_year": 4100,
+        "availability": "Daily",
+        "composition": {
+          "Carbohydrates": 55,
+          "Fats": 20,
+          "Protein": 10,
+          "Moisture": 12,
+          "Other": 3
+        },
+        "physical_properties": {
+          "state": "Solid",
+          "color": "Various",
+          "particle_size": "Baked goods sized",
+          "moisture_content": "10-15%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/composting",
+          "cost_per_ton": 55,
+          "annual_cost": 225500,
+          "hauling_distance_miles": 45
+        },
+        "certifications": ["Food-grade origin", "Clean"],
+        "description": "Off-spec and expired cookies, crackers, and snacks from production. Suitable for animal feed, anaerobic digestion, or industrial composting."
+      }
+    },
+    {
+      "id": 62,
+      "name": "Newmont Mining - Carlin Operations",
+      "type": "producer",
+      "industry": "Gold Mining",
+      "location": {
+        "address": "Highway 278",
+        "city": "Carlin",
+        "state": "NV",
+        "zip": "89822",
+        "coordinates": {
+          "lat": 40.7135,
+          "lng": -116.1033
+        }
+      },
+      "contact": {
+        "name": "Christopher Anderson",
+        "title": "Waste Rock Manager",
+        "email": "chris.anderson@newmont.com",
+        "phone": "(775) 555-0934"
+      },
+      "waste_stream": {
+        "material": "Mine Tailings",
+        "category": "Mining Waste",
+        "quantity_tons_year": 185000,
+        "availability": "Continuous",
+        "composition": {
+          "Silica": 60,
+          "Clay_minerals": 20,
+          "Iron_oxides": 10,
+          "Trace_metals": 5,
+          "Other_minerals": 5
+        },
+        "physical_properties": {
+          "state": "Slurry/semi-solid",
+          "color": "Gray/brown",
+          "particle_size": "Fine sand to silt",
+          "moisture_content": "30-40%"
+        },
+        "current_disposal": {
+          "method": "Tailings storage facility",
+          "cost_per_ton": 12,
+          "annual_cost": 2220000,
+          "hauling_distance_miles": 5
+        },
+        "certifications": ["EPA monitored", "Geochemically stable"],
+        "description": "Processed ore tailings from gold extraction. After dewatering and stabilization, suitable for construction fill, road base, or mine reclamation."
+      }
+    },
+    {
+      "id": 63,
+      "name": "JSW Steel - Mingo Junction Mill",
+      "type": "consumer",
+      "industry": "Steel Manufacturing",
+      "location": {
+        "address": "400 Independence St",
+        "city": "Mingo Junction",
+        "state": "OH",
+        "zip": "43938",
+        "coordinates": {
+          "lat": 40.3234,
+          "lng": -80.6098
+        }
+      },
+      "contact": {
+        "name": "Steven Kumar",
+        "title": "Raw Materials Manager",
+        "email": "steven.kumar@jsw.in",
+        "phone": "(740) 555-0678"
+      },
+      "material_needs": {
+        "material": "Iron Ore Pellets & Scrap",
+        "category": "Steel Production Feedstock",
+        "quantity_tons_year": 52000,
+        "frequency": "Daily deliveries",
+        "composition_needed": {
+          "Iron_content": 65,
+          "Gangue_minerals": 30,
+          "Moisture": 5
+        },
+        "specifications": {
+          "form": "Pellets or prepared scrap",
+          "iron_content": "> 62%",
+          "size": "Blast furnace grade",
+          "quality_standard": "ASTM specifications"
+        },
+        "current_sourcing": {
+          "primary_source": "Imported ore",
+          "cost_per_ton": 125,
+          "annual_cost": 6500000,
+          "transport_distance_miles": 300
+        },
+        "certifications_required": ["Chemical analysis", "Size specification"],
+        "description": "Integrated steel mill seeking iron-bearing materials for blast furnace operations. Can utilize ore pellets, mill scale, and iron-rich byproducts."
+      }
+    },
+    {
+      "id": 64,
+      "name": "Starbucks - York Roasting Plant",
+      "type": "producer",
+      "industry": "Coffee Roasting",
+      "location": {
+        "address": "3000 Espresso Way",
+        "city": "York",
+        "state": "PA",
+        "zip": "17406",
+        "coordinates": {
+          "lat": 39.9626,
+          "lng": -76.7277
+        }
+      },
+      "contact": {
+        "name": "Rachel Kim",
+        "title": "Environmental Affairs Manager",
+        "email": "rachel.kim@starbucks.com",
+        "phone": "(717) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Coffee Chaff",
+        "category": "Roasting Byproduct",
+        "quantity_tons_year": 850,
+        "availability": "Daily",
+        "composition": {
+          "Cellulose": 70,
+          "Lignin": 15,
+          "Protein": 8,
+          "Moisture": 5,
+          "Ash": 2
+        },
+        "physical_properties": {
+          "state": "Dry flakes",
+          "color": "Light brown",
+          "particle_size": "Flake-sized",
+          "moisture_content": "8-12%"
+        },
+        "current_disposal": {
+          "method": "Composting",
+          "cost_per_ton": 45,
+          "annual_cost": 38250,
+          "hauling_distance_miles": 30
+        },
+        "certifications": ["Organic", "Food-grade origin"],
+        "description": "Chaff removed during coffee roasting. High cellulose content suitable for composting, mulch, animal bedding, or biomass fuel pellets."
+      }
+    },
+    {
+      "id": 65,
+      "name": "Mitsubishi Chemical - Chesapeake Plant",
+      "type": "producer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "1000 Battlefield Blvd",
+        "city": "Chesapeake",
+        "state": "VA",
+        "zip": "23320",
+        "coordinates": {
+          "lat": 36.6777,
+          "lng": -76.2858
+        }
+      },
+      "contact": {
+        "name": "Yuki Tanaka",
+        "title": "Waste Management Coordinator",
+        "email": "y.tanaka@mfc.com",
+        "phone": "(757) 555-0891"
+      },
+      "waste_stream": {
+        "material": "Polyethylene Terephthalate Waste",
+        "category": "Polymer Waste",
+        "quantity_tons_year": 3200,
+        "availability": "Monthly batches",
+        "composition": {
+          "PET_polymer": 95,
+          "Oligomers": 3,
+          "Catalysts": 2
+        },
+        "physical_properties": {
+          "state": "Solid chips/powder",
+          "color": "White/translucent",
+          "particle_size": "1-10mm",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "Chemical recycler",
+          "cost_per_ton": 280,
+          "annual_cost": 896000,
+          "hauling_distance_miles": 150
+        },
+        "certifications": ["Clean polymer", "Depolymerization suitable"],
+        "description": "Off-spec PET polymer from polyester production. Suitable for chemical recycling, depolymerization to monomers, or reprocessing into fiber/film."
+      }
+    },
+    {
+      "id": 66,
+      "name": "Hormel Foods - Austin Plant",
+      "type": "producer",
+      "industry": "Meat Processing",
+      "location": {
+        "address": "1101 N Main St",
+        "city": "Austin",
+        "state": "MN",
+        "zip": "55912",
+        "coordinates": {
+          "lat": 43.6805,
+          "lng": -92.9746
+        }
+      },
+      "contact": {
+        "name": "Mary Thompson",
+        "title": "Environmental Services Manager",
+        "email": "mary.thompson@hormel.com",
+        "phone": "(507) 555-0623"
+      },
+      "waste_stream": {
+        "material": "Pork Blood",
+        "category": "Processing Byproduct",
+        "quantity_tons_year": 2400,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 18,
+          "Water": 80,
+          "Minerals": 1,
+          "Other": 1
+        },
+        "physical_properties": {
+          "state": "Liquid",
+          "color": "Dark red",
+          "particle_size": "N/A",
+          "moisture_content": "N/A"
+        },
+        "current_disposal": {
+          "method": "Rendering/blood meal production",
+          "cost_per_ton": -45,
+          "annual_cost": -108000,
+          "hauling_distance_miles": 25
+        },
+        "certifications": ["USDA inspected", "Pathogen tested"],
+        "description": "Blood collected from pork processing. High protein content suitable for spray-dried blood meal production for animal feed or fertilizer."
+      }
+    },
+    {
+      "id": 67,
+      "name": "Graphic Packaging - Kalamazoo Mill",
+      "type": "consumer",
+      "industry": "Packaging Manufacturing",
+      "location": {
+        "address": "519 Alcott St",
+        "city": "Kalamazoo",
+        "state": "MI",
+        "zip": "49001",
+        "coordinates": {
+          "lat": 42.2694,
+          "lng": -85.5903
+        }
+      },
+      "contact": {
+        "name": "Jennifer Cole",
+        "title": "Fiber Procurement Manager",
+        "email": "jennifer.cole@graphicpkg.com",
+        "phone": "(269) 555-0734"
+      },
+      "material_needs": {
+        "material": "Recycled Paperboard",
+        "category": "Packaging Feedstock",
+        "quantity_tons_year": 42000,
+        "frequency": "Daily deliveries",
+        "composition_needed": {
+          "Old_corrugated_cardboard": 70,
+          "Mixed_paper": 25,
+          "Kraft_paper": 5
+        },
+        "specifications": {
+          "form": "Baled",
+          "contamination": "< 3%",
+          "moisture": "< 15%",
+          "quality_standard": "PS-2017 standards"
+        },
+        "current_sourcing": {
+          "primary_source": "Virgin fiber",
+          "cost_per_ton": 120,
+          "annual_cost": 5040000,
+          "transport_distance_miles": 200
+        },
+        "certifications_required": ["Quality graded", "Clean fiber"],
+        "description": "Paperboard mill seeking recycled fiber for folding carton production. Can utilize post-consumer and post-industrial cardboard and paper."
+      }
+    },
+    {
+      "id": 68,
+      "name": "Hexion - Louisville Plant",
+      "type": "producer",
+      "industry": "Specialty Chemicals",
+      "location": {
+        "address": "10000 Blevins Gap Rd",
+        "city": "Louisville",
+        "state": "KY",
+        "zip": "40299",
+        "coordinates": {
+          "lat": 38.1347,
+          "lng": -85.5644
+        }
+      },
+      "contact": {
+        "name": "Douglas Wright",
+        "title": "Waste Reduction Manager",
+        "email": "douglas.wright@hexion.com",
+        "phone": "(502) 555-0556"
+      },
+      "waste_stream": {
+        "material": "Formaldehyde Residue",
+        "category": "Chemical Waste",
+        "quantity_tons_year": 1850,
+        "availability": "Monthly batches",
+        "composition": {
+          "Formaldehyde": 15,
+          "Methanol": 8,
+          "Water": 72,
+          "Polymers": 5
+        },
+        "physical_properties": {
+          "state": "Liquid",
+          "color": "Clear to cloudy",
+          "particle_size": "N/A",
+          "moisture_content": "N/A"
+        },
+        "current_disposal": {
+          "method": "Wastewater treatment",
+          "cost_per_ton": 320,
+          "annual_cost": 592000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": ["RCRA listed", "Treatability documented"],
+        "description": "Dilute formaldehyde waste from resin production. Suitable for wastewater treatment, chemical oxidation, or recovery as industrial preservative."
+      }
+    },
+    {
+      "id": 69,
+      "name": "Ocean Spray - Middleboro Facility",
+      "type": "producer",
+      "industry": "Food & Beverage Processing",
+      "location": {
+        "address": "1 Ocean Spray Dr",
+        "city": "Middleboro",
+        "state": "MA",
+        "zip": "02346",
+        "coordinates": {
+          "lat": 41.8959,
+          "lng": -70.9109
+        }
+      },
+      "contact": {
+        "name": "Patricia Sullivan",
+        "title": "Sustainability Director",
+        "email": "patricia.sullivan@oceanspray.com",
+        "phone": "(508) 555-0812"
+      },
+      "waste_stream": {
+        "material": "Cranberry Pomace",
+        "category": "Food Processing Waste",
+        "quantity_tons_year": 5600,
+        "availability": "Seasonal (Fall harvest)",
+        "composition": {
+          "Fiber": 45,
+          "Seeds": 20,
+          "Skins": 15,
+          "Moisture": 15,
+          "Sugars": 3,
+          "Other": 2
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Dark red",
+          "particle_size": "Mixed",
+          "moisture_content": "60-70%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/composting",
+          "cost_per_ton": 35,
+          "annual_cost": 196000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Organic", "Food-grade origin"],
+        "description": "Pressed cranberry skins and seeds from juice production. High fiber and antioxidants, suitable for animal feed, dietary supplements, or composting."
+      }
+    },
+    {
+      "id": 70,
+      "name": "Clearwater Paper - Spokane Mill",
+      "type": "producer",
+      "industry": "Tissue Manufacturing",
+      "location": {
+        "address": "601 W 1st Ave",
+        "city": "Spokane",
+        "state": "WA",
+        "zip": "99201",
+        "coordinates": {
+          "lat": 47.6571,
+          "lng": -117.4260
+        }
+      },
+      "contact": {
+        "name": "Michael Harris",
+        "title": "Environmental Manager",
+        "email": "michael.harris@clearwaterpaper.com",
+        "phone": "(509) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Tissue Paper Trim",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 2800,
+        "availability": "Continuous",
+        "composition": {
+          "Cellulose_fibers": 95,
+          "Moisture": 5
+        },
+        "physical_properties": {
+          "state": "Dry sheets",
+          "color": "White",
+          "particle_size": "Sheet form",
+          "moisture_content": "5-8%"
+        },
+        "current_disposal": {
+          "method": "Repulp internally",
+          "cost_per_ton": 20,
+          "annual_cost": 56000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["Virgin fiber", "Food-grade capable"],
+        "description": "Clean tissue paper trim from converting operations. High-quality virgin fiber suitable for repulping into new tissue or specialty paper products."
+      }
+    },
+    {
+      "id": 71,
+      "name": "Nutrien - Aurora Phosphate Complex",
+      "type": "consumer",
+      "industry": "Fertilizer Manufacturing",
+      "location": {
+        "address": "1951 US Highway 33",
+        "city": "Bartow",
+        "state": "FL",
+        "zip": "33830",
+        "coordinates": {
+          "lat": 27.8669,
+          "lng": -81.8431
+        }
+      },
+      "contact": {
+        "name": "Carlos Ramirez",
+        "title": "Sulfur Procurement Manager",
+        "email": "carlos.ramirez@nutrien.com",
+        "phone": "(863) 555-0923"
+      },
+      "material_needs": {
+        "material": "Elemental Sulfur",
+        "category": "Fertilizer Production Input",
+        "quantity_tons_year": 65000,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "Elemental_sulfur": 99,
+          "Impurities": 1
+        },
+        "specifications": {
+          "form": "Prilled or molten",
+          "purity": "> 99%",
+          "particle_size": "2-6mm prills",
+          "quality_standard": "Fertilizer grade"
+        },
+        "current_sourcing": {
+          "primary_source": "Oil refineries",
+          "cost_per_ton": 85,
+          "annual_cost": 5525000,
+          "transport_distance_miles": 150
+        },
+        "certifications_required": ["Chemical analysis", "Fertilizer grade"],
+        "description": "Phosphate fertilizer complex seeking sulfur for sulfuric acid production. Can utilize recovered sulfur from refinery desulfurization operations."
+      }
+    },
+    {
+      "id": 72,
+      "name": "Crown Holdings - Olympia Plant",
+      "type": "producer",
+      "industry": "Metal Packaging",
+      "location": {
+        "address": "1601 Sherman St",
+        "city": "Olympia",
+        "state": "WA",
+        "zip": "98501",
+        "coordinates": {
+          "lat": 47.0379,
+          "lng": -122.9007
+        }
+      },
+      "contact": {
+        "name": "William Chen",
+        "title": "Sustainability Manager",
+        "email": "william.chen@crowncork.com",
+        "phone": "(360) 555-0678"
+      },
+      "waste_stream": {
+        "material": "Steel Can Scrap",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 4200,
+        "availability": "Weekly batches",
+        "composition": {
+          "Tin_plated_steel": 92,
+          "Coatings": 5,
+          "Inks": 3
+        },
+        "physical_properties": {
+          "state": "Solid trim/rejects",
+          "color": "Silver with printing",
+          "particle_size": "Sheet/can form",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "Scrap dealer sale",
+          "cost_per_ton": -280,
+          "annual_cost": -1176000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": ["Clean steel", "Detinning capable"],
+        "description": "Tin-plated steel scrap from food can manufacturing. Suitable for detinning to recover tin, with steel remelted for new can production."
+      }
+    },
+    {
+      "id": 73,
+      "name": "Celanese - Bishop Plant",
+      "type": "producer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "9502 Bayport Blvd",
+        "city": "Pasadena",
+        "state": "TX",
+        "zip": "77507",
+        "coordinates": {
+          "lat": 29.6897,
+          "lng": -95.0849
+        }
+      },
+      "contact": {
+        "name": "Robert Zhang",
+        "title": "Byproducts Coordinator",
+        "email": "robert.zhang@celanese.com",
+        "phone": "(281) 555-0834"
+      },
+      "waste_stream": {
+        "material": "Acetic Acid Waste Stream",
+        "category": "Chemical Byproduct",
+        "quantity_tons_year": 2700,
+        "availability": "Bi-weekly batches",
+        "composition": {
+          "Acetic_acid": 65,
+          "Water": 30,
+          "Organic_impurities": 5
+        },
+        "physical_properties": {
+          "state": "Liquid",
+          "color": "Clear to light yellow",
+          "particle_size": "N/A",
+          "moisture_content": "N/A"
+        },
+        "current_disposal": {
+          "method": "Distillation/recovery",
+          "cost_per_ton": 180,
+          "annual_cost": 486000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Distillation suitable", "Industrial grade potential"],
+        "description": "Dilute acetic acid from chemical synthesis. Suitable for recovery via distillation or direct use in pH adjustment and industrial cleaning applications."
+      }
+    },
+    {
+      "id": 74,
+      "name": "Perdue Farms - Salisbury Complex",
+      "type": "producer",
+      "industry": "Poultry Processing",
+      "location": {
+        "address": "31149 Old Ocean City Rd",
+        "city": "Salisbury",
+        "state": "MD",
+        "zip": "21804",
+        "coordinates": {
+          "lat": 38.3606,
+          "lng": -75.5994
+        }
+      },
+      "contact": {
+        "name": "Elizabeth Brown",
+        "title": "Environmental Compliance Manager",
+        "email": "elizabeth.brown@perdue.com",
+        "phone": "(410) 555-0712"
+      },
+      "waste_stream": {
+        "material": "Poultry Fat",
+        "category": "Rendering Byproduct",
+        "quantity_tons_year": 6400,
+        "availability": "Daily",
+        "composition": {
+          "Triglycerides": 95,
+          "Free_fatty_acids": 3,
+          "Moisture": 1,
+          "Impurities": 1
+        },
+        "physical_properties": {
+          "state": "Liquid/semi-solid",
+          "color": "Yellow",
+          "particle_size": "N/A",
+          "moisture_content": "< 2%"
+        },
+        "current_disposal": {
+          "method": "Renderer sale",
+          "cost_per_ton": -320,
+          "annual_cost": -2048000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": ["Rendered", "Feed-grade", "Biodiesel suitable"],
+        "description": "Rendered chicken fat from processing operations. High energy content suitable for animal feed, biodiesel production, or oleochemical manufacturing."
+      }
+    },
+    {
+      "id": 75,
+      "name": "Georgia Renewable Power - Baxley Facility",
+      "type": "consumer",
+      "industry": "Biomass Power Generation",
+      "location": {
+        "address": "3750 Industrial Park Dr",
+        "city": "Baxley",
+        "state": "GA",
+        "zip": "31513",
+        "coordinates": {
+          "lat": 31.7682,
+          "lng": -82.3487
+        }
+      },
+      "contact": {
+        "name": "James Patterson",
+        "title": "Fuel Supply Manager",
+        "email": "james.patterson@georgiarpc.com",
+        "phone": "(912) 555-0589"
+      },
+      "material_needs": {
+        "material": "Wood Residue & Biomass",
+        "category": "Power Plant Fuel",
+        "quantity_tons_year": 78000,
+        "frequency": "Daily deliveries",
+        "composition_needed": {
+          "Wood_chips": 50,
+          "Bark": 25,
+          "Sawdust": 15,
+          "Forest_residue": 10
+        },
+        "specifications": {
+          "form": "Chipped or ground",
+          "moisture_content": "< 50%",
+          "BTU_content": "8000+ BTU/lb dry",
+          "quality_standard": "Utility biomass spec"
+        },
+        "current_sourcing": {
+          "primary_source": "Sawmills & logging",
+          "cost_per_ton": 32,
+          "annual_cost": 2496000,
+          "transport_distance_miles": 75
+        },
+        "certifications_required": ["Clean wood", "Sustainable forestry"],
+        "description": "Dedicated biomass power plant seeking wood residues for renewable electricity generation. Can utilize mill residues, forest thinnings, and clean wood waste."
+      }
+    },
+    {
+      "id": 76,
+      "name": "Dupont - Yerkes Plant",
+      "type": "producer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "Route 513",
+        "city": "Tonawanda",
+        "state": "NY",
+        "zip": "14150",
+        "coordinates": {
+          "lat": 43.0131,
+          "lng": -78.8714
+        }
+      },
+      "contact": {
+        "name": "Susan Mitchell",
+        "title": "Waste Management Engineer",
+        "email": "susan.mitchell@dupont.com",
+        "phone": "(716) 555-0923"
+      },
+      "waste_stream": {
+        "material": "Titanium Dioxide Filter Cake",
+        "category": "Process Waste",
+        "quantity_tons_year": 4800,
+        "availability": "Weekly batches",
+        "composition": {
+          "TiO2": 60,
+          "Iron_oxides": 15,
+          "Silica": 10,
+          "Water": 12,
+          "Other": 3
+        },
+        "physical_properties": {
+          "state": "Wet cake",
+          "color": "White/gray",
+          "particle_size": "Fine powder",
+          "moisture_content": "35-45%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 150,
+          "annual_cost": 720000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": ["Non-hazardous", "TiO2 recovery potential"],
+        "description": "Filter cake from titanium dioxide pigment production. Contains recoverable TiO2 suitable for lower-grade pigment applications or ceramic manufacturing."
+      }
+    },
+    {
+      "id": 77,
+      "name": "Novelis - Oswego Rolling Mill",
+      "type": "producer",
+      "industry": "Aluminum Rolling",
+      "location": {
+        "address": "15 S 2nd St",
+        "city": "Oswego",
+        "state": "NY",
+        "zip": "13126",
+        "coordinates": {
+          "lat": 43.4553,
+          "lng": -76.5105
+        }
+      },
+      "contact": {
+        "name": "Jennifer Walsh",
+        "title": "Sustainability Manager",
+        "email": "jennifer.walsh@novelis.com",
+        "phone": "(315) 555-0634"
+      },
+      "waste_stream": {
+        "material": "Aluminum Rolling Oil",
+        "category": "Process Waste",
+        "quantity_tons_year": 1950,
+        "availability": "Monthly batches",
+        "composition": {
+          "Mineral_oil": 75,
+          "Aluminum_fines": 15,
+          "Water": 8,
+          "Additives": 2
+        },
+        "physical_properties": {
+          "state": "Liquid/slurry",
+          "color": "Gray",
+          "particle_size": "Mixed with fines",
+          "moisture_content": "N/A"
+        },
+        "current_disposal": {
+          "method": "Oil recycler",
+          "cost_per_ton": 380,
+          "annual_cost": 741000,
+          "hauling_distance_miles": 90
+        },
+        "certifications": ["RCRA non-hazardous", "Metal recovery potential"],
+        "description": "Spent rolling oil contaminated with aluminum fines from sheet production. Suitable for oil re-refining and aluminum recovery."
+      }
+    },
+    {
+      "id": 78,
+      "name": "ConAgra - Omaha Frozen Foods",
+      "type": "producer",
+      "industry": "Food Manufacturing",
+      "location": {
+        "address": "1 ConAgra Dr",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68102",
+        "coordinates": {
+          "lat": 41.2565,
+          "lng": -95.9345
+        }
+      },
+      "contact": {
+        "name": "Michelle Rodriguez",
+        "title": "Environmental Manager",
+        "email": "michelle.rodriguez@conagra.com",
+        "phone": "(402) 555-0778"
+      },
+      "waste_stream": {
+        "material": "Vegetable Processing Waste",
+        "category": "Food Processing Waste",
+        "quantity_tons_year": 6800,
+        "availability": "Daily",
+        "composition": {
+          "Vegetable_trimmings": 70,
+          "Starch": 15,
+          "Moisture": 12,
+          "Other_organics": 3
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Various",
+          "particle_size": "Chopped pieces",
+          "moisture_content": "80-85%"
+        },
+        "current_disposal": {
+          "method": "Composting/animal feed",
+          "cost_per_ton": 45,
+          "annual_cost": 306000,
+          "hauling_distance_miles": 35
+        },
+        "certifications": ["Food-grade origin", "Non-GMO available"],
+        "description": "Vegetable peels, stems, and off-cuts from frozen food production. Suitable for composting, animal feed, or anaerobic digestion for biogas."
+      }
+    },
+    {
+      "id": 79,
+      "name": "AK Steel - Ashland Works",
+      "type": "producer",
+      "industry": "Steel Manufacturing",
+      "location": {
+        "address": "3801 Greenup Ave",
+        "city": "Ashland",
+        "state": "KY",
+        "zip": "41101",
+        "coordinates": {
+          "lat": 38.4784,
+          "lng": -82.6379
+        }
+      },
+      "contact": {
+        "name": "Thomas Bradley",
+        "title": "Byproducts Operations Manager",
+        "email": "thomas.bradley@aksteel.com",
+        "phone": "(606) 555-0891"
+      },
+      "waste_stream": {
+        "material": "Zinc Dross",
+        "category": "Galvanizing Byproduct",
+        "quantity_tons_year": 4200,
+        "availability": "Weekly batches",
+        "composition": {
+          "Metallic_zinc": 45,
+          "Zinc_oxide": 40,
+          "Iron": 12,
+          "Other": 3
+        },
+        "physical_properties": {
+          "state": "Solid chunks",
+          "color": "Gray/silver",
+          "particle_size": "Varied chunks",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "Zinc reclaimer",
+          "cost_per_ton": -120,
+          "annual_cost": -504000,
+          "hauling_distance_miles": 200
+        },
+        "certifications": ["Zinc recovery potential", "Non-hazardous"],
+        "description": "Zinc dross from hot-dip galvanizing operations. Contains recoverable metallic zinc and zinc oxide suitable for zinc oxide production or remelting."
+      }
+    },
+    {
+      "id": 80,
+      "name": "Milliken & Company - LaGrange Plant",
+      "type": "producer",
+      "industry": "Textile Manufacturing",
+      "location": {
+        "address": "104 Hayne St",
+        "city": "LaGrange",
+        "state": "GA",
+        "zip": "30240",
+        "coordinates": {
+          "lat": 33.0362,
+          "lng": -85.0322
+        }
+      },
+      "contact": {
+        "name": "Laura Stevens",
+        "title": "Sustainability Coordinator",
+        "email": "laura.stevens@milliken.com",
+        "phone": "(706) 555-0523"
+      },
+      "waste_stream": {
+        "material": "Carpet Fiber Waste",
+        "category": "Manufacturing Scrap",
+        "quantity_tons_year": 3400,
+        "availability": "Weekly batches",
+        "composition": {
+          "Nylon_6": 55,
+          "Nylon_66": 30,
+          "Polypropylene": 10,
+          "Backing_material": 5
+        },
+        "physical_properties": {
+          "state": "Solid fiber/yarn",
+          "color": "Various",
+          "particle_size": "Fiber lengths",
+          "moisture_content": "< 3%"
+        },
+        "current_disposal": {
+          "method": "Carpet recycler",
+          "cost_per_ton": 165,
+          "annual_cost": 561000,
+          "hauling_distance_miles": 120
+        },
+        "certifications": ["Clean fiber", "Sorted by type"],
+        "description": "Post-industrial carpet fiber and yarn waste. Nylon suitable for depolymerization to caprolactam or mechanical recycling into new fiber."
+      }
+    },
+    {
+      "id": 81,
+      "name": "C&H Sugar - Crockett Refinery",
+      "type": "producer",
+      "industry": "Sugar Refining",
+      "location": {
+        "address": "830 Loring Ave",
+        "city": "Crockett",
+        "state": "CA",
+        "zip": "94525",
+        "coordinates": {
+          "lat": 38.0522,
+          "lng": -122.2136
+        }
+      },
+      "contact": {
+        "name": "Patricia Lee",
+        "title": "Environmental Manager",
+        "email": "patricia.lee@chsugar.com",
+        "phone": "(510) 555-0667"
+      },
+      "waste_stream": {
+        "material": "Beet Pulp & Molasses",
+        "category": "Refining Byproduct",
+        "quantity_tons_year": 12500,
+        "availability": "Continuous",
+        "composition": {
+          "Fiber": 35,
+          "Sugars": 30,
+          "Protein": 10,
+          "Moisture": 20,
+          "Minerals": 5
+        },
+        "physical_properties": {
+          "state": "Wet solid/viscous liquid",
+          "color": "Brown",
+          "particle_size": "Pulp pellets",
+          "moisture_content": "75-80%"
+        },
+        "current_disposal": {
+          "method": "Animal feed sale",
+          "cost_per_ton": -65,
+          "annual_cost": -812500,
+          "hauling_distance_miles": 80
+        },
+        "certifications": ["Feed-grade", "Non-GMO"],
+        "description": "Sugar beet pulp and molasses from refining operations. High energy and fiber content, excellent for cattle feed or ethanol production."
+      }
+    },
+    {
+      "id": 82,
+      "name": "Nucor - Berkeley Steel",
+      "type": "consumer",
+      "industry": "Steel Manufacturing",
+      "location": {
+        "address": "2600 Caroline St",
+        "city": "Berkeley",
+        "state": "SC",
+        "zip": "29720",
+        "coordinates": {
+          "lat": 33.1251,
+          "lng": -79.9289
+        }
+      },
+      "contact": {
+        "name": "David Wilson",
+        "title": "Scrap Procurement Manager",
+        "email": "d.wilson@nucor.com",
+        "phone": "(843) 555-0845"
+      },
+      "material_needs": {
+        "material": "Steel Scrap & Turnings",
+        "category": "EAF Feedstock",
+        "quantity_tons_year": 68000,
+        "frequency": "Daily deliveries",
+        "composition_needed": {
+          "Steel": 90,
+          "Iron": 8,
+          "Other_metals": 2
+        },
+        "specifications": {
+          "form": "Shredded, bundled, or turnings",
+          "contamination": "< 2% non-ferrous",
+          "size": "EAF grade",
+          "quality_standard": "ISRI specifications"
+        },
+        "current_sourcing": {
+          "primary_source": "Regional scrap dealers",
+          "cost_per_ton": 385,
+          "annual_cost": 26180000,
+          "transport_distance_miles": 75
+        },
+        "certifications_required": ["ISRI certified", "Radiation cleared"],
+        "description": "Electric arc furnace steel mill seeking ferrous scrap for rebar and structural steel production. Can process automotive, industrial, and demolition scrap."
+      }
+    },
+    {
+      "id": 83,
+      "name": "Pilgrim's Pride - Mount Pleasant Plant",
+      "type": "producer",
+      "industry": "Poultry Processing",
+      "location": {
+        "address": "100 Industrial Dr",
+        "city": "Mount Pleasant",
+        "state": "TX",
+        "zip": "75455",
+        "coordinates": {
+          "lat": 33.1568,
+          "lng": -94.9683
+        }
+      },
+      "contact": {
+        "name": "Sandra Martinez",
+        "title": "Environmental Compliance Manager",
+        "email": "sandra.martinez@pilgrims.com",
+        "phone": "(903) 555-0734"
+      },
+      "waste_stream": {
+        "material": "Chicken By-Products",
+        "category": "Processing Waste",
+        "quantity_tons_year": 9200,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 55,
+          "Fat": 20,
+          "Moisture": 20,
+          "Ash": 5
+        },
+        "physical_properties": {
+          "state": "Solid/semi-solid",
+          "color": "Various",
+          "particle_size": "Mixed",
+          "moisture_content": "65-70%"
+        },
+        "current_disposal": {
+          "method": "Rendering",
+          "cost_per_ton": -55,
+          "annual_cost": -506000,
+          "hauling_distance_miles": 45
+        },
+        "certifications": ["Rendered", "USDA approved"],
+        "description": "Chicken viscera, heads, and feet from processing. High protein content suitable for rendering into pet food meal or livestock feed ingredients."
+      }
+    },
+    {
+      "id": 84,
+      "name": "Eastman Chemical - Kingsport Complex",
+      "type": "producer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "200 S Wilcox Dr",
+        "city": "Kingsport",
+        "state": "TN",
+        "zip": "37660",
+        "coordinates": {
+          "lat": 36.5484,
+          "lng": -82.5618
+        }
+      },
+      "contact": {
+        "name": "Kevin Johnson",
+        "title": "Waste Management Director",
+        "email": "kevin.johnson@eastman.com",
+        "phone": "(423) 555-0912"
+      },
+      "waste_stream": {
+        "material": "Mixed Plastic Waste",
+        "category": "Chemical Recycling Feedstock",
+        "quantity_tons_year": 5800,
+        "availability": "Monthly batches",
+        "composition": {
+          "Polyester": 40,
+          "Polyethylene": 25,
+          "Polypropylene": 20,
+          "Mixed_polymers": 15
+        },
+        "physical_properties": {
+          "state": "Solid pellets/flake",
+          "color": "Mixed",
+          "particle_size": "5-20mm",
+          "moisture_content": "< 2%"
+        },
+        "current_disposal": {
+          "method": "Chemical recycling internally",
+          "cost_per_ton": 95,
+          "annual_cost": 551000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["Clean plastic", "Depolymerization suitable"],
+        "description": "Mixed post-industrial plastic waste from chemical production. Suitable for chemical recycling via methanolysis or pyrolysis to monomers."
+      }
+    },
+    {
+      "id": 85,
+      "name": "Valero - Memphis Refinery",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "4694 Valero Way",
+        "city": "Memphis",
+        "state": "TN",
+        "zip": "38113",
+        "coordinates": {
+          "lat": 35.0847,
+          "lng": -90.0370
+        }
+      },
+      "contact": {
+        "name": "Andrew Collins",
+        "title": "Environmental Operations Manager",
+        "email": "andrew.collins@valero.com",
+        "phone": "(901) 555-0678"
+      },
+      "waste_stream": {
+        "material": "API Separator Sludge",
+        "category": "Refinery Waste",
+        "quantity_tons_year": 3600,
+        "availability": "Quarterly batches",
+        "composition": {
+          "Hydrocarbons": 50,
+          "Water": 35,
+          "Solids": 15
+        },
+        "physical_properties": {
+          "state": "Sludge/slurry",
+          "color": "Black/brown",
+          "particle_size": "Mixed",
+          "moisture_content": "35-45%"
+        },
+        "current_disposal": {
+          "method": "Thermal treatment",
+          "cost_per_ton": 425,
+          "annual_cost": 1530000,
+          "hauling_distance_miles": 100
+        },
+        "certifications": ["RCRA non-hazardous", "BTU content"],
+        "description": "Oil-water separator sludge from refinery wastewater treatment. After dewatering, suitable for energy recovery, fuel blending, or road oiling."
+      }
+    },
+    {
+      "id": 86,
+      "name": "Sabic - Selkirk Plant",
+      "type": "producer",
+      "industry": "Plastics Manufacturing",
+      "location": {
+        "address": "135 County Route 54",
+        "city": "Selkirk",
+        "state": "NY",
+        "zip": "12158",
+        "coordinates": {
+          "lat": 42.5370,
+          "lng": -73.8001
+        }
+      },
+      "contact": {
+        "name": "Hassan Al-Rashid",
+        "title": "Sustainability Manager",
+        "email": "hassan.alrashid@sabic.com",
+        "phone": "(518) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Polycarbonate Scrap",
+        "category": "Polymer Waste",
+        "quantity_tons_year": 2800,
+        "availability": "Monthly batches",
+        "composition": {
+          "Polycarbonate": 97,
+          "Additives": 2,
+          "Contaminants": 1
+        },
+        "physical_properties": {
+          "state": "Solid pellets/regrind",
+          "color": "Clear/translucent",
+          "particle_size": "2-8mm",
+          "moisture_content": "< 0.5%"
+        },
+        "current_disposal": {
+          "method": "Reprocessor sale",
+          "cost_per_ton": -150,
+          "annual_cost": -420000,
+          "hauling_distance_miles": 100
+        },
+        "certifications": ["Clean resin", "Optical grade potential"],
+        "description": "Off-spec polycarbonate from resin production. High-quality engineering plastic suitable for reprocessing into automotive, electronics, or optical applications."
+      }
+    },
+    {
+      "id": 87,
+      "name": "Louisiana Pacific - Corrigan Mill",
+      "type": "producer",
+      "industry": "Wood Products",
+      "location": {
+        "address": "4101 US Highway 287",
+        "city": "Corrigan",
+        "state": "TX",
+        "zip": "75939",
+        "coordinates": {
+          "lat": 30.9960,
+          "lng": -94.8266
+        }
+      },
+      "contact": {
+        "name": "William Taylor",
+        "title": "Mill Operations Manager",
+        "email": "william.taylor@lpcorp.com",
+        "phone": "(936) 555-0589"
+      },
+      "waste_stream": {
+        "material": "Bark & Wood Residue",
+        "category": "Lumber Mill Byproduct",
+        "quantity_tons_year": 28000,
+        "availability": "Continuous",
+        "composition": {
+          "Cellulose": 40,
+          "Lignin": 30,
+          "Hemicellulose": 20,
+          "Extractives": 8,
+          "Ash": 2
+        },
+        "physical_properties": {
+          "state": "Solid chips/chunks",
+          "color": "Brown",
+          "particle_size": "Varied",
+          "moisture_content": "45-55%"
+        },
+        "current_disposal": {
+          "method": "Biomass boiler fuel",
+          "cost_per_ton": -18,
+          "annual_cost": -504000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["Clean wood", "Sustainable source"],
+        "description": "Bark and wood residue from oriented strand board (OSB) production. Suitable for biomass energy, mulch, compost, or soil amendment."
+      }
+    },
+    {
+      "id": 88,
+      "name": "Alcoa - Warrick Operations",
+      "type": "consumer",
+      "industry": "Aluminum Production",
+      "location": {
+        "address": "5998 IN-261",
+        "city": "Newburgh",
+        "state": "IN",
+        "zip": "47630",
+        "coordinates": {
+          "lat": 37.9445,
+          "lng": -87.4053
+        }
+      },
+      "contact": {
+        "name": "Michael Patterson",
+        "title": "Raw Materials Manager",
+        "email": "michael.patterson@alcoa.com",
+        "phone": "(812) 555-0723"
+      },
+      "material_needs": {
+        "material": "Aluminum Scrap & Dross",
+        "category": "Smelter Feedstock",
+        "quantity_tons_year": 45000,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "Metallic_aluminum": 70,
+          "Aluminum_oxide": 25,
+          "Other": 5
+        },
+        "specifications": {
+          "form": "Scrap, dross, or chips",
+          "contamination": "< 5%",
+          "moisture": "< 3%",
+          "quality_standard": "Aluminum Association specs"
+        },
+        "current_sourcing": {
+          "primary_source": "Virgin alumina",
+          "cost_per_ton": 1800,
+          "annual_cost": 81000000,
+          "transport_distance_miles": 500
+        },
+        "certifications_required": ["Alloy identified", "Clean material"],
+        "description": "Aluminum smelter seeking scrap and dross to reduce energy consumption. Can process automotive scrap, can stock, extrusion scrap, and dross from casting operations."
+      }
+    },
+    {
+      "id": 89,
+      "name": "Hershey - Hershey Plant",
+      "type": "producer",
+      "industry": "Confectionery Manufacturing",
+      "location": {
+        "address": "19 E Chocolate Ave",
+        "city": "Hershey",
+        "state": "PA",
+        "zip": "17033",
+        "coordinates": {
+          "lat": 40.2862,
+          "lng": -76.6503
+        }
+      },
+      "contact": {
+        "name": "Emily Richardson",
+        "title": "Sustainability Manager",
+        "email": "emily.richardson@hersheys.com",
+        "phone": "(717) 555-0834"
+      },
+      "waste_stream": {
+        "material": "Cocoa Shells & Husks",
+        "category": "Food Processing Waste",
+        "quantity_tons_year": 3800,
+        "availability": "Weekly batches",
+        "composition": {
+          "Fiber": 60,
+          "Theobromine": 2,
+          "Fat": 3,
+          "Protein": 15,
+          "Moisture": 18,
+          "Ash": 2
+        },
+        "physical_properties": {
+          "state": "Dry shells",
+          "color": "Brown",
+          "particle_size": "Shell pieces",
+          "moisture_content": "12-15%"
+        },
+        "current_disposal": {
+          "method": "Mulch/compost sale",
+          "cost_per_ton": -30,
+          "annual_cost": -114000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Organic", "Food-grade origin"],
+        "description": "Cocoa bean shells from chocolate production. High fiber and theobromine content, suitable for mulch, animal bedding, tea production, or composting."
+      }
+    },
+    {
+      "id": 90,
+      "name": "Ashland - Calvert City Plant",
+      "type": "producer",
+      "industry": "Specialty Chemicals",
+      "location": {
+        "address": "100 Ashland Dr",
+        "city": "Calvert City",
+        "state": "KY",
+        "zip": "42029",
+        "coordinates": {
+          "lat": 37.0334,
+          "lng": -88.3506
+        }
+      },
+      "contact": {
+        "name": "Rebecca Foster",
+        "title": "Environmental Coordinator",
+        "email": "rebecca.foster@ashland.com",
+        "phone": "(270) 555-0612"
+      },
+      "waste_stream": {
+        "material": "Maleic Anhydride Residue",
+        "category": "Chemical Byproduct",
+        "quantity_tons_year": 2100,
+        "availability": "Bi-weekly batches",
+        "composition": {
+          "Maleic_anhydride": 40,
+          "Organic_acids": 35,
+          "Water": 20,
+          "Other": 5
+        },
+        "physical_properties": {
+          "state": "Viscous liquid",
+          "color": "Yellow-brown",
+          "particle_size": "N/A",
+          "moisture_content": "N/A"
+        },
+        "current_disposal": {
+          "method": "Incineration",
+          "cost_per_ton": 520,
+          "annual_cost": 1092000,
+          "hauling_distance_miles": 110
+        },
+        "certifications": ["RCRA listed", "BTU value"],
+        "description": "Maleic anhydride production residue. Contains organic acids suitable for neutralization, fuel blending, or chemical recovery applications."
+      }
+    },
+    {
+      "id": 91,
+      "name": "Cemex - Odessa Cement Plant",
+      "type": "consumer",
+      "industry": "Cement Manufacturing",
+      "location": {
+        "address": "14001 E Interstate 20",
+        "city": "Odessa",
+        "state": "TX",
+        "zip": "79765",
+        "coordinates": {
+          "lat": 31.8457,
+          "lng": -102.3676
+        }
+      },
+      "contact": {
+        "name": "Roberto Sanchez",
+        "title": "Alternative Materials Manager",
+        "email": "roberto.sanchez@cemex.com",
+        "phone": "(432) 555-0789"
+      },
+      "material_needs": {
+        "material": "Industrial Byproducts & Waste Fuels",
+        "category": "Cement Production Input",
+        "quantity_tons_year": 48000,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "Combustibles": 60,
+          "Minerals": 30,
+          "Moisture": 10
+        },
+        "specifications": {
+          "form": "Solid or semi-solid",
+          "BTU_content": "6000+ BTU/lb",
+          "particle_size": "< 100mm",
+          "quality_standard": "Cement kiln spec"
+        },
+        "current_sourcing": {
+          "primary_source": "Coal & natural minerals",
+          "cost_per_ton": 85,
+          "annual_cost": 4080000,
+          "transport_distance_miles": 250
+        },
+        "certifications_required": ["Chemical analysis", "Non-hazardous"],
+        "description": "Cement plant seeking industrial byproducts for fuel and raw material substitution. Can utilize slag, ash, spent solvents, and high-BTU waste materials."
+      }
+    },
+    {
+      "id": 92,
+      "name": "Dole - Atwater Processing",
+      "type": "producer",
+      "industry": "Food Processing",
+      "location": {
+        "address": "4500 N Winton Way",
+        "city": "Atwater",
+        "state": "CA",
+        "zip": "95301",
+        "coordinates": {
+          "lat": 37.3477,
+          "lng": -120.6099
+        }
+      },
+      "contact": {
+        "name": "Maria Santos",
+        "title": "Sustainability Coordinator",
+        "email": "maria.santos@dole.com",
+        "phone": "(209) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Fruit Pomace & Peels",
+        "category": "Food Processing Waste",
+        "quantity_tons_year": 8400,
+        "availability": "Seasonal (Summer-Fall)",
+        "composition": {
+          "Fiber": 40,
+          "Sugars": 25,
+          "Pectin": 8,
+          "Moisture": 25,
+          "Other_organics": 2
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Various",
+          "particle_size": "Mixed",
+          "moisture_content": "75-80%"
+        },
+        "current_disposal": {
+          "method": "Composting/cattle feed",
+          "cost_per_ton": 35,
+          "annual_cost": 294000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": ["Organic", "Food-grade origin"],
+        "description": "Mixed fruit pomace from juice and canning operations. High in fiber and pectin, suitable for animal feed, composting, or pectin extraction."
+      }
+    },
+    {
+      "id": 93,
+      "name": "Olin Corporation - Freeport Chlor-Alkali",
+      "type": "producer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "1000 S Brazosport Blvd",
+        "city": "Freeport",
+        "state": "TX",
+        "zip": "77541",
+        "coordinates": {
+          "lat": 28.9536,
+          "lng": -95.3594
+        }
+      },
+      "contact": {
+        "name": "James Morrison",
+        "title": "Environmental Manager",
+        "email": "james.morrison@olin.com",
+        "phone": "(979) 555-0667"
+      },
+      "waste_stream": {
+        "material": "Salt Brine Sludge",
+        "category": "Process Waste",
+        "quantity_tons_year": 5200,
+        "availability": "Monthly batches",
+        "composition": {
+          "Sodium_chloride": 45,
+          "Calcium_compounds": 25,
+          "Magnesium_compounds": 15,
+          "Water": 12,
+          "Other_salts": 3
+        },
+        "physical_properties": {
+          "state": "Wet sludge",
+          "color": "White/gray",
+          "particle_size": "Slurry",
+          "moisture_content": "40-50%"
+        },
+        "current_disposal": {
+          "method": "Evaporation pond",
+          "cost_per_ton": 95,
+          "annual_cost": 494000,
+          "hauling_distance_miles": 10
+        },
+        "certifications": ["Non-hazardous", "High salt content"],
+        "description": "Brine purification sludge from chlorine production. After dewatering, suitable for road deicing, dust control, or salt recovery."
+      }
+    },
+    {
+      "id": 94,
+      "name": "Graphic Packaging - West Monroe Mill",
+      "type": "producer",
+      "industry": "Paperboard Manufacturing",
+      "location": {
+        "address": "1020 Sycamore St",
+        "city": "West Monroe",
+        "state": "LA",
+        "zip": "71292",
+        "coordinates": {
+          "lat": 32.5088,
+          "lng": -92.1471
+        }
+      },
+      "contact": {
+        "name": "Charles Henderson",
+        "title": "Mill Environmental Manager",
+        "email": "charles.henderson@graphicpkg.com",
+        "phone": "(318) 555-0823"
+      },
+      "waste_stream": {
+        "material": "Paperboard Trim & Rejects",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 6200,
+        "availability": "Continuous",
+        "composition": {
+          "Cellulose_fibers": 88,
+          "Coatings": 8,
+          "Moisture": 4
+        },
+        "physical_properties": {
+          "state": "Solid sheets",
+          "color": "White/printed",
+          "particle_size": "Sheet form",
+          "moisture_content": "6-8%"
+        },
+        "current_disposal": {
+          "method": "Repulp/recycle",
+          "cost_per_ton": 45,
+          "annual_cost": 279000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": ["Recyclable fiber", "Food-grade"],
+        "description": "Off-spec and trim paperboard from beverage carton production. Clean fiber suitable for repulping into new paperboard or paper products."
+      }
+    },
+    {
+      "id": 95,
+      "name": "Veolia - North America Recycling",
+      "type": "consumer",
+      "industry": "Waste Management & Recycling",
+      "location": {
+        "address": "200 E Randolph St",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60601",
+        "coordinates": {
+          "lat": 41.8856,
+          "lng": -87.6213
+        }
+      },
+      "contact": {
+        "name": "Alexandre Dubois",
+        "title": "Regional Procurement Director",
+        "email": "alexandre.dubois@veolia.com",
+        "phone": "(312) 555-0934"
+      },
+      "material_needs": {
+        "material": "Industrial Recyclables",
+        "category": "Recycling Feedstock",
+        "quantity_tons_year": 95000,
+        "frequency": "Daily intake",
+        "composition_needed": {
+          "Metals": 35,
+          "Plastics": 30,
+          "Paper": 25,
+          "Other": 10
+        },
+        "specifications": {
+          "form": "Sorted or mixed",
+          "contamination": "< 15%",
+          "moisture": "Varied",
+          "quality_standard": "MRF acceptable"
+        },
+        "current_sourcing": {
+          "primary_source": "Commercial/Industrial",
+          "cost_per_ton": 65,
+          "annual_cost": 6175000,
+          "transport_distance_miles": 50
+        },
+        "certifications_required": ["Non-hazardous", "Manifest if required"],
+        "description": "Large-scale recycling operation seeking diverse industrial waste streams. Advanced sorting capabilities for metals, plastics, paper, and mixed materials."
+      }
+    },
+    {
+      "id": 96,
+      "name": "International Paper - Georgetown Mill",
+      "type": "producer",
+      "industry": "Paper Manufacturing",
+      "location": {
+        "address": "408 Front St",
+        "city": "Georgetown",
+        "state": "SC",
+        "zip": "29440",
+        "coordinates": {
+          "lat": 33.3768,
+          "lng": -79.2945
+        }
+      },
+      "contact": {
+        "name": "Walter Johnson",
+        "title": "Byproducts Manager",
+        "email": "walter.johnson@ipaper.com",
+        "phone": "(843) 555-0556"
+      },
+      "waste_stream": {
+        "material": "Lime Mud",
+        "category": "Pulping Byproduct",
+        "quantity_tons_year": 18500,
+        "availability": "Continuous",
+        "composition": {
+          "Calcium_carbonate": 85,
+          "Water": 12,
+          "Organic_matter": 2,
+          "Other": 1
+        },
+        "physical_properties": {
+          "state": "Wet sludge",
+          "color": "White",
+          "particle_size": "Fine particles",
+          "moisture_content": "50-60%"
+        },
+        "current_disposal": {
+          "method": "Land application/kiln",
+          "cost_per_ton": 25,
+          "annual_cost": 462500,
+          "hauling_distance_miles": 20
+        },
+        "certifications": ["Non-hazardous", "Agricultural lime potential"],
+        "description": "Lime mud from kraft pulping causticizing process. High calcium carbonate content suitable for agricultural lime, cement kiln feedstock, or soil amendment."
+      }
+    },
+    {
+      "id": 97,
+      "name": "Keurig Dr Pepper - Victorville Facility",
+      "type": "producer",
+      "industry": "Beverage Manufacturing",
+      "location": {
+        "address": "16850 Stoddard Wells Rd",
+        "city": "Victorville",
+        "state": "CA",
+        "zip": "92395",
+        "coordinates": {
+          "lat": 34.5362,
+          "lng": -117.2911
+        }
+      },
+      "contact": {
+        "name": "Rachel Thompson",
+        "title": "Environmental Manager",
+        "email": "rachel.thompson@kdrp.com",
+        "phone": "(760) 555-0734"
+      },
+      "waste_stream": {
+        "material": "Plastic Bottle Preforms",
+        "category": "Manufacturing Scrap",
+        "quantity_tons_year": 2400,
+        "availability": "Weekly batches",
+        "composition": {
+          "PET": 98,
+          "Additives": 2
+        },
+        "physical_properties": {
+          "state": "Solid preforms",
+          "color": "Clear",
+          "particle_size": "Preform-sized",
+          "moisture_content": "< 0.5%"
+        },
+        "current_disposal": {
+          "method": "Recycler sale",
+          "cost_per_ton": -200,
+          "annual_cost": -480000,
+          "hauling_distance_miles": 90
+        },
+        "certifications": ["Food-grade PET", "Virgin resin"],
+        "description": "Off-spec PET bottle preforms from beverage bottling. Virgin food-grade material suitable for bottle-to-bottle recycling or high-value fiber applications."
+      }
+    },
+    {
+      "id": 98,
+      "name": "Rio Tinto - Kennecott Utah Copper",
+      "type": "producer",
+      "industry": "Copper Mining",
+      "location": {
+        "address": "10000 S Bacchus Hwy",
+        "city": "Magna",
+        "state": "UT",
+        "zip": "84044",
+        "coordinates": {
+          "lat": 40.7096,
+          "lng": -112.0991
+        }
+      },
+      "contact": {
+        "name": "Daniel Richards",
+        "title": "Byproducts Sales Manager",
+        "email": "daniel.richards@riotinto.com",
+        "phone": "(801) 555-0912"
+      },
+      "waste_stream": {
+        "material": "Copper Slag",
+        "category": "Smelting Byproduct",
+        "quantity_tons_year": 95000,
+        "availability": "Continuous",
+        "composition": {
+          "Iron_silicates": 65,
+          "SiO2": 20,
+          "FeO": 10,
+          "Copper": 1,
+          "Other_oxides": 4
+        },
+        "physical_properties": {
+          "state": "Solid aggregate",
+          "color": "Black/dark gray",
+          "particle_size": "0-100mm",
+          "moisture_content": "< 5%"
+        },
+        "current_disposal": {
+          "method": "Aggregate sale",
+          "cost_per_ton": -12,
+          "annual_cost": -1140000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Non-hazardous", "ASTM tested"],
+        "description": "Copper smelting slag with iron silicate composition. Suitable for abrasive blasting, road base, concrete aggregate, or roofing granules."
+      }
+    },
+    {
+      "id": 99,
+      "name": "Glatfelter - Spring Grove Mill",
+      "type": "producer",
+      "industry": "Specialty Paper Manufacturing",
+      "location": {
+        "address": "228 S Main St",
+        "city": "Spring Grove",
+        "state": "PA",
+        "zip": "17362",
+        "coordinates": {
+          "lat": 39.8770,
+          "lng": -76.8664
+        }
+      },
+      "contact": {
+        "name": "Patricia Collins",
+        "title": "Environmental Coordinator",
+        "email": "patricia.collins@glatfelter.com",
+        "phone": "(717) 555-0623"
+      },
+      "waste_stream": {
+        "material": "Specialty Paper Trim",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 3600,
+        "availability": "Continuous",
+        "composition": {
+          "Cellulose_fibers": 90,
+          "Specialty_coatings": 8,
+          "Moisture": 2
+        },
+        "physical_properties": {
+          "state": "Dry sheets",
+          "color": "White/various",
+          "particle_size": "Sheet form",
+          "moisture_content": "4-6%"
+        },
+        "current_disposal": {
+          "method": "Repulp/recycle",
+          "cost_per_ton": 55,
+          "annual_cost": 198000,
+          "hauling_distance_miles": 25
+        },
+        "certifications": ["High-grade fiber", "Specialty grade"],
+        "description": "Trim from tea bag, wallcovering, and specialty paper production. High-quality fiber suitable for repulping into premium paper grades."
+      }
+    },
+    {
+      "id": 100,
+      "name": "Air Products - New Orleans Plant",
+      "type": "producer",
+      "industry": "Industrial Gases",
+      "location": {
+        "address": "3600 River Rd",
+        "city": "New Orleans",
+        "state": "LA",
+        "zip": "70131",
+        "coordinates": {
+          "lat": 29.9225,
+          "lng": -90.0640
+        }
+      },
+      "contact": {
+        "name": "Kevin Zhang",
+        "title": "Operations Manager",
+        "email": "kevin.zhang@airproducts.com",
+        "phone": "(504) 555-0445"
+      },
+      "waste_stream": {
+        "material": "Carbon Dioxide",
+        "category": "Gas Byproduct",
+        "quantity_tons_year": 24000,
+        "availability": "Continuous",
+        "composition": {
+          "CO2": 99.5,
+          "Trace_gases": 0.5
+        },
+        "physical_properties": {
+          "state": "Gas/Liquid",
+          "color": "Colorless",
+          "particle_size": "N/A",
+          "moisture_content": "N/A"
+        },
+        "current_disposal": {
+          "method": "Vent/Sale",
+          "cost_per_ton": -45,
+          "annual_cost": -1080000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": ["Industrial grade", "Beverage grade potential"],
+        "description": "High-purity CO2 from hydrogen production. Suitable for beverage carbonation, dry ice production, enhanced oil recovery, or greenhouse enrichment."
+      }
+    },
+    {
+      "id": 101,
+      "name": "Sherwin-Williams - Coffeyville Plant",
+      "type": "producer",
+      "industry": "Paint & Coatings",
+      "location": {
+        "address": "1200 W 9th St",
+        "city": "Coffeyville",
+        "state": "KS",
+        "zip": "67337",
+        "coordinates": {
+          "lat": 37.0373,
+          "lng": -95.6336
+        }
+      },
+      "contact": {
+        "name": "Timothy Brooks",
+        "title": "EHS Manager",
+        "email": "timothy.brooks@sherwin.com",
+        "phone": "(620) 555-0778"
+      },
+      "waste_stream": {
+        "material": "Waste Paint & Solvents",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 2850,
+        "availability": "Monthly batches",
+        "composition": {
+          "Solvents": 50,
+          "Pigments": 20,
+          "Resins": 15,
+          "Water": 10,
+          "Other": 5
+        },
+        "physical_properties": {
+          "state": "Liquid/paste",
+          "color": "Various",
+          "particle_size": "N/A",
+          "moisture_content": "Varies"
+        },
+        "current_disposal": {
+          "method": "Hazardous waste facility",
+          "cost_per_ton": 680,
+          "annual_cost": 1938000,
+          "hauling_distance_miles": 120
+        },
+        "certifications": ["RCRA hazardous", "Fuel blending potential"],
+        "description": "Off-spec paint and solvent waste from coatings production. Suitable for solvent recovery, fuel blending, or energy recovery after proper handling."
+      }
+    },
+    {
+      "id": 102,
+      "name": "Land O'Lakes - Perham Facility",
+      "type": "producer",
+      "industry": "Dairy Processing",
+      "location": {
+        "address": "301 1st Ave S",
+        "city": "Perham",
+        "state": "MN",
+        "zip": "56573",
+        "coordinates": {
+          "lat": 46.5953,
+          "lng": -95.5728
+        }
+      },
+      "contact": {
+        "name": "Amanda Peterson",
+        "title": "Sustainability Manager",
+        "email": "amanda.peterson@landolakes.com",
+        "phone": "(218) 555-0556"
+      },
+      "waste_stream": {
+        "material": "Whey Permeate",
+        "category": "Dairy Byproduct",
+        "quantity_tons_year": 16500,
+        "availability": "Daily",
+        "composition": {
+          "Lactose": 75,
+          "Protein": 2,
+          "Minerals": 8,
+          "Water": 15
+        },
+        "physical_properties": {
+          "state": "Liquid/powder",
+          "color": "Off-white",
+          "particle_size": "Liquid or powder",
+          "moisture_content": "Varies"
+        },
+        "current_disposal": {
+          "method": "Animal feed sale",
+          "cost_per_ton": -85,
+          "annual_cost": -1402500,
+          "hauling_distance_miles": 60
+        },
+        "certifications": ["Food-grade", "Dairy approved"],
+        "description": "Whey permeate from cheese and protein production. High lactose content suitable for animal feed, fermentation feedstock, or lactose extraction."
+      }
+    },
+    {
+      "id": 103,
+      "name": "Commercial Metals Company - Seguin Mill",
+      "type": "consumer",
+      "industry": "Steel Recycling",
+      "location": {
+        "address": "2900 Hwy 123 Bypass",
+        "city": "Seguin",
+        "state": "TX",
+        "zip": "78155",
+        "coordinates": {
+          "lat": 29.5688,
+          "lng": -97.9650
+        }
+      },
+      "contact": {
+        "name": "Marcus Johnson",
+        "title": "Scrap Procurement Director",
+        "email": "marcus.johnson@cmc.com",
+        "phone": "(830) 555-0934"
+      },
+      "material_needs": {
+        "material": "Ferrous Scrap Metal",
+        "category": "Steel Production Feedstock",
+        "quantity_tons_year": 58000,
+        "frequency": "Daily deliveries",
+        "composition_needed": {
+          "Steel": 88,
+          "Iron": 10,
+          "Other": 2
+        },
+        "specifications": {
+          "form": "Shredded, bundled, or HMS",
+          "contamination": "< 3%",
+          "size": "Prepared scrap",
+          "quality_standard": "ISRI grades"
+        },
+        "current_sourcing": {
+          "primary_source": "Scrap dealers",
+          "cost_per_ton": 370,
+          "annual_cost": 21460000,
+          "transport_distance_miles": 60
+        },
+        "certifications_required": ["ISRI certified", "Radiation scanned"],
+        "description": "Mini-mill producing rebar and merchant bar products. Seeking diverse ferrous scrap sources including automotive, structural, and industrial scrap."
+      }
+    },
+    {
+      "id": 104,
+      "name": "Siemens - Charlotte Electronics",
+      "type": "producer",
+      "industry": "Electronics Manufacturing",
+      "location": {
+        "address": "5400 77 Center Dr",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28217",
+        "coordinates": {
+          "lat": 35.1848,
+          "lng": -80.9372
+        }
+      },
+      "contact": {
+        "name": "Hans Mueller",
+        "title": "Environmental Health & Safety Manager",
+        "email": "hans.mueller@siemens.com",
+        "phone": "(704) 555-0612"
+      },
+      "waste_stream": {
+        "material": "Circuit Board Scrap",
+        "category": "Electronic Waste",
+        "quantity_tons_year": 1650,
+        "availability": "Monthly batches",
+        "composition": {
+          "Copper": 20,
+          "Epoxy_resin": 40,
+          "Glass_fiber": 25,
+          "Precious_metals": 0.5,
+          "Solder": 5,
+          "Other": 9.5
+        },
+        "physical_properties": {
+          "state": "Solid boards",
+          "color": "Green/brown",
+          "particle_size": "Board-sized",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "E-waste recycler",
+          "cost_per_ton": 520,
+          "annual_cost": 858000,
+          "hauling_distance_miles": 150
+        },
+        "certifications": ["R2 certified disposal", "Data cleared"],
+        "description": "Defective and trimmed PCBs from industrial controls manufacturing. Contains recoverable copper, gold, and other metals suitable for precious metal recovery."
+      }
+    },
+    {
+      "id": 105,
+      "name": "ExxonMobil - Beaumont Refinery",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "5999 Hwy 347",
+        "city": "Beaumont",
+        "state": "TX",
+        "zip": "77705",
+        "coordinates": {
+          "lat": 30.0366,
+          "lng": -94.1257
+        }
+      },
+      "contact": {
+        "name": "Elizabeth Harper",
+        "title": "Waste Management Coordinator",
+        "email": "elizabeth.harper@exxonmobil.com",
+        "phone": "(409) 555-0789"
+      },
+      "waste_stream": {
+        "material": "Delayed Coker Fines",
+        "category": "Refinery Byproduct",
+        "quantity_tons_year": 8400,
+        "availability": "Weekly batches",
+        "composition": {
+          "Carbon": 88,
+          "Sulfur": 5,
+          "Ash": 4,
+          "Volatiles": 3
+        },
+        "physical_properties": {
+          "state": "Fine powder",
+          "color": "Black",
+          "particle_size": "< 1mm",
+          "moisture_content": "3-6%"
+        },
+        "current_disposal": {
+          "method": "Fuel blending",
+          "cost_per_ton": -35,
+          "annual_cost": -294000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": ["High BTU", "Low ash"],
+        "description": "Fine coke dust from delayed coking operations. High carbon content suitable for fuel blending, activated carbon production, or industrial carbon applications."
+      }
+    },
+    {
+      "id": 106,
+      "name": "Praxair - Tonawanda Facility",
+      "type": "consumer",
+      "industry": "Industrial Gases",
+      "location": {
+        "address": "175 East Park Dr",
+        "city": "Tonawanda",
+        "state": "NY",
+        "zip": "14150",
+        "coordinates": {
+          "lat": 43.0131,
+          "lng": -78.8714
+        }
+      },
+      "contact": {
+        "name": "Robert Chen",
+        "title": "Feedstock Manager",
+        "email": "robert.chen@praxair.com",
+        "phone": "(716) 555-0845"
+      },
+      "material_needs": {
+        "material": "Natural Gas & Hydrocarbons",
+        "category": "Hydrogen Production Feedstock",
+        "quantity_tons_year": 32000,
+        "frequency": "Continuous supply",
+        "composition_needed": {
+          "Methane": 85,
+          "Ethane": 10,
+          "Other_hydrocarbons": 5
+        },
+        "specifications": {
+          "form": "Gas or light liquid",
+          "BTU_content": "900+ BTU/scf",
+          "sulfur": "< 100 ppm",
+          "quality_standard": "Pipeline quality"
+        },
+        "current_sourcing": {
+          "primary_source": "Natural gas pipeline",
+          "cost_per_ton": 280,
+          "annual_cost": 8960000,
+          "transport_distance_miles": 0
+        },
+        "certifications_required": ["Chemical analysis", "Pressure spec"],
+        "description": "Hydrogen production facility seeking natural gas or refinery off-gas for steam methane reforming. Can utilize process gas, flare gas, or waste hydrocarbons."
+      }
+    },
+    {
+      "id": 107,
+      "name": "Scotts Miracle-Gro - Marysville Plant",
+      "type": "producer",
+      "industry": "Fertilizer & Lawn Care",
+      "location": {
+        "address": "14111 Scottslawn Rd",
+        "city": "Marysville",
+        "state": "OH",
+        "zip": "43041",
+        "coordinates": {
+          "lat": 40.2364,
+          "lng": -83.3538
+        }
+      },
+      "contact": {
+        "name": "Jennifer Martinez",
+        "title": "Environmental Manager",
+        "email": "jennifer.martinez@scotts.com",
+        "phone": "(937) 555-0678"
+      },
+      "waste_stream": {
+        "material": "Off-Spec Fertilizer",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 4200,
+        "availability": "Monthly batches",
+        "composition": {
+          "Nitrogen": 15,
+          "Phosphorus": 8,
+          "Potassium": 10,
+          "Fillers": 65,
+          "Moisture": 2
+        },
+        "physical_properties": {
+          "state": "Granular",
+          "color": "Various",
+          "particle_size": "2-6mm",
+          "moisture_content": "3-5%"
+        },
+        "current_disposal": {
+          "method": "Reprocess/bulk sale",
+          "cost_per_ton": -15,
+          "annual_cost": -63000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Fertilizer grade", "AAFCO registered"],
+        "description": "Off-spec and returned lawn fertilizer products. Suitable for bulk agricultural use, reprocessing, or soil amendment applications."
+      }
+    },
+    {
+      "id": 108,
+      "name": "Owens-Illinois - Streator Plant",
+      "type": "producer",
+      "industry": "Glass Container Manufacturing",
+      "location": {
+        "address": "801 N Bloomington St",
+        "city": "Streator",
+        "state": "IL",
+        "zip": "61364",
+        "coordinates": {
+          "lat": 41.1289,
+          "lng": -88.8348
+        }
+      },
+      "contact": {
+        "name": "Michael O'Brien",
+        "title": "Plant Environmental Manager",
+        "email": "michael.obrien@o-i.com",
+        "phone": "(815) 555-0523"
+      },
+      "waste_stream": {
+        "material": "Cullet & Glass Rejects",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 7800,
+        "availability": "Continuous",
+        "composition": {
+          "Soda_lime_glass": 97,
+          "Contaminants": 3
+        },
+        "physical_properties": {
+          "state": "Solid glass",
+          "color": "Amber/flint/green",
+          "particle_size": "Mixed sizes",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "Remelt internally",
+          "cost_per_ton": 10,
+          "annual_cost": 78000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["Clean glass", "Color sorted"],
+        "description": "Glass cullet from bottle manufacturing defects. Clean material suitable for remelting into new containers, saving energy versus virgin batch."
+      }
+    },
+    {
+      "id": 109,
+      "name": "Campbell Soup - Napoleon Plant",
+      "type": "producer",
+      "industry": "Food Processing",
+      "location": {
+        "address": "644 County Road 424",
+        "city": "Napoleon",
+        "state": "OH",
+        "zip": "43545",
+        "coordinates": {
+          "lat": 41.3923,
+          "lng": -84.1252
+        }
+      },
+      "contact": {
+        "name": "Sarah Williams",
+        "title": "Sustainability Coordinator",
+        "email": "sarah.williams@campbells.com",
+        "phone": "(419) 555-0834"
+      },
+      "waste_stream": {
+        "material": "Tomato Pomace",
+        "category": "Food Processing Waste",
+        "quantity_tons_year": 11200,
+        "availability": "Seasonal (Summer-Fall)",
+        "composition": {
+          "Fiber": 45,
+          "Seeds": 15,
+          "Skins": 20,
+          "Moisture": 18,
+          "Other": 2
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Red/brown",
+          "particle_size": "Mixed",
+          "moisture_content": "70-75%"
+        },
+        "current_disposal": {
+          "method": "Cattle feed",
+          "cost_per_ton": -20,
+          "annual_cost": -224000,
+          "hauling_distance_miles": 35
+        },
+        "certifications": ["Food-grade origin", "Non-GMO available"],
+        "description": "Tomato skins and seeds from soup production. High lycopene and fiber content, suitable for animal feed, nutraceutical extraction, or composting."
+      }
+    },
+    {
+      "id": 110,
+      "name": "Tronox - Hamilton Plant",
+      "type": "producer",
+      "industry": "Titanium Dioxide Production",
+      "location": {
+        "address": "One Tronox Way",
+        "city": "Hamilton",
+        "state": "MS",
+        "zip": "39746",
+        "coordinates": {
+          "lat": 33.7973,
+          "lng": -88.4067
+        }
+      },
+      "contact": {
+        "name": "David Patterson",
+        "title": "Waste Operations Manager",
+        "email": "david.patterson@tronox.com",
+        "phone": "(662) 555-0912"
+      },
+      "waste_stream": {
+        "material": "Iron Sulfate Copperas",
+        "category": "Process Byproduct",
+        "quantity_tons_year": 18500,
+        "availability": "Continuous",
+        "composition": {
+          "FeSO4": 85,
+          "Water": 10,
+          "Other_sulfates": 5
+        },
+        "physical_properties": {
+          "state": "Crystalline solid",
+          "color": "Green",
+          "particle_size": "Crystal/powder",
+          "moisture_content": "10-15%"
+        },
+        "current_disposal": {
+          "method": "Industrial sale",
+          "cost_per_ton": -30,
+          "annual_cost": -555000,
+          "hauling_distance_miles": 80
+        },
+        "certifications": ["Industrial grade", "Water treatment suitable"],
+        "description": "Ferrous sulfate from titanium dioxide production. Suitable for water treatment, soil amendment, pigment production, or animal feed supplement."
+      }
+    },
+    {
+      "id": 111,
+      "name": "Berry Global - Evansville Plant",
+      "type": "producer",
+      "industry": "Plastic Packaging",
+      "location": {
+        "address": "101 Oakley St",
+        "city": "Evansville",
+        "state": "IN",
+        "zip": "47710",
+        "coordinates": {
+          "lat": 37.9716,
+          "lng": -87.5711
+        }
+      },
+      "contact": {
+        "name": "Lisa Henderson",
+        "title": "Environmental Coordinator",
+        "email": "lisa.henderson@berryglobal.com",
+        "phone": "(812) 555-0667"
+      },
+      "waste_stream": {
+        "material": "HDPE & PP Scrap",
+        "category": "Manufacturing Waste",
+        "quantity_tons_year": 5600,
+        "availability": "Weekly batches",
+        "composition": {
+          "HDPE": 60,
+          "Polypropylene": 35,
+          "Mixed_additives": 5
+        },
+        "physical_properties": {
+          "state": "Solid pellets/regrind",
+          "color": "Various",
+          "particle_size": "3-10mm",
+          "moisture_content": "< 1%"
+        },
+        "current_disposal": {
+          "method": "Plastic recycler sale",
+          "cost_per_ton": -140,
+          "annual_cost": -784000,
+          "hauling_distance_miles": 70
+        },
+        "certifications": ["Clean plastic", "Sorted by resin"],
+        "description": "Post-industrial HDPE and PP scrap from container and closure manufacturing. Clean material suitable for recycling into new packaging or durable goods."
+      }
+    },
+    {
+      "id": 112,
+      "name": "Solenis - Wilmington Plant",
+      "type": "consumer",
+      "industry": "Specialty Chemicals",
+      "location": {
+        "address": "500 Hercules Rd",
+        "city": "Wilmington",
+        "state": "DE",
+        "zip": "19808",
+        "coordinates": {
+          "lat": 39.7709,
+          "lng": -75.5824
+        }
+      },
+      "contact": {
+        "name": "Katherine Moore",
+        "title": "Raw Materials Manager",
+        "email": "katherine.moore@solenis.com",
+        "phone": "(302) 555-0756"
+      },
+      "material_needs": {
+        "material": "Industrial Acids & Bases",
+        "category": "Chemical Feedstock",
+        "quantity_tons_year": 12000,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "Acids": 50,
+          "Bases": 40,
+          "Water": 10
+        },
+        "specifications": {
+          "form": "Liquid",
+          "concentration": "Varied",
+          "purity": "Industrial grade",
+          "quality_standard": "Reagent specifications"
+        },
+        "current_sourcing": {
+          "primary_source": "Chemical suppliers",
+          "cost_per_ton": 220,
+          "annual_cost": 2640000,
+          "transport_distance_miles": 100
+        },
+        "certifications_required": ["COA provided", "Industrial grade"],
+        "description": "Specialty chemical manufacturer seeking spent acids and bases for neutralization or chemical synthesis. Can utilize sulfuric acid, caustic, and other industrial chemicals."
+      }
+    },
+    {
+      "id": 113,
+      "name": "US Gypsum - Southard Plant",
+      "type": "consumer",
+      "industry": "Building Materials",
+      "location": {
+        "address": "9300 W 55th St",
+        "city": "Southard",
+        "state": "OK",
+        "zip": "74006",
+        "coordinates": {
+          "lat": 36.2642,
+          "lng": -96.9536
+        }
+      },
+      "contact": {
+        "name": "Gregory Thompson",
+        "title": "Raw Materials Procurement",
+        "email": "gregory.thompson@usg.com",
+        "phone": "(918) 555-0845"
+      },
+      "material_needs": {
+        "material": "Synthetic Gypsum",
+        "category": "Wallboard Production Input",
+        "quantity_tons_year": 85000,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "Calcium_sulfate": 90,
+          "Moisture": 8,
+          "Impurities": 2
+        },
+        "specifications": {
+          "form": "Dry or semi-dry powder",
+          "purity": "> 85% CaSO4",
+          "particle_size": "Fine powder",
+          "quality_standard": "Wallboard grade"
+        },
+        "current_sourcing": {
+          "primary_source": "Natural gypsum mines",
+          "cost_per_ton": 35,
+          "annual_cost": 2975000,
+          "transport_distance_miles": 200
+        },
+        "certifications_required": ["Chemical analysis", "Moisture content"],
+        "description": "Wallboard manufacturing seeking synthetic gypsum from FGD systems or chemical processes. Can replace natural gypsum with byproduct material."
+      }
+    },
+    {
+      "id": 114,
+      "name": "Bunge - Morristown Soybean Plant",
+      "type": "producer",
+      "industry": "Agricultural Processing",
+      "location": {
+        "address": "4100 County Road 500 E",
+        "city": "Morristown",
+        "state": "IN",
+        "zip": "46161",
+        "coordinates": {
+          "lat": 39.6750,
+          "lng": -85.6983
+        }
+      },
+      "contact": {
+        "name": "Daniel Foster",
+        "title": "Operations Manager",
+        "email": "daniel.foster@bunge.com",
+        "phone": "(765) 555-0589"
+      },
+      "waste_stream": {
+        "material": "Soybean Hulls",
+        "category": "Agricultural Byproduct",
+        "quantity_tons_year": 14800,
+        "availability": "Daily",
+        "composition": {
+          "Fiber": 65,
+          "Protein": 12,
+          "Fat": 2,
+          "Moisture": 10,
+          "Ash": 5,
+          "Other": 6
+        },
+        "physical_properties": {
+          "state": "Dry flakes",
+          "color": "Light brown",
+          "particle_size": "Flake form",
+          "moisture_content": "10-12%"
+        },
+        "current_disposal": {
+          "method": "Animal feed sale",
+          "cost_per_ton": -95,
+          "annual_cost": -1406000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": ["Feed-grade", "Non-GMO available", "Organic certified"],
+        "description": "Soybean hulls from oil extraction. High fiber content, excellent for ruminant feed, biofuel production, or industrial fiber applications."
+      }
+    },
+    {
+      "id": 115,
+      "name": "POET Biorefining - Chancellor Plant",
+      "type": "consumer",
+      "industry": "Ethanol Production",
+      "location": {
+        "address": "47434 245th St",
+        "city": "Chancellor",
+        "state": "SD",
+        "zip": "57015",
+        "coordinates": {
+          "lat": 43.3644,
+          "lng": -96.9892
+        }
+      },
+      "contact": {
+        "name": "John Anderson",
+        "title": "Grain Procurement Manager",
+        "email": "john.anderson@poetbiofuels.com",
+        "phone": "(605) 555-0734"
+      },
+      "material_needs": {
+        "material": "Corn & Grain Byproducts",
+        "category": "Ethanol Feedstock",
+        "quantity_tons_year": 38000,
+        "frequency": "Weekly deliveries",
+        "composition_needed": {
+          "Starch": 60,
+          "Protein": 15,
+          "Fiber": 15,
+          "Oil": 5,
+          "Moisture": 5
+        },
+        "specifications": {
+          "form": "Whole or ground grain",
+          "moisture": "< 15%",
+          "contamination": "< 2%",
+          "quality_standard": "Fermentation grade"
+        },
+        "current_sourcing": {
+          "primary_source": "Local farms",
+          "cost_per_ton": 180,
+          "annual_cost": 6840000,
+          "transport_distance_miles": 75
+        },
+        "certifications_required": ["Food/feed grade", "Non-GMO preferred"],
+        "description": "Ethanol biorefinery seeking corn and grain byproducts for fermentation. Can utilize damaged grain, food processing waste, or brewery spent grain."
+      }
+    },
+    {
+      "id": 116,
+      "name": "Evonik - Mobile Plant",
+      "type": "producer",
+      "industry": "Specialty Chemicals",
+      "location": {
+        "address": "3000 Evonik Rd",
+        "city": "Theodore",
+        "state": "AL",
+        "zip": "36582",
+        "coordinates": {
+          "lat": 30.5502,
+          "lng": -88.1706
+        }
+      },
+      "contact": {
+        "name": "Werner Schmidt",
+        "title": "Environmental Manager",
+        "email": "werner.schmidt@evonik.com",
+        "phone": "(251) 555-0912"
+      },
+      "waste_stream": {
+        "material": "Silica Gel Waste",
+        "category": "Process Waste",
+        "quantity_tons_year": 3200,
+        "availability": "Quarterly batches",
+        "composition": {
+          "Silicon_dioxide": 95,
+          "Moisture": 3,
+          "Organic_compounds": 2
+        },
+        "physical_properties": {
+          "state": "Solid beads/powder",
+          "color": "White/translucent",
+          "particle_size": "1-5mm beads",
+          "moisture_content": "3-5%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 75,
+          "annual_cost": 240000,
+          "hauling_distance_miles": 45
+        },
+        "certifications": ["Non-hazardous", "High purity silica"],
+        "description": "Spent silica gel from chemical drying and purification. High-purity amorphous silica suitable for construction additives or abrasive applications after regeneration."
+      }
+    },
+    {
+      "id": 107,
+      "name": "Gypsum Management & Supply - Fort Dodge Plant",
+      "type": "producer",
+      "industry": "Wallboard Manufacturing",
+      "location": {
+        "address": "1801 N 25th St",
+        "city": "Fort Dodge",
+        "state": "IA",
+        "zip": "50501",
+        "coordinates": {
+          "lat": 42.5138,
+          "lng": -94.1683
+        }
+      },
+      "contact": {
+        "name": "Richard Torres",
+        "email": "rtorres@gypsummanagement.com",
+        "phone": "(515) 955-1234"
+      },
+      "waste_stream": {
+        "material": "Gypsum Dust",
+        "category": "Process Dust",
+        "quantity_tons_year": 4800,
+        "availability": "Weekly",
+        "composition": {
+          "Calcium_sulfate_dihydrate": 96,
+          "Paper_fibers": 2,
+          "Clay": 1,
+          "Other": 1
+        },
+        "physical_properties": {
+          "state": "Fine powder",
+          "color": "White",
+          "particle_size": "<100 microns",
+          "moisture_content": "2-4%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 45,
+          "annual_cost": 216000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": ["Non-hazardous", "Construction grade"],
+        "description": "Fine gypsum dust from wallboard cutting and finishing. High purity calcium sulfate suitable for cement retarder or agricultural amendment."
+      }
+    },
+    {
+      "id": 108,
+      "name": "Biofuel Solutions - Des Moines Facility",
+      "type": "consumer",
+      "industry": "Renewable Energy",
+      "location": {
+        "address": "4500 SE 14th St",
+        "city": "Des Moines",
+        "state": "IA",
+        "zip": "50320",
+        "coordinates": {
+          "lat": 41.5561,
+          "lng": -93.5899
+        }
+      },
+      "contact": {
+        "name": "Amanda Fischer",
+        "email": "afischer@biofuelsolutions.com",
+        "phone": "(515) 287-5600"
+      },
+      "material_needs": {
+        "material": "Organic Solvents",
+        "category": "Chemical Feedstock",
+        "quantity_tons_year": 2400,
+        "frequency": "Monthly",
+        "composition": {
+          "Ethanol": 40,
+          "Methanol": 30,
+          "Acetone": 20,
+          "Other_alcohols": 10
+        },
+        "physical_requirements": {
+          "state": "Liquid",
+          "purity": ">85%",
+          "contamination_tolerance": "Low",
+          "storage_conditions": "Ambient, sealed"
+        },
+        "intended_use": {
+          "application": "Biodiesel transesterification",
+          "process": "Chemical reaction catalyst/solvent",
+          "value_proposition": "Reduce virgin solvent procurement costs"
+        },
+        "current_sourcing": {
+          "method": "Virgin chemical purchase",
+          "cost_per_ton": 1200,
+          "annual_cost": 2880000
+        },
+        "certifications": ["Fuel grade", "ASTM compatible"],
+        "description": "Seeking recovered organic solvents for biodiesel production. Can accept mixed alcohol streams if composition is consistent and within specification."
+      }
+    },
+    {
+      "id": 109,
+      "name": "Simplot - Caldwell Food Processing",
+      "type": "producer",
+      "industry": "Food Processing",
+      "location": {
+        "address": "5369 Franklin Rd",
+        "city": "Caldwell",
+        "state": "ID",
+        "zip": "83605",
+        "coordinates": {
+          "lat": 43.6463,
+          "lng": -116.6874
+        }
+      },
+      "contact": {
+        "name": "Larry Henderson",
+        "email": "lhenderson@simplot.com",
+        "phone": "(208) 459-3300"
+      },
+      "waste_stream": {
+        "material": "Potato Peel Waste",
+        "category": "Organic Waste",
+        "quantity_tons_year": 18000,
+        "availability": "Daily",
+        "composition": {
+          "Cellulose": 35,
+          "Starch": 25,
+          "Protein": 10,
+          "Moisture": 20,
+          "Minerals": 10
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Brown",
+          "particle_size": "Shredded",
+          "moisture_content": "18-22%"
+        },
+        "current_disposal": {
+          "method": "Composting/Animal feed",
+          "cost_per_ton": 25,
+          "annual_cost": 450000,
+          "hauling_distance_miles": 20
+        },
+        "certifications": ["Food grade origin", "Non-GMO available"],
+        "description": "Fresh potato peel and trim waste from french fry production. High starch content suitable for bioethanol fermentation or animal feed supplement."
+      }
+    },
+    {
+      "id": 110,
+      "name": "Martin Marietta - Tucson Cement Plant",
+      "type": "consumer",
+      "industry": "Cement Manufacturing",
+      "location": {
+        "address": "6300 W Ajo Hwy",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85735",
+        "coordinates": {
+          "lat": 32.1576,
+          "lng": -111.0951
+        }
+      },
+      "contact": {
+        "name": "Steve Ramirez",
+        "email": "sramirez@martinmarietta.com",
+        "phone": "(520) 294-8100"
+      },
+      "material_needs": {
+        "material": "Alternative Fuels",
+        "category": "Energy Source",
+        "quantity_tons_year": 45000,
+        "frequency": "Continuous",
+        "composition": {
+          "Combustible_content": 60,
+          "Ash": 30,
+          "Moisture": 10
+        },
+        "physical_requirements": {
+          "state": "Solid or liquid",
+          "BTU_content": ">8000 BTU/lb",
+          "chlorine_content": "<0.5%",
+          "sulfur_content": "<2%"
+        },
+        "intended_use": {
+          "application": "Kiln fuel replacement",
+          "process": "Co-firing with coal",
+          "value_proposition": "Reduce coal consumption and emissions"
+        },
+        "current_sourcing": {
+          "method": "Coal purchase",
+          "cost_per_ton": 85,
+          "annual_cost": 3825000
+        },
+        "certifications": ["EPA RCRA exempt", "Cement Kiln Dust compatible"],
+        "description": "Seeking high-BTU waste materials as coal substitute in cement kilns. Can accept tires, plastics, biomass, solvents, or other combustibles meeting specifications."
+      }
+    },
+    {
+      "id": 111,
+      "name": "Anheuser-Busch - Fairfield Brewery",
+      "type": "producer",
+      "industry": "Brewing",
+      "location": {
+        "address": "3101 Busch Dr",
+        "city": "Fairfield",
+        "state": "CA",
+        "zip": "94534",
+        "coordinates": {
+          "lat": 38.2517,
+          "lng": -122.0397
+        }
+      },
+      "contact": {
+        "name": "Monica Liu",
+        "email": "monica.liu@anheuser-busch.com",
+        "phone": "(707) 864-1400"
+      },
+      "waste_stream": {
+        "material": "Spent Brewing Yeast",
+        "category": "Organic Waste",
+        "quantity_tons_year": 3600,
+        "availability": "Weekly",
+        "composition": {
+          "Protein": 45,
+          "Carbohydrates": 30,
+          "Lipids": 5,
+          "Moisture": 15,
+          "Minerals": 5
+        },
+        "physical_properties": {
+          "state": "Thick slurry",
+          "color": "Tan/beige",
+          "particle_size": "Cellular",
+          "moisture_content": "75-80%"
+        },
+        "current_disposal": {
+          "method": "Animal feed",
+          "cost_per_ton": 15,
+          "annual_cost": 54000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": ["Food grade", "Non-GMO yeast"],
+        "description": "Spent brewer's yeast from beer fermentation. Rich in B-vitamins and protein, suitable for animal feed supplement or nutritional extract production."
+      }
+    },
+    {
+      "id": 112,
+      "name": "Renewable Energy Group - Ralston Biorefinery",
+      "type": "consumer",
+      "industry": "Biodiesel Production",
+      "location": {
+        "address": "9224 S 70th St",
+        "city": "Ralston",
+        "state": "NE",
+        "zip": "68127",
+        "coordinates": {
+          "lat": 41.2067,
+          "lng": -96.0583
+        }
+      },
+      "contact": {
+        "name": "Dennis Kowalski",
+        "email": "dkowalski@regi.com",
+        "phone": "(402) 331-2200"
+      },
+      "material_needs": {
+        "material": "Used Cooking Oil",
+        "category": "Lipid Feedstock",
+        "quantity_tons_year": 75000,
+        "frequency": "Continuous",
+        "composition": {
+          "Triglycerides": 85,
+          "Free_fatty_acids": 10,
+          "Moisture": 3,
+          "Solids": 2
+        },
+        "physical_requirements": {
+          "state": "Liquid at ambient",
+          "FFA": "<15%",
+          "water_content": "<5%",
+          "impurities": "Minimal"
+        },
+        "intended_use": {
+          "application": "Biodiesel feedstock",
+          "process": "Transesterification",
+          "value_proposition": "Lower cost than virgin oils"
+        },
+        "current_sourcing": {
+          "method": "Restaurant collection + virgin oil",
+          "cost_per_ton": 650,
+          "annual_cost": 48750000
+        },
+        "certifications": ["ASTM D6751 capable", "RFS2 eligible"],
+        "description": "Seeking large volumes of used cooking oils and animal fats for renewable diesel production. Can process various lipid feedstocks including yellow and brown grease."
+      }
+    },
+    {
+      "id": 113,
+      "name": "Formosa Plastics - Point Comfort Complex",
+      "type": "producer",
+      "industry": "Petrochemicals",
+      "location": {
+        "address": "201 Formosa Dr",
+        "city": "Point Comfort",
+        "state": "TX",
+        "zip": "77978",
+        "coordinates": {
+          "lat": 28.6656,
+          "lng": -96.5561
+        }
+      },
+      "contact": {
+        "name": "Kevin Chang",
+        "email": "kchang@fpcusa.com",
+        "phone": "(361) 987-8000"
+      },
+      "waste_stream": {
+        "material": "Mixed Plastic Scrap",
+        "category": "Polymer Waste",
+        "quantity_tons_year": 8500,
+        "availability": "Monthly",
+        "composition": {
+          "Polyethylene": 50,
+          "Polypropylene": 30,
+          "PVC": 15,
+          "Other_polymers": 5
+        },
+        "physical_properties": {
+          "state": "Solid pieces",
+          "color": "Mixed",
+          "particle_size": "Varied chunks",
+          "moisture_content": "<1%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 90,
+          "annual_cost": 765000,
+          "hauling_distance_miles": 35
+        },
+        "certifications": ["Non-hazardous", "Virgin resin origin"],
+        "description": "Off-spec and production scrap plastics from polyolefin manufacturing. Clean industrial plastic suitable for mechanical recycling or pyrolysis to monomers."
+      }
+    },
+    {
+      "id": 114,
+      "name": "Waste Management - Houston Materials Recovery",
+      "type": "consumer",
+      "industry": "Recycling",
+      "location": {
+        "address": "10785 N Loop E",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77029",
+        "coordinates": {
+          "lat": 29.8238,
+          "lng": -95.2604
+        }
+      },
+      "contact": {
+        "name": "Patricia Coleman",
+        "email": "pcoleman@wm.com",
+        "phone": "(713) 675-8900"
+      },
+      "material_needs": {
+        "material": "Post-Industrial Scrap Metal",
+        "category": "Metal Feedstock",
+        "quantity_tons_year": 35000,
+        "frequency": "Continuous",
+        "composition": {
+          "Ferrous_metals": 60,
+          "Aluminum": 25,
+          "Copper": 10,
+          "Other_metals": 5
+        },
+        "physical_requirements": {
+          "state": "Solid",
+          "cleanliness": "Industrial grade",
+          "size": "Manageable pieces",
+          "contamination": "<10%"
+        },
+        "intended_use": {
+          "application": "Metal recycling and resale",
+          "process": "Sorting and baling",
+          "value_proposition": "Supply to regional mills and smelters"
+        },
+        "current_sourcing": {
+          "method": "Industrial collection contracts",
+          "cost_per_ton": -50,
+          "annual_cost": -1750000
+        },
+        "certifications": ["ISRI certified", "ISO 14001"],
+        "description": "Seeking clean post-industrial metal scrap from manufacturing operations. Can process ferrous, non-ferrous, and mixed metal streams for commodity markets."
+      }
+    },
+    {
+      "id": 115,
+      "name": "Boise Cascade - International Falls Mill",
+      "type": "producer",
+      "industry": "Paper Manufacturing",
+      "location": {
+        "address": "1000 3rd St",
+        "city": "International Falls",
+        "state": "MN",
+        "zip": "56649",
+        "coordinates": {
+          "lat": 48.6011,
+          "lng": -93.4083
+        }
+      },
+      "contact": {
+        "name": "Gary Nelson",
+        "email": "gnelson@bc.com",
+        "phone": "(218) 285-5011"
+      },
+      "waste_stream": {
+        "material": "Wood Bark and Fines",
+        "category": "Biomass Waste",
+        "quantity_tons_year": 32000,
+        "availability": "Daily",
+        "composition": {
+          "Cellulose": 40,
+          "Lignin": 30,
+          "Extractives": 10,
+          "Moisture": 15,
+          "Ash": 5
+        },
+        "physical_properties": {
+          "state": "Shredded biomass",
+          "color": "Brown",
+          "particle_size": "0.5-3 inches",
+          "moisture_content": "35-45%"
+        },
+        "current_disposal": {
+          "method": "Boiler fuel",
+          "cost_per_ton": 20,
+          "annual_cost": 640000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["Renewable biomass", "Non-treated wood"],
+        "description": "Bark and wood fines from debarking and chipping operations. Used internally for boiler fuel but excess available for mulch, animal bedding, or biomass energy."
+      }
+    },
+    {
+      "id": 116,
+      "name": "Archer Daniels Midland - Cedar Rapids Corn Mill",
+      "type": "consumer",
+      "industry": "Grain Processing",
+      "location": {
+        "address": "4800 Edgewood Rd SW",
+        "city": "Cedar Rapids",
+        "state": "IA",
+        "zip": "52404",
+        "coordinates": {
+          "lat": 41.9203,
+          "lng": -91.7106
+        }
+      },
+      "contact": {
+        "name": "Robert Jensen",
+        "email": "robert.jensen@adm.com",
+        "phone": "(319) 399-4100"
+      },
+      "material_needs": {
+        "material": "Carbon Dioxide Gas",
+        "category": "Process Gas",
+        "quantity_tons_year": 12000,
+        "frequency": "Continuous",
+        "composition": {
+          "CO2": 99,
+          "Nitrogen": 0.5,
+          "Other": 0.5
+        },
+        "physical_requirements": {
+          "state": "Gas or liquid",
+          "purity": ">99%",
+          "pressure": "Variable",
+          "temperature": "Ambient to cryogenic"
+        },
+        "intended_use": {
+          "application": "Beverage carbonation and preservation",
+          "process": "Food grade CO2 supply",
+          "value_proposition": "Reduce commercial CO2 purchase"
+        },
+        "current_sourcing": {
+          "method": "Industrial gas supplier",
+          "cost_per_ton": 85,
+          "annual_cost": 1020000
+        },
+        "certifications": ["Food grade", "Beverage quality"],
+        "description": "Seeking food-grade CO2 from ethanol fermentation or other clean sources. Can accept gas or liquid, will install capture/purification if volume justifies."
+      }
+    },
+    {
+      "id": 117,
+      "name": "Owens-Illinois - Oakland Glass Plant",
+      "type": "producer",
+      "industry": "Glass Manufacturing",
+      "location": {
+        "address": "8201 San Leandro St",
+        "city": "Oakland",
+        "state": "CA",
+        "zip": "94621",
+        "coordinates": {
+          "lat": 37.7396,
+          "lng": -122.1853
+        }
+      },
+      "contact": {
+        "name": "Jennifer Park",
+        "email": "jpark@o-i.com",
+        "phone": "(510) 632-7800"
+      },
+      "waste_stream": {
+        "material": "Cullet - Mixed Glass",
+        "category": "Glass Scrap",
+        "quantity_tons_year": 5600,
+        "availability": "Weekly",
+        "composition": {
+          "Silica": 72,
+          "Sodium_oxide": 14,
+          "Calcium_oxide": 10,
+          "Other_oxides": 4
+        },
+        "physical_properties": {
+          "state": "Crushed glass",
+          "color": "Mixed (clear/green/amber)",
+          "particle_size": "Varied fragments",
+          "moisture_content": "<1%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 60,
+          "annual_cost": 336000,
+          "hauling_distance_miles": 25
+        },
+        "certifications": ["Non-hazardous", "Container glass origin"],
+        "description": "Off-spec container glass and production cullet. Mixed colors from bottle manufacturing, suitable for glass fiber production or aggregate applications."
+      }
+    },
+    {
+      "id": 118,
+      "name": "Sierra Nevada Brewing - Chico Facility",
+      "type": "consumer",
+      "industry": "Craft Brewing",
+      "location": {
+        "address": "1075 E 20th St",
+        "city": "Chico",
+        "state": "CA",
+        "zip": "95928",
+        "coordinates": {
+          "lat": 39.7534,
+          "lng": -121.8127
+        }
+      },
+      "contact": {
+        "name": "Tom Brennan",
+        "email": "tbrennan@sierranevada.com",
+        "phone": "(530) 893-3520"
+      },
+      "material_needs": {
+        "material": "Waste Heat",
+        "category": "Energy Recovery",
+        "quantity_tons_year": 0,
+        "frequency": "Continuous",
+        "composition": {
+          "Thermal_energy": 100
+        },
+        "physical_requirements": {
+          "state": "Hot water or steam",
+          "temperature": ">150°F",
+          "pressure": "Atmospheric to 50 psi",
+          "cleanliness": "Industrial grade"
+        },
+        "intended_use": {
+          "application": "Process heating and facility HVAC",
+          "process": "Heat recovery integration",
+          "value_proposition": "Reduce natural gas consumption"
+        },
+        "current_sourcing": {
+          "method": "Natural gas boilers",
+          "cost_per_ton": 0,
+          "annual_cost": 450000
+        },
+        "certifications": ["Clean heat source preferred"],
+        "description": "Seeking nearby industrial waste heat source for process integration. Brewery has continuous hot water needs for mashing, cleaning, and space heating."
+      }
+    },
+    {
+      "id": 119,
+      "name": "Exxon Mobil - Beaumont Refinery",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "5999 Folsom Rd",
+        "city": "Beaumont",
+        "state": "TX",
+        "zip": "77705",
+        "coordinates": {
+          "lat": 30.0608,
+          "lng": -94.1426
+        }
+      },
+      "contact": {
+        "name": "Michael Rodriguez",
+        "email": "michael.rodriguez@exxonmobil.com",
+        "phone": "(409) 835-1000"
+      },
+      "waste_stream": {
+        "material": "Spent Catalyst - FCC",
+        "category": "Catalytic Material",
+        "quantity_tons_year": 1800,
+        "availability": "Quarterly",
+        "composition": {
+          "Zeolite": 50,
+          "Aluminum_oxide": 30,
+          "Rare_earth_oxides": 5,
+          "Carbon_deposits": 10,
+          "Other": 5
+        },
+        "physical_properties": {
+          "state": "Fine powder",
+          "color": "Gray/black",
+          "particle_size": "50-150 microns",
+          "moisture_content": "<2%"
+        },
+        "current_disposal": {
+          "method": "Landfill",
+          "cost_per_ton": 200,
+          "annual_cost": 360000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["RCRA non-hazardous", "Characteristically non-hazardous"],
+        "description": "Spent fluid catalytic cracking catalyst from petroleum refining. Contains rare earth metals and zeolites, suitable for catalyst regeneration or metal recovery."
+      }
+    },
+    {
+      "id": 120,
+      "name": "Sims Metal Management - Jersey City Yard",
+      "type": "consumer",
+      "industry": "Metal Recycling",
+      "location": {
+        "address": "25 Claremont Ave",
+        "city": "Jersey City",
+        "state": "NJ",
+        "zip": "07305",
+        "coordinates": {
+          "lat": 40.7081,
+          "lng": -74.0776
+        }
+      },
+      "contact": {
+        "name": "David Sullivan",
+        "email": "dsullivan@simsmm.com",
+        "phone": "(201) 432-3200"
+      },
+      "material_needs": {
+        "material": "Obsolete Electronics",
+        "category": "E-waste",
+        "quantity_tons_year": 25000,
+        "frequency": "Continuous",
+        "composition": {
+          "Ferrous_metals": 40,
+          "Plastics": 25,
+          "Copper": 15,
+          "Circuit_boards": 10,
+          "Other": 10
+        },
+        "physical_requirements": {
+          "state": "Whole or partially disassembled",
+          "types": "Computers, servers, telecom, industrial",
+          "data_destruction": "Required if storage devices present",
+          "hazmat": "Batteries removed preferred"
+        },
+        "intended_use": {
+          "application": "Electronics recycling and metal recovery",
+          "process": "Shredding, sorting, smelting",
+          "value_proposition": "Recover precious metals and recyclables"
+        },
+        "current_sourcing": {
+          "method": "Corporate IT asset disposition",
+          "cost_per_ton": -150,
+          "annual_cost": -3750000
+        },
+        "certifications": ["R2 certified", "e-Stewards", "ISO 14001"],
+        "description": "Seeking end-of-life electronics from corporate, institutional, and industrial sources. Provide certified data destruction and responsible recycling per EPA standards."
+      }
+    },
+    {
+      "id": 121,
+      "name": "HP Hood - Winchester Dairy",
+      "type": "producer",
+      "industry": "Dairy Processing",
+      "location": {
+        "address": "132 Swanton Rd",
+        "city": "Winchester",
+        "state": "NH",
+        "zip": "03470",
+        "coordinates": {
+          "lat": 42.7667,
+          "lng": -72.3861
+        }
+      },
+      "contact": {
+        "name": "Susan Mitchell",
+        "email": "smitchell@hphood.com",
+        "phone": "(603) 239-4000"
+      },
+      "waste_stream": {
+        "material": "Whey Permeate",
+        "category": "Liquid Food Waste",
+        "quantity_tons_year": 14000,
+        "availability": "Daily",
+        "composition": {
+          "Lactose": 80,
+          "Minerals": 10,
+          "Protein": 5,
+          "Water": 5
+        },
+        "physical_properties": {
+          "state": "Liquid",
+          "color": "Clear to yellow",
+          "particle_size": "Dissolved solids",
+          "moisture_content": "94-96%"
+        },
+        "current_disposal": {
+          "method": "Wastewater treatment",
+          "cost_per_ton": 35,
+          "annual_cost": 490000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["Food grade origin", "Pasteurized"],
+        "description": "Whey permeate from dairy processing and ultrafiltration. High lactose content suitable for fermentation to lactic acid or bioethanol, or dried as animal feed ingredient."
+      }
+    },
+    {
+      "id": 122,
+      "name": "Blue Buffalo - Richmond Manufacturing",
+      "type": "consumer",
+      "industry": "Pet Food Manufacturing",
+      "location": {
+        "address": "1000 Technology Park Dr",
+        "city": "Richmond",
+        "state": "IN",
+        "zip": "47374",
+        "coordinates": {
+          "lat": 39.8289,
+          "lng": -84.8902
+        }
+      },
+      "contact": {
+        "name": "Kelly Williams",
+        "email": "kwilliams@bluebuffalo.com",
+        "phone": "(765) 962-4545"
+      },
+      "material_needs": {
+        "material": "Animal By-Products",
+        "category": "Protein Feedstock",
+        "quantity_tons_year": 8500,
+        "frequency": "Weekly",
+        "composition": {
+          "Protein": 60,
+          "Fat": 20,
+          "Moisture": 15,
+          "Ash": 5
+        },
+        "physical_requirements": {
+          "state": "Rendered meal or fresh",
+          "types": "Chicken, beef, fish, lamb",
+          "grade": "Pet food grade",
+          "safety": "AAFCO approved sources"
+        },
+        "intended_use": {
+          "application": "Premium pet food ingredient",
+          "process": "Kibble extrusion",
+          "value_proposition": "High-quality protein source"
+        },
+        "current_sourcing": {
+          "method": "Rendering plants and processors",
+          "cost_per_ton": 1400,
+          "annual_cost": 11900000
+        },
+        "certifications": ["AAFCO approved", "USDA inspected facilities"],
+        "description": "Seeking high-quality animal protein meals and by-products from USDA-inspected facilities for premium pet food formulations. Traceability and quality documentation required."
+      }
+    },
+    {
+      "id": 123,
+      "name": "Resolute Forest Products - Thunder Bay Mill",
+      "type": "producer",
+      "industry": "Pulp and Paper",
+      "location": {
+        "address": "111 Syndicate Ave S",
+        "city": "Thunder Bay",
+        "state": "ON",
+        "zip": "P7E 6S5",
+        "coordinates": {
+          "lat": 48.4047,
+          "lng": -89.2167
+        }
+      },
+      "contact": {
+        "name": "Mark Thompson",
+        "email": "mthompson@resolutefp.com",
+        "phone": "(807) 623-4481"
+      },
+      "waste_stream": {
+        "material": "Kraft Lignin",
+        "category": "Organic Chemical",
+        "quantity_tons_year": 6800,
+        "availability": "Monthly",
+        "composition": {
+          "Lignin": 90,
+          "Carbohydrates": 5,
+          "Ash": 3,
+          "Moisture": 2
+        },
+        "physical_properties": {
+          "state": "Powder or pellets",
+          "color": "Dark brown",
+          "particle_size": "Variable",
+          "moisture_content": "5-8%"
+        },
+        "current_disposal": {
+          "method": "Boiler fuel",
+          "cost_per_ton": 30,
+          "annual_cost": 204000,
+          "hauling_distance_miles": 0
+        },
+        "certifications": ["Renewable material", "Biomass origin"],
+        "description": "Kraft lignin extracted from black liquor. High purity aromatic polymer suitable for phenol replacement, carbon fiber precursor, or dispersant applications."
+      }
+    },
+    {
+      "id": 124,
+      "name": "Advanced Disposal - Phoenix Transfer Station",
+      "type": "consumer",
+      "industry": "Waste Management",
+      "location": {
+        "address": "3033 W Lower Buckeye Rd",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85009",
+        "coordinates": {
+          "lat": 33.4342,
+          "lng": -112.1182
+        }
+      },
+      "contact": {
+        "name": "Carlos Mendez",
+        "email": "cmendez@advanceddisposal.com",
+        "phone": "(602) 233-7900"
+      },
+      "material_needs": {
+        "material": "Construction Debris",
+        "category": "Aggregate Material",
+        "quantity_tons_year": 50000,
+        "frequency": "Continuous",
+        "composition": {
+          "Concrete": 50,
+          "Asphalt": 25,
+          "Wood": 15,
+          "Metal": 5,
+          "Other": 5
+        },
+        "physical_requirements": {
+          "state": "Solid",
+          "cleanliness": "Source-separated preferred",
+          "size": "Varied",
+          "contamination": "<20% non-recyclable"
+        },
+        "intended_use": {
+          "application": "Aggregate production and recycling",
+          "process": "Crushing, screening, separation",
+          "value_proposition": "Divert from landfill, create recycled products"
+        },
+        "current_sourcing": {
+          "method": "Construction site collections",
+          "cost_per_ton": -25,
+          "annual_cost": -1250000
+        },
+        "certifications": ["LEED credit eligible", "State approved facility"],
+        "description": "Seeking clean construction and demolition debris for aggregate recycling operations. Concrete, asphalt, and masonry preferred. Metal and wood also accepted for sorting."
+      }
+    },
+    {
+      "id": 125,
+      "name": "General Mills - Lodi Manufacturing",
+      "type": "producer",
+      "industry": "Food Manufacturing",
+      "location": {
+        "address": "777 S Ham Ln",
+        "city": "Lodi",
+        "state": "CA",
+        "zip": "95242",
+        "coordinates": {
+          "lat": 38.1213,
+          "lng": -121.2949
+        }
+      },
+      "contact": {
+        "name": "Rachel Anderson",
+        "email": "rachel.anderson@genmills.com",
+        "phone": "(209) 334-5500"
+      },
+      "waste_stream": {
+        "material": "Oat Hull Waste",
+        "category": "Agricultural Waste",
+        "quantity_tons_year": 9200,
+        "availability": "Weekly",
+        "composition": {
+          "Cellulose": 40,
+          "Hemicellulose": 30,
+          "Lignin": 20,
+          "Protein": 5,
+          "Ash": 5
+        },
+        "physical_properties": {
+          "state": "Dry solid",
+          "color": "Tan/brown",
+          "particle_size": "Flakes and fines",
+          "moisture_content": "8-12%"
+        },
+        "current_disposal": {
+          "method": "Animal bedding/feed",
+          "cost_per_ton": 20,
+          "annual_cost": 184000,
+          "hauling_distance_miles": 40
+        },
+        "certifications": ["Food grade origin", "Organic certified available"],
+        "description": "Oat hulls from cereal grain processing. High fiber content suitable for animal feed, bedding, fuel pellets, or extraction of specialty chemicals like furfural."
+      }
+    },
+    {
+      "id": 126,
+      "name": "Solvay Chemicals - Green River Plant",
+      "type": "consumer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "100 Solvay Rd",
+        "city": "Green River",
+        "state": "WY",
+        "zip": "82935",
+        "coordinates": {
+          "lat": 41.5283,
+          "lng": -109.4662
+        }
+      },
+      "contact": {
+        "name": "James Patterson",
+        "email": "james.patterson@solvay.com",
+        "phone": "(307) 875-6800"
+      },
+      "material_needs": {
+        "material": "Limestone or Calcium Carbonate",
+        "category": "Mineral Feedstock",
+        "quantity_tons_year": 125000,
+        "frequency": "Continuous",
+        "composition": {
+          "Calcium_carbonate": 90,
+          "Magnesium_carbonate": 5,
+          "Silica": 3,
+          "Other": 2
+        },
+        "physical_requirements": {
+          "state": "Crushed rock or powder",
+          "purity": ">85% CaCO3",
+          "particle_size": "<1 inch preferred",
+          "moisture": "<5%"
+        },
+        "intended_use": {
+          "application": "Soda ash production via Solvay process",
+          "process": "Chemical reaction with salt brine",
+          "value_proposition": "Alternative to mined limestone"
+        },
+        "current_sourcing": {
+          "method": "Local quarry",
+          "cost_per_ton": 15,
+          "annual_cost": 1875000
+        },
+        "certifications": ["Industrial grade", "Consistent chemistry"],
+        "description": "Seeking high-calcium limestone for soda ash manufacturing. Can accept quarry fines, lime mud, or other calcium carbonate sources if chemistry meets specifications."
+      }
     }
   ]
 }
