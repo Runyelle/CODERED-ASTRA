@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, CheckCircle2, Send } from "lucide-react"
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 interface SendRequestStepProps {
   formData: any
@@ -13,11 +14,16 @@ interface SendRequestStepProps {
 
 export function SendRequestStep({ formData, prevStep }: SendRequestStepProps) {
   const [submitted, setSubmitted] = useState(false)
+  const router = useRouter()
 
   const handleSubmit = () => {
     // Here you would send the data to your backend
     console.log("[v0] Submitting onboarding data:", formData)
     setSubmitted(true)
+  }
+
+  const handleReturnToDashboard = () => {
+    router.push("/dashboard")
   }
 
   if (submitted) {
@@ -42,7 +48,7 @@ export function SendRequestStep({ formData, prevStep }: SendRequestStepProps) {
             </ul>
           </div>
         </div>
-        <Button size="lg" className="mt-8" onClick={() => (window.location.href = "/")}>
+        <Button size="lg" className="mt-8" onClick={handleReturnToDashboard}>
           Return to Dashboard
         </Button>
       </Card>
