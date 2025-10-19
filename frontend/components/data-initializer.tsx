@@ -52,7 +52,7 @@ export function DataInitializer() {
     }
   }, [initialized, mounted])
 
-  // Don't render anything during SSR
+  // Don't render anything until mounted
   if (!mounted) {
     return null
   }

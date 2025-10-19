@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { DataInitializer } from "@/components/data-initializer"
+import { ClientOnly } from "@/components/client-only"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -22,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        <DataInitializer />
+        <ClientOnly>
+          <DataInitializer />
+        </ClientOnly>
         {children}
         <Analytics />
       </body>
