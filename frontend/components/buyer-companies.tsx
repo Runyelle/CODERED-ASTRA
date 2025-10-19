@@ -25,7 +25,7 @@ export function BuyerCompanies() {
         contact: company.contact,
         description: company.material_needs?.description || '',
       }))
-      .slice(0, 6) // Limit to 6 companies for display
+      .slice(0, 6) // Limit to 6 companies for even display (3 rows of 2)
   }, [companies])
 
   function getIconForIndustry(industry: string) {

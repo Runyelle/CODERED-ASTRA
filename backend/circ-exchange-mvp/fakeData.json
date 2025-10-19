@@ -668,6 +668,103 @@
         "certifications": ["Food-safe", "Organic", "Non-GMO sources"],
         "description": "Mixed food waste from distribution center operations. Includes expired produce, bakery items, and unsaleable food products suitable for composting or anaerobic digestion."
       }
+    },
+    {
+      "id": 15,
+      "name": "Houston Materials Recovery",
+      "type": "consumer",
+      "industry": "Waste Processing & Recovery",
+      "location": {
+        "address": "12345 Industrial Blvd",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77015",
+        "coordinates": {
+          "lat": 29.7752,
+          "lng": -95.3103
+        }
+      },
+      "contact": {
+        "name": "Lisa Johnson",
+        "title": "Procurement Manager",
+        "email": "l.johnson@houstonmaterials.com",
+        "phone": "(713) 555-0123"
+      },
+      "material_needs": {
+        "material": "Mixed Industrial Waste",
+        "category": "Processing Feedstock",
+        "quantity_tons_year": 15000,
+        "frequency": "Daily intake",
+        "composition_needed": {
+          "Metals": 30,
+          "Plastics": 25,
+          "Paper": 20,
+          "Organics": 15,
+          "Other": 10
+        },
+        "specifications": {
+          "form": "Mixed solid waste",
+          "contamination": "< 20%",
+          "particle_size": "Variable",
+          "quality_standard": "Industrial processing"
+        },
+        "current_sourcing": {
+          "primary_source": "Local manufacturers",
+          "cost_per_ton": 75,
+          "annual_cost": 1125000,
+          "transport_distance_miles": 25
+        },
+        "certifications_required": ["Non-hazardous", "Sorted"],
+        "description": "Processing facility seeking diverse industrial waste streams for material recovery and recycling operations."
+      }
+    },
+    {
+      "id": 16,
+      "name": "Gulf Coast Biofuels",
+      "type": "consumer",
+      "industry": "Biofuel Production",
+      "location": {
+        "address": "9876 Energy Way",
+        "city": "Pasadena",
+        "state": "TX",
+        "zip": "77507",
+        "coordinates": {
+          "lat": 29.6558,
+          "lng": -95.1619
+        }
+      },
+      "contact": {
+        "name": "Mark Wilson",
+        "title": "Feedstock Coordinator",
+        "email": "m.wilson@gulfcoastbiofuels.com",
+        "phone": "(281) 555-0456"
+      },
+      "material_needs": {
+        "material": "Organic Waste Feedstock",
+        "category": "Biofuel Input",
+        "quantity_tons_year": 20000,
+        "frequency": "Continuous supply",
+        "composition_needed": {
+          "Carbohydrates": 40,
+          "Lipids": 25,
+          "Proteins": 20,
+          "Cellulose": 15
+        },
+        "specifications": {
+          "form": "Organic waste, food waste, agricultural",
+          "moisture_content": "< 70%",
+          "contamination": "< 10%",
+          "quality_standard": "Biofuel grade"
+        },
+        "current_sourcing": {
+          "primary_source": "Food processors",
+          "cost_per_ton": 40,
+          "annual_cost": 800000,
+          "transport_distance_miles": 35
+        },
+        "certifications_required": ["Organic", "Non-GMO", "Food-grade"],
+        "description": "Biofuel production facility seeking organic waste streams for conversion into renewable energy and biofuels."
+      }
     }
   ]
 }

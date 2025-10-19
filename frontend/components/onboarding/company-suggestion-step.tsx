@@ -32,7 +32,7 @@ export function CompanySuggestionStep({ formData, updateFormData, nextStep, prev
         industry: company.industry,
         contact: company.contact,
       }))
-      .slice(0, 3) // Limit to 3 companies for onboarding
+      // Remove artificial limit to show all available companies
   }, [companies])
 
   const toggleCompany = (companyId: string) => {
