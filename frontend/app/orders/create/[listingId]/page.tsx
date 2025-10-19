@@ -52,6 +52,12 @@ export default function CreateOrderPage() {
     termsAccepted: false
   })
 
+  // Calculate derived values
+  const isSellerListing = listing?.type === 'seller'
+  const materialType = listing ? (isSellerListing ? (listing as SellerListing).wasteType : (listing as BuyerListing).materialType) : ''
+  const pricePerUnit = listing ? (isSellerListing ? (listing as SellerListing).disposalCost : (listing as BuyerListing).sourcingCost) : '0'
+  const totalPrice = parseFloat(listing?.quantity || '0') * parseFloat(pricePerUnit || '0')
+
   useEffect(() => {
     if (typeof window === 'undefined') return
     
@@ -248,10 +254,6 @@ export default function CreateOrderPage() {
     )
   }
 
-  const isSellerListing = listing.type === 'seller'
-  const materialType = isSellerListing ? (listing as SellerListing).wasteType : (listing as BuyerListing).materialType
-  const pricePerUnit = isSellerListing ? (listing as SellerListing).disposalCost : (listing as BuyerListing).sourcingCost
-  const totalPrice = parseFloat(listing.quantity || '0') * parseFloat(pricePerUnit || '0')
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-muted/20">
