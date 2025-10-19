@@ -1,7 +1,0 @@
-{
-  "/onboarding/sell/page": "app/onboarding/sell/page.js",
-  "/onboarding/buy/page": "app/onboarding/buy/page.js",
-  "/onboarding/page": "app/onboarding/page.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/page": "app/page.js"
-}
