@@ -1,0 +1,5 @@
+{
+  "/page": "app/page.js",
+  "/onboarding/buy/page": "app/onboarding/buy/page.js",
+  "/onboarding/sell/page": "app/onboarding/sell/page.js"
+}

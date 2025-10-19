@@ -1,6 +1,6 @@
 export function AboutMissionSection() {
   return (
-    <section className="relative py-24 px-6">
+    <section id="about-mission" className="relative py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           {/* About Me */}

@@ -120,7 +120,7 @@ export default function SellOnboardingPage() {
           />
         )
       case 8:
-        return <SendRequestStep formData={formData} prevStep={prevStep} listingType="seller" />
+        return <SendRequestStep formData={formData} prevStep={prevStep} />
       default:
         return null
     }

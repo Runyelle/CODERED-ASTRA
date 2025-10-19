@@ -106,7 +106,7 @@ export default function BuyOnboardingPage() {
           />
         )
       case 7:
-        return <SendRequestStep formData={formData} prevStep={prevStep} listingType="buyer" />
+        return <SendRequestStep formData={formData} prevStep={prevStep} />
       default:
         return null
     }
