@@ -1,7 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/onboarding/sell/page": "app/onboarding/sell/page.js",
-  "/onboarding/buy/page": "app/onboarding/buy/page.js",
   "/dashboard/page": "app/dashboard/page.js"
 }
