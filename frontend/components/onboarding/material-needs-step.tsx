@@ -4,14 +4,12 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Package } from "lucide-react"
 
 interface MaterialNeedsStepProps {
   formData: {
     materialType: string
-    materialDescription: string
   }
   updateFormData: (data: Partial<typeof formData>) => void
   nextStep: () => void
@@ -21,7 +19,7 @@ interface MaterialNeedsStepProps {
 export function MaterialNeedsStep({ formData, updateFormData, nextStep, prevStep }: MaterialNeedsStepProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    if (formData.materialType && formData.materialDescription) {
+    if (formData.materialType) {
       nextStep()
     }
   }
@@ -71,22 +69,12 @@ export function MaterialNeedsStep({ formData, updateFormData, nextStep, prevStep
           </Select>
         </div>
 
-        <div className="space-y-2">
-          <Label htmlFor="materialDescription">Material Description</Label>
-          <Textarea
-            id="materialDescription"
-            placeholder="Describe the specific materials you're looking for, including any particular characteristics, quality requirements, or specifications..."
-            value={formData.materialDescription}
-            onChange={(e) => updateFormData({ materialDescription: e.target.value })}
-            rows={4}
-          />
-        </div>
 
         <div className="flex justify-between">
           <Button variant="outline" onClick={prevStep}>
             Back
           </Button>
-          <Button type="submit" disabled={!formData.materialType || !formData.materialDescription}>
+          <Button type="submit" disabled={!formData.materialType}>
             Continue
           </Button>
         </div>

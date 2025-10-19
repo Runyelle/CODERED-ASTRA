@@ -1,15 +1,9 @@
 "use client"
 
-import { Sparkles, LayoutDashboard, ChevronDown } from "lucide-react"
+import { Sparkles, LayoutDashboard } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 
 export function Navigation() {
   return (
@@ -22,27 +16,6 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center gap-4">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm" className="gap-2 border-primary/20 bg-primary/5 hover:bg-primary/10">
-                  <span className="hidden sm:inline">Create Listing</span>
-                  <ChevronDown className="h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem asChild>
-                  <Link href="/onboarding/sell" className="flex items-center gap-2">
-                    <span>Sell Materials</span>
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/onboarding/buy" className="flex items-center gap-2">
-                    <span>Buy Materials</span>
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
             <Link href="/dashboard">
               <Button variant="outline" size="sm" className="gap-2 border-primary/20 bg-primary/5 hover:bg-primary/10">
                 <LayoutDashboard className="h-4 w-4" />

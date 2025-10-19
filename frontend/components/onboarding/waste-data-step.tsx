@@ -5,7 +5,6 @@ import React from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Badge } from "@/components/ui/badge"
 import { ScrollArea } from "@/components/ui/scroll-area"
@@ -146,17 +145,6 @@ export function WasteDataStep({ formData, updateFormData, nextStep, prevStep }: 
               ))}
             </div>
           </ScrollArea>
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="wasteDescription">Waste Description *</Label>
-          <Textarea
-            id="wasteDescription"
-            value={formData.wasteDescription}
-            onChange={(e) => updateFormData({ wasteDescription: e.target.value })}
-            placeholder="Provide detailed description of your waste materials..."
-            required
-            className="min-h-32 bg-background/50"
-          />
         </div>
         <div className="flex gap-4">
           <Button type="button" onClick={prevStep} variant="outline" className="gap-2 bg-transparent">

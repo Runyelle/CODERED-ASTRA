@@ -32,7 +32,6 @@ export default function SellOnboardingPage() {
     email: "",
     phone: "",
     wasteType: "",
-    wasteDescription: "",
     chemicalComposition: [] as { chemical: string; percentage: string }[],
     quantity: "",
     unit: "tons",

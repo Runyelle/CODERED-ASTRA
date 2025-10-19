@@ -44,22 +44,12 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="/onboarding/sell">
+            <Link href="/dashboard">
               <Button
                 size="lg"
                 className="group relative h-14 gap-2 px-8 text-lg font-semibold shadow-[0_0_20px_rgba(100,200,150,0.3)] hover:shadow-[0_0_30px_rgba(100,200,150,0.5)] transition-all duration-300"
               >
-                Start Selling
-                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-              </Button>
-            </Link>
-            <Link href="/onboarding/buy">
-              <Button
-                size="lg"
-                variant="outline"
-                className="group relative h-14 gap-2 px-8 text-lg font-semibold border-primary/20 bg-primary/5 hover:bg-primary/10 transition-all duration-300"
-              >
-                Start Buying
+                Go to Dashboard
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
               </Button>
             </Link>

@@ -6,7 +6,6 @@ import {
   Package,
   Building2,
   TrendingUp,
-  Bell,
   Plus,
   Search,
   Filter,
@@ -18,6 +17,7 @@ import {
   CheckCircle2,
   Clock,
   AlertCircle,
+  LayoutDashboard,
   ShoppingCart,
   Upload,
   MapPin,
@@ -209,23 +209,13 @@ export default function DashboardPage() {
             </nav>
           </div>
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="icon" className="relative">
-              <Bell className="h-5 w-5" />
-              <span className="absolute top-1 right-1 h-2 w-2 rounded-full bg-primary" />
-            </Button>
             <div className="flex items-center gap-2">
-              <Button asChild variant="outline">
-                <Link href="/onboarding/sell">
-                  <Plus className="h-4 w-4 mr-2" />
-                  Sell Materials
+              <Button asChild>
+                <Link href="/dashboard">
+                  <LayoutDashboard className="h-4 w-4 mr-2" />
+                  Dashboard
                 </Link>
-            </Button>
-            <Button asChild>
-                <Link href="/onboarding/buy">
-                <Plus className="h-4 w-4 mr-2" />
-                  Buy Materials
-              </Link>
-            </Button>
+              </Button>
             </div>
           </div>
         </div>
@@ -236,7 +226,7 @@ export default function DashboardPage() {
           <div className="space-y-8 max-w-6xl mx-auto">
             {/* Welcome Section */}
             <div>
-              <h1 className="text-3xl font-bold mb-2">Welcome back, Acme Corp</h1>
+              <h1 className="text-3xl font-bold mb-2">Welcome back, ConocoPhillips</h1>
               <p className="text-muted-foreground">Here's what's happening with your waste management today.</p>
             </div>
 

@@ -30,7 +30,6 @@ export default function BuyOnboardingPage() {
     email: "",
     phone: "",
     materialType: "",
-    materialDescription: "",
     materialSpecs: [] as { spec: string; value: string }[],
     quantity: "",
     unit: "tons",
