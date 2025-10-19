@@ -43,7 +43,10 @@
           "annual_cost": 1020000,
           "hauling_distance_miles": 45
         },
-        "certifications": ["Non-hazardous", "ISO 14001"],
+        "certifications": [
+          "Non-hazardous",
+          "ISO 14001"
+        ],
         "description": "Off-spec and post-industrial plastic pellets from polyolefin production. Clean material suitable for recycled plastic manufacturing."
       }
     },
@@ -92,7 +95,10 @@
           "annual_cost": 540000,
           "hauling_distance_miles": 25
         },
-        "certifications": ["Non-hazardous", "ASTM C989"],
+        "certifications": [
+          "Non-hazardous",
+          "ASTM C989"
+        ],
         "description": "Slag from electric arc furnace steel production. Contains valuable minerals suitable for construction aggregate and cement production."
       }
     },
@@ -140,7 +146,10 @@
           "annual_cost": 375000,
           "hauling_distance_miles": 60
         },
-        "certifications": ["Non-hazardous", "EPA registered"],
+        "certifications": [
+          "Non-hazardous",
+          "EPA registered"
+        ],
         "description": "High-carbon byproduct from oil refining coking process. Suitable for fuel in cement kilns, power generation, or activated carbon production."
       }
     },
@@ -187,7 +196,10 @@
           "annual_cost": 552500,
           "hauling_distance_miles": 40
         },
-        "certifications": ["Non-hazardous", "RCRA exempt"],
+        "certifications": [
+          "Non-hazardous",
+          "RCRA exempt"
+        ],
         "description": "Calcium carbonate waste from soda ash production. After dewatering, suitable for pH adjustment, water treatment, or filler material."
       }
     },
@@ -235,7 +247,11 @@
           "annual_cost": 63000,
           "hauling_distance_miles": 50
         },
-        "certifications": ["Food-grade", "Non-GMO", "Organic certified"],
+        "certifications": [
+          "Food-grade",
+          "Non-GMO",
+          "Organic certified"
+        ],
         "description": "Spent barley and grain from beer brewing process. High protein and fiber content, excellent for animal feed, composting, or biofuel production."
       }
     },
@@ -283,7 +299,10 @@
           "annual_cost": 2850000,
           "hauling_distance_miles": 55
         },
-        "certifications": ["RCRA non-hazardous", "Distillation capable"],
+        "certifications": [
+          "RCRA non-hazardous",
+          "Distillation capable"
+        ],
         "description": "Mixed hydrocarbon solvents from polymer production cleaning. Suitable for solvent recovery, fuel blending, or industrial cleaning applications."
       }
     },
@@ -331,7 +350,10 @@
           "annual_cost": 1500000,
           "transport_distance_miles": 30
         },
-        "certifications_required": ["Clean", "Sorted by resin"],
+        "certifications_required": [
+          "Clean",
+          "Sorted by resin"
+        ],
         "description": "Seeking post-industrial plastic waste for recycling operations. Can process mixed plastics into recycled resin pellets for manufacturing."
       }
     },
@@ -379,7 +401,10 @@
           "annual_cost": 2375000,
           "transport_distance_miles": 200
         },
-        "certifications_required": ["EPA approved", "BTU certified"],
+        "certifications_required": [
+          "EPA approved",
+          "BTU certified"
+        ],
         "description": "Seeking high-energy waste materials as alternative fuel for cement kilns. Can utilize petroleum coke, plastics, tires, biomass, and other combustibles."
       }
     },
@@ -426,7 +451,11 @@
           "annual_cost": 280000,
           "transport_distance_miles": 40
         },
-        "certifications_required": ["Organic", "Non-hazardous", "Pathogen-free"],
+        "certifications_required": [
+          "Organic",
+          "Non-hazardous",
+          "Pathogen-free"
+        ],
         "description": "Industrial composting facility seeking diverse organic waste streams. Can process food waste, spent grains, agricultural waste, and biosolids into compost."
       }
     },
@@ -474,7 +503,10 @@
           "annual_cost": 4500000,
           "transport_distance_miles": 150
         },
-        "certifications_required": ["COA provided", "Distillation certified"],
+        "certifications_required": [
+          "COA provided",
+          "Distillation certified"
+        ],
         "description": "Seeking recovered industrial solvents for use in chemical synthesis. Can utilize spent solvents from pharmaceutical, coatings, and manufacturing operations."
       }
     },
@@ -522,7 +554,10 @@
           "annual_cost": 1296000,
           "hauling_distance_miles": 50
         },
-        "certifications": ["RCRA non-hazardous", "EPA registered"],
+        "certifications": [
+          "RCRA non-hazardous",
+          "EPA registered"
+        ],
         "description": "Alkaline sludge from chlor-alkali and ethylene production. High sodium content suitable for pH adjustment, water treatment, or neutralization processes."
       }
     },
@@ -571,7 +606,10 @@
           "annual_cost": 1530000,
           "hauling_distance_miles": 70
         },
-        "certifications": ["Metal recovery potential", "Catalyst waste"],
+        "certifications": [
+          "Metal recovery potential",
+          "Catalyst waste"
+        ],
         "description": "Spent catalyst filter cake from chemical synthesis. Contains recoverable metals and alumina suitable for catalyst regeneration or metal recovery."
       }
     },
@@ -617,7 +655,10 @@
           "annual_cost": -925000,
           "hauling_distance_miles": 100
         },
-        "certifications": ["Industrial grade", "ASTM D1552"],
+        "certifications": [
+          "Industrial grade",
+          "ASTM D1552"
+        ],
         "description": "High-purity elemental sulfur recovered from hydrodesulfurization. Valuable for fertilizer production, sulfuric acid manufacturing, and chemical synthesis."
       }
     },
@@ -665,7 +706,11 @@
           "annual_cost": 252000,
           "hauling_distance_miles": 25
         },
-        "certifications": ["Food-safe", "Organic", "Non-GMO sources"],
+        "certifications": [
+          "Food-safe",
+          "Organic",
+          "Non-GMO sources"
+        ],
         "description": "Mixed food waste from distribution center operations. Includes expired produce, bakery items, and unsaleable food products suitable for composting or anaerobic digestion."
       }
     },
@@ -714,7 +759,10 @@
           "annual_cost": 1125000,
           "transport_distance_miles": 25
         },
-        "certifications_required": ["Non-hazardous", "Sorted"],
+        "certifications_required": [
+          "Non-hazardous",
+          "Sorted"
+        ],
         "description": "Processing facility seeking diverse industrial waste streams for material recovery and recycling operations."
       }
     },
@@ -762,8 +810,1829 @@
           "annual_cost": 800000,
           "transport_distance_miles": 35
         },
-        "certifications_required": ["Organic", "Non-GMO", "Food-grade"],
+        "certifications_required": [
+          "Organic",
+          "Non-GMO",
+          "Food-grade"
+        ],
         "description": "Biofuel production facility seeking organic waste streams for conversion into renewable energy and biofuels."
+      }
+    },
+    {
+      "id": 17,
+      "name": "Shell Deer Park Refinery",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "Main Plant Rd 17",
+        "city": "Deer Park",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.7129,
+          "lng": -95.1181
+        }
+      },
+      "contact": {
+        "name": "Contact 17",
+        "title": "Environmental Manager",
+        "email": "contact17@shelldeerparkrefinery.com",
+        "phone": "(713) 555-2017"
+      },
+      "waste_stream": {
+        "material": "Petcoke",
+        "category": "Refinery Byproduct",
+        "quantity_tons_year": 10000,
+        "availability": "Continuous",
+        "composition": {
+          "Carbon": 85,
+          "Sulfur": 5,
+          "Ash": 8,
+          "Volatiles": 2
+        },
+        "physical_properties": {
+          "state": "Solid/granular",
+          "color": "Black",
+          "particle_size": "1-6mm",
+          "moisture_content": "<5%"
+        },
+        "current_disposal": {
+          "method": "Commodity sale",
+          "cost_per_ton": 25,
+          "annual_cost": 250000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": [
+          "Industrial grade"
+        ],
+        "description": "Byproduct from Shell Deer Park Refinery's refining operations."
+      }
+    },
+    {
+      "id": 18,
+      "name": "Chevron Houston Refinery",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "Main Plant Rd 18",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.719,
+          "lng": -95.2658
+        }
+      },
+      "contact": {
+        "name": "Contact 18",
+        "title": "Environmental Manager",
+        "email": "contact18@chevronhoustonrefinery.com",
+        "phone": "(713) 555-2018"
+      },
+      "waste_stream": {
+        "material": "Petcoke",
+        "category": "Refinery Byproduct",
+        "quantity_tons_year": 10000,
+        "availability": "Continuous",
+        "composition": {
+          "Carbon": 85,
+          "Sulfur": 5,
+          "Ash": 8,
+          "Volatiles": 2
+        },
+        "physical_properties": {
+          "state": "Solid/granular",
+          "color": "Black",
+          "particle_size": "1-6mm",
+          "moisture_content": "<5%"
+        },
+        "current_disposal": {
+          "method": "Commodity sale",
+          "cost_per_ton": 25,
+          "annual_cost": 250000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": [
+          "Industrial grade"
+        ],
+        "description": "Byproduct from Chevron Houston Refinery's refining operations."
+      }
+    },
+    {
+      "id": 19,
+      "name": "Phillips 66 Sweeny Refinery",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "Main Plant Rd 19",
+        "city": "Sweeny",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.1765,
+          "lng": -95.3947
+        }
+      },
+      "contact": {
+        "name": "Contact 19",
+        "title": "Environmental Manager",
+        "email": "contact19@phillips66sweenyrefinery.com",
+        "phone": "(713) 555-2019"
+      },
+      "waste_stream": {
+        "material": "Petcoke",
+        "category": "Refinery Byproduct",
+        "quantity_tons_year": 10000,
+        "availability": "Continuous",
+        "composition": {
+          "Carbon": 85,
+          "Sulfur": 5,
+          "Ash": 8,
+          "Volatiles": 2
+        },
+        "physical_properties": {
+          "state": "Solid/granular",
+          "color": "Black",
+          "particle_size": "1-6mm",
+          "moisture_content": "<5%"
+        },
+        "current_disposal": {
+          "method": "Commodity sale",
+          "cost_per_ton": 25,
+          "annual_cost": 250000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": [
+          "Industrial grade"
+        ],
+        "description": "Byproduct from Phillips 66 Sweeny Refinery's refining operations."
+      }
+    },
+    {
+      "id": 20,
+      "name": "Dow Chemical Freeport (site)",
+      "type": "producer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 20",
+        "city": "Freeport",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 28.9536,
+          "lng": -95.3594
+        }
+      },
+      "contact": {
+        "name": "Contact 20",
+        "title": "Environmental Manager",
+        "email": "contact20@dowchemicalfreeport(site).com",
+        "phone": "(713) 555-2020"
+      },
+      "waste_stream": {
+        "material": "Process Sludge",
+        "category": "Chemical Byproduct",
+        "quantity_tons_year": 5000,
+        "availability": "Monthly",
+        "composition": {
+          "Water": 50,
+          "Organics": 30,
+          "Inorganics": 20
+        },
+        "physical_properties": {
+          "state": "Wet sludge",
+          "color": "Gray",
+          "particle_size": "slurry",
+          "moisture_content": "40-60%"
+        },
+        "current_disposal": {
+          "method": "Treatment",
+          "cost_per_ton": 200,
+          "annual_cost": 1000000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": [
+          "RCRA non-hazardous"
+        ],
+        "description": "Process residues generated at Dow Chemical Freeport (site)."
+      }
+    },
+    {
+      "id": 21,
+      "name": "BASF Pasadena (site)",
+      "type": "producer",
+      "industry": "Chemical Production",
+      "location": {
+        "address": "Main Plant Rd 21",
+        "city": "Pasadena",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.6558,
+          "lng": -95.1619
+        }
+      },
+      "contact": {
+        "name": "Contact 21",
+        "title": "Environmental Manager",
+        "email": "contact21@basfpasadena(site).com",
+        "phone": "(713) 555-2021"
+      },
+      "waste_stream": {
+        "material": "Process Sludge",
+        "category": "Chemical Byproduct",
+        "quantity_tons_year": 5000,
+        "availability": "Monthly",
+        "composition": {
+          "Water": 50,
+          "Organics": 30,
+          "Inorganics": 20
+        },
+        "physical_properties": {
+          "state": "Wet sludge",
+          "color": "Gray",
+          "particle_size": "slurry",
+          "moisture_content": "40-60%"
+        },
+        "current_disposal": {
+          "method": "Treatment",
+          "cost_per_ton": 200,
+          "annual_cost": 1000000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": [
+          "RCRA non-hazardous"
+        ],
+        "description": "Process residues generated at BASF Pasadena (site)."
+      }
+    },
+    {
+      "id": 22,
+      "name": "Valero Port Arthur Refinery",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "Main Plant Rd 22",
+        "city": "Port Arthur",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.9044,
+          "lng": -93.9368
+        }
+      },
+      "contact": {
+        "name": "Contact 22",
+        "title": "Environmental Manager",
+        "email": "contact22@valeroportarthurrefinery.com",
+        "phone": "(713) 555-2022"
+      },
+      "waste_stream": {
+        "material": "Petcoke",
+        "category": "Refinery Byproduct",
+        "quantity_tons_year": 10000,
+        "availability": "Continuous",
+        "composition": {
+          "Carbon": 85,
+          "Sulfur": 5,
+          "Ash": 8,
+          "Volatiles": 2
+        },
+        "physical_properties": {
+          "state": "Solid/granular",
+          "color": "Black",
+          "particle_size": "1-6mm",
+          "moisture_content": "<5%"
+        },
+        "current_disposal": {
+          "method": "Commodity sale",
+          "cost_per_ton": 25,
+          "annual_cost": 250000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": [
+          "Industrial grade"
+        ],
+        "description": "Byproduct from Valero Port Arthur Refinery's refining operations."
+      }
+    },
+    {
+      "id": 23,
+      "name": "Cargill Amarillo Feed Mill",
+      "type": "producer",
+      "industry": "Food & Beverage Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 23",
+        "city": "Amarillo",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 35.222,
+          "lng": -101.8313
+        }
+      },
+      "contact": {
+        "name": "Contact 23",
+        "title": "Environmental Manager",
+        "email": "contact23@cargillamarillofeedmill.com",
+        "phone": "(713) 555-2023"
+      },
+      "waste_stream": {
+        "material": "Spent Grain/Organic Waste",
+        "category": "Organic Byproduct",
+        "quantity_tons_year": 4000,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 25,
+          "Fiber": 45,
+          "Moisture": 30
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Brown",
+          "particle_size": "grain-sized",
+          "moisture_content": "70%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/compost",
+          "cost_per_ton": 15,
+          "annual_cost": 60000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": [
+          "Food-grade"
+        ],
+        "description": "Organic byproducts from food processing at Cargill Amarillo Feed Mill."
+      }
+    },
+    {
+      "id": 24,
+      "name": "Tyson Foods Amarillo Complex",
+      "type": "producer",
+      "industry": "Food Processing",
+      "location": {
+        "address": "Main Plant Rd 24",
+        "city": "Amarillo",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 35.2216,
+          "lng": -101.8312
+        }
+      },
+      "contact": {
+        "name": "Contact 24",
+        "title": "Environmental Manager",
+        "email": "contact24@tysonfoodsamarillocomplex.com",
+        "phone": "(713) 555-2024"
+      },
+      "waste_stream": {
+        "material": "Spent Grain/Organic Waste",
+        "category": "Organic Byproduct",
+        "quantity_tons_year": 4000,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 25,
+          "Fiber": 45,
+          "Moisture": 30
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Brown",
+          "particle_size": "grain-sized",
+          "moisture_content": "70%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/compost",
+          "cost_per_ton": 15,
+          "annual_cost": 60000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": [
+          "Food-grade"
+        ],
+        "description": "Organic byproducts from food processing at Tyson Foods Amarillo Complex."
+      }
+    },
+    {
+      "id": 25,
+      "name": "Flint Hills Resources Corpus Christi",
+      "type": "producer",
+      "industry": "Petrochemical/Oil Refining",
+      "location": {
+        "address": "Main Plant Rd 25",
+        "city": "Corpus Christi",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 27.6743,
+          "lng": -97.2928
+        }
+      },
+      "contact": {
+        "name": "Contact 25",
+        "title": "Environmental Manager",
+        "email": "contact25@flinthillsresourcescorpuschristi.com",
+        "phone": "(713) 555-2025"
+      },
+      "waste_stream": {
+        "material": "Petcoke",
+        "category": "Refinery Byproduct",
+        "quantity_tons_year": 10000,
+        "availability": "Continuous",
+        "composition": {
+          "Carbon": 85,
+          "Sulfur": 5,
+          "Ash": 8,
+          "Volatiles": 2
+        },
+        "physical_properties": {
+          "state": "Solid/granular",
+          "color": "Black",
+          "particle_size": "1-6mm",
+          "moisture_content": "<5%"
+        },
+        "current_disposal": {
+          "method": "Commodity sale",
+          "cost_per_ton": 25,
+          "annual_cost": 250000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": [
+          "Industrial grade"
+        ],
+        "description": "Byproduct from Flint Hills Resources Corpus Christi's refining operations."
+      }
+    },
+    {
+      "id": 26,
+      "name": "OxyChem - Ingleside",
+      "type": "producer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 26",
+        "city": "Ingleside",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 27.9406,
+          "lng": -97.286
+        }
+      },
+      "contact": {
+        "name": "Contact 26",
+        "title": "Environmental Manager",
+        "email": "contact26@oxychemingleside.com",
+        "phone": "(713) 555-2026"
+      },
+      "waste_stream": {
+        "material": "Process Sludge",
+        "category": "Chemical Byproduct",
+        "quantity_tons_year": 5000,
+        "availability": "Monthly",
+        "composition": {
+          "Water": 50,
+          "Organics": 30,
+          "Inorganics": 20
+        },
+        "physical_properties": {
+          "state": "Wet sludge",
+          "color": "Gray",
+          "particle_size": "slurry",
+          "moisture_content": "40-60%"
+        },
+        "current_disposal": {
+          "method": "Treatment",
+          "cost_per_ton": 200,
+          "annual_cost": 1000000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": [
+          "RCRA non-hazardous"
+        ],
+        "description": "Process residues generated at OxyChem - Ingleside."
+      }
+    },
+    {
+      "id": 27,
+      "name": "Caterpillar Inc. - Victoria",
+      "type": "producer",
+      "industry": "Heavy Equipment Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 27",
+        "city": "Victoria",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 28.8046,
+          "lng": -97.0035
+        }
+      },
+      "contact": {
+        "name": "Contact 27",
+        "title": "Environmental Manager",
+        "email": "contact27@caterpillarinc.victoria.com",
+        "phone": "(713) 555-2027"
+      },
+      "waste_stream": {
+        "material": "Metal Scrap/Slag",
+        "category": "Industrial Byproduct",
+        "quantity_tons_year": 8000,
+        "availability": "Continuous",
+        "composition": {
+          "Metals": 85,
+          "Other": 15
+        },
+        "physical_properties": {
+          "state": "Solid",
+          "color": "Silver/gray",
+          "particle_size": "1-50mm",
+          "moisture_content": "<2%"
+        },
+        "current_disposal": {
+          "method": "Recycling",
+          "cost_per_ton": 0,
+          "annual_cost": 0,
+          "hauling_distance_miles": 25
+        },
+        "certifications": [
+          "Non-hazardous"
+        ],
+        "description": "Manufacturing scrap from Caterpillar Inc. - Victoria."
+      }
+    },
+    {
+      "id": 28,
+      "name": "General Motors - Arlington Assembly",
+      "type": "producer",
+      "industry": "Automotive Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 28",
+        "city": "Arlington",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 32.7357,
+          "lng": -97.1081
+        }
+      },
+      "contact": {
+        "name": "Contact 28",
+        "title": "Environmental Manager",
+        "email": "contact28@generalmotorsarlingtonassembly.com",
+        "phone": "(713) 555-2028"
+      },
+      "waste_stream": {
+        "material": "Metal Scrap/Slag",
+        "category": "Industrial Byproduct",
+        "quantity_tons_year": 8000,
+        "availability": "Continuous",
+        "composition": {
+          "Metals": 85,
+          "Other": 15
+        },
+        "physical_properties": {
+          "state": "Solid",
+          "color": "Silver/gray",
+          "particle_size": "1-50mm",
+          "moisture_content": "<2%"
+        },
+        "current_disposal": {
+          "method": "Recycling",
+          "cost_per_ton": 0,
+          "annual_cost": 0,
+          "hauling_distance_miles": 25
+        },
+        "certifications": [
+          "Non-hazardous"
+        ],
+        "description": "Manufacturing scrap from General Motors - Arlington Assembly."
+      }
+    },
+    {
+      "id": 29,
+      "name": "Schlumberger - Sugar Land",
+      "type": "producer",
+      "industry": "Oilfield Services",
+      "location": {
+        "address": "Main Plant Rd 29",
+        "city": "Sugar Land",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.6226,
+          "lng": -95.6065
+        }
+      },
+      "contact": {
+        "name": "Contact 29",
+        "title": "Environmental Manager",
+        "email": "contact29@schlumbergersugarland.com",
+        "phone": "(713) 555-2029"
+      },
+      "waste_stream": {
+        "material": "Refinery Sludge",
+        "category": "Refinery Byproduct",
+        "quantity_tons_year": 10000,
+        "availability": "Continuous",
+        "composition": {
+          "Carbon": 85,
+          "Sulfur": 5,
+          "Ash": 8,
+          "Volatiles": 2
+        },
+        "physical_properties": {
+          "state": "Solid/granular",
+          "color": "Black",
+          "particle_size": "1-6mm",
+          "moisture_content": "<5%"
+        },
+        "current_disposal": {
+          "method": "Commodity sale",
+          "cost_per_ton": 25,
+          "annual_cost": 250000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": [
+          "Industrial grade"
+        ],
+        "description": "Byproduct from Schlumberger - Sugar Land's refining operations."
+      }
+    },
+    {
+      "id": 30,
+      "name": "Olin Corporation - McIntosh (LA)",
+      "type": "producer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 30",
+        "city": "McIntosh",
+        "state": "LA",
+        "zip": "",
+        "coordinates": {
+          "lat": 30.1031,
+          "lng": -90.8577
+        }
+      },
+      "contact": {
+        "name": "Contact 30",
+        "title": "Environmental Manager",
+        "email": "contact30@olincorporationmcintosh(la).com",
+        "phone": "(713) 555-2030"
+      },
+      "waste_stream": {
+        "material": "Process Sludge",
+        "category": "Chemical Byproduct",
+        "quantity_tons_year": 5000,
+        "availability": "Monthly",
+        "composition": {
+          "Water": 50,
+          "Organics": 30,
+          "Inorganics": 20
+        },
+        "physical_properties": {
+          "state": "Wet sludge",
+          "color": "Gray",
+          "particle_size": "slurry",
+          "moisture_content": "40-60%"
+        },
+        "current_disposal": {
+          "method": "Treatment",
+          "cost_per_ton": 200,
+          "annual_cost": 1000000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": [
+          "RCRA non-hazardous"
+        ],
+        "description": "Process residues generated at Olin Corporation - McIntosh (LA)."
+      }
+    },
+    {
+      "id": 31,
+      "name": "3M - Waco",
+      "type": "producer",
+      "industry": "Specialty Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 31",
+        "city": "Waco",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 31.5242,
+          "lng": -97.168
+        }
+      },
+      "contact": {
+        "name": "Contact 31",
+        "title": "Environmental Manager",
+        "email": "contact31@3mwaco.com",
+        "phone": "(713) 555-2031"
+      },
+      "waste_stream": {
+        "material": "Metal Scrap/Slag",
+        "category": "Industrial Byproduct",
+        "quantity_tons_year": 8000,
+        "availability": "Continuous",
+        "composition": {
+          "Metals": 85,
+          "Other": 15
+        },
+        "physical_properties": {
+          "state": "Solid",
+          "color": "Silver/gray",
+          "particle_size": "1-50mm",
+          "moisture_content": "<2%"
+        },
+        "current_disposal": {
+          "method": "Recycling",
+          "cost_per_ton": 0,
+          "annual_cost": 0,
+          "hauling_distance_miles": 25
+        },
+        "certifications": [
+          "Non-hazardous"
+        ],
+        "description": "Manufacturing scrap from 3M - Waco."
+      }
+    },
+    {
+      "id": 32,
+      "name": "Anheuser-Busch - Fort Worth",
+      "type": "producer",
+      "industry": "Food & Beverage Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 32",
+        "city": "Fort Worth",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 32.7569,
+          "lng": -97.3272
+        }
+      },
+      "contact": {
+        "name": "Contact 32",
+        "title": "Environmental Manager",
+        "email": "contact32@anheuserbuschfortworth.com",
+        "phone": "(713) 555-2032"
+      },
+      "waste_stream": {
+        "material": "Spent Grain/Organic Waste",
+        "category": "Organic Byproduct",
+        "quantity_tons_year": 4000,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 25,
+          "Fiber": 45,
+          "Moisture": 30
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Brown",
+          "particle_size": "grain-sized",
+          "moisture_content": "70%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/compost",
+          "cost_per_ton": 15,
+          "annual_cost": 60000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": [
+          "Food-grade"
+        ],
+        "description": "Organic byproducts from food processing at Anheuser-Busch - Fort Worth."
+      }
+    },
+    {
+      "id": 33,
+      "name": "Sysco Dallas",
+      "type": "producer",
+      "industry": "Food Distribution",
+      "location": {
+        "address": "Main Plant Rd 33",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 32.7798,
+          "lng": -96.7936
+        }
+      },
+      "contact": {
+        "name": "Contact 33",
+        "title": "Environmental Manager",
+        "email": "contact33@syscodallas.com",
+        "phone": "(713) 555-2033"
+      },
+      "waste_stream": {
+        "material": "Spent Grain/Organic Waste",
+        "category": "Organic Byproduct",
+        "quantity_tons_year": 4000,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 25,
+          "Fiber": 45,
+          "Moisture": 30
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Brown",
+          "particle_size": "grain-sized",
+          "moisture_content": "70%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/compost",
+          "cost_per_ton": 15,
+          "annual_cost": 60000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": [
+          "Food-grade"
+        ],
+        "description": "Organic byproducts from food processing at Sysco Dallas."
+      }
+    },
+    {
+      "id": 34,
+      "name": "Waste Management - Dallas Transfer Station",
+      "type": "consumer",
+      "industry": "Waste Management & Recycling",
+      "location": {
+        "address": "Main Plant Rd 34",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 32.7076,
+          "lng": -96.8719
+        }
+      },
+      "contact": {
+        "name": "Contact 34",
+        "title": "Environmental Manager",
+        "email": "contact34@wastemanagementdallastransferstation.com",
+        "phone": "(713) 555-2034"
+      },
+      "material_needs": {
+        "material": "Mixed Recyclable Plastics",
+        "category": "Recycling Feedstock",
+        "quantity_tons_year": 10000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "HDPE": 30,
+          "PET": 25,
+          "PP": 25,
+          "Mixed": 20
+        },
+        "specifications": {
+          "form": "Baled or loose",
+          "purity_minimum": "85%",
+          "contamination": "<15%",
+          "quality_standard": "APR standards"
+        },
+        "current_sourcing": {
+          "primary_source": "Municipal collection",
+          "cost_per_ton": 150,
+          "annual_cost": 1500000,
+          "transport_distance_miles": 30
+        },
+        "certifications_required": [
+          "Clean",
+          "Sorted by resin"
+        ],
+        "description": "Material demand from Waste Management - Dallas Transfer Station."
+      }
+    },
+    {
+      "id": 35,
+      "name": "Texas Lehigh Cement - Buda",
+      "type": "consumer",
+      "industry": "Cement Production",
+      "location": {
+        "address": "Main Plant Rd 35",
+        "city": "Buda",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 30.0562,
+          "lng": -97.8494
+        }
+      },
+      "contact": {
+        "name": "Contact 35",
+        "title": "Environmental Manager",
+        "email": "contact35@texaslehighcementbuda.com",
+        "phone": "(713) 555-2035"
+      },
+      "material_needs": {
+        "material": "High-BTU Waste Fuels",
+        "category": "Alternative Fuel",
+        "quantity_tons_year": 20000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "BTU_content": "8000+",
+          "Moisture": "<25%",
+          "Ash": "<30%"
+        },
+        "specifications": {
+          "form": "Shredded/pelletized",
+          "particle_size": "<50mm",
+          "contamination": "No metals or hazmat"
+        },
+        "current_sourcing": {
+          "primary_source": "Coal and petcoke",
+          "cost_per_ton": 95,
+          "annual_cost": 1900000,
+          "transport_distance_miles": 150
+        },
+        "certifications_required": [
+          "EPA approved"
+        ],
+        "description": "Seeks high-energy waste materials at Texas Lehigh Cement - Buda."
+      }
+    },
+    {
+      "id": 36,
+      "name": "Synagro - San Antonio Composting",
+      "type": "consumer",
+      "industry": "Organic Waste Processing",
+      "location": {
+        "address": "Main Plant Rd 36",
+        "city": "San Antonio",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.5366,
+          "lng": -98.4287
+        }
+      },
+      "contact": {
+        "name": "Contact 36",
+        "title": "Environmental Manager",
+        "email": "contact36@synagrosanantoniocomposting.com",
+        "phone": "(713) 555-2036"
+      },
+      "material_needs": {
+        "material": "Organic Waste Feedstock",
+        "category": "Composting Input",
+        "quantity_tons_year": 10000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "Carbon_rich": 40,
+          "Nitrogen_rich": 30,
+          "Moisture": 30
+        },
+        "specifications": {
+          "form": "Food/yard/agricultural",
+          "contamination": "<5% non-organics",
+          "particle_size": "chipped/shredded preferred",
+          "quality_standard": "USCC certified"
+        },
+        "current_sourcing": {
+          "primary_source": "Municipal collection",
+          "cost_per_ton": 150,
+          "annual_cost": 1500000,
+          "transport_distance_miles": 30
+        },
+        "certifications_required": [
+          "Organic",
+          "Non-hazardous"
+        ],
+        "description": "Material demand from Synagro - San Antonio Composting."
+      }
+    },
+    {
+      "id": 37,
+      "name": "Eastman Chemical - Longview",
+      "type": "consumer",
+      "industry": "Chemical Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 37",
+        "city": "Longview",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 32.5632,
+          "lng": -94.7108
+        }
+      },
+      "contact": {
+        "name": "Contact 37",
+        "title": "Environmental Manager",
+        "email": "contact37@eastmanchemicallongview.com",
+        "phone": "(713) 555-2037"
+      },
+      "material_needs": {
+        "material": "Mixed Industrial Waste",
+        "category": "Processing Feedstock",
+        "quantity_tons_year": 8000,
+        "frequency": "Daily intake",
+        "composition_needed": {
+          "Metals": 30,
+          "Plastics": 25,
+          "Paper": 20,
+          "Organics": 15
+        },
+        "specifications": {
+          "form": "Mixed solid waste",
+          "contamination": "<20%",
+          "particle_size": "Variable",
+          "quality_standard": "Industrial processing"
+        },
+        "current_sourcing": {
+          "primary_source": "Local manufacturers",
+          "cost_per_ton": 75,
+          "annual_cost": 600000,
+          "transport_distance_miles": 25
+        },
+        "certifications_required": [
+          "Non-hazardous"
+        ],
+        "description": "General processing demand at Eastman Chemical - Longview."
+      }
+    },
+    {
+      "id": 38,
+      "name": "Nucor Steel - Jewett (site)",
+      "type": "producer",
+      "industry": "Steel Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 38",
+        "city": "Jewett",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 31.3594,
+          "lng": -96.1436
+        }
+      },
+      "contact": {
+        "name": "Contact 38",
+        "title": "Environmental Manager",
+        "email": "contact38@nucorsteeljewett(site).com",
+        "phone": "(713) 555-2038"
+      },
+      "waste_stream": {
+        "material": "Metal Scrap/Slag",
+        "category": "Industrial Byproduct",
+        "quantity_tons_year": 8000,
+        "availability": "Continuous",
+        "composition": {
+          "Metals": 85,
+          "Other": 15
+        },
+        "physical_properties": {
+          "state": "Solid",
+          "color": "Silver/gray",
+          "particle_size": "1-50mm",
+          "moisture_content": "<2%"
+        },
+        "current_disposal": {
+          "method": "Recycling",
+          "cost_per_ton": 0,
+          "annual_cost": 0,
+          "hauling_distance_miles": 25
+        },
+        "certifications": [
+          "Non-hazardous"
+        ],
+        "description": "Manufacturing scrap from Nucor Steel - Jewett (site)."
+      }
+    },
+    {
+      "id": 39,
+      "name": "ConocoPhillips Refinery - Borger",
+      "type": "producer",
+      "industry": "Oil Refining",
+      "location": {
+        "address": "Main Plant Rd 39",
+        "city": "Borger",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 35.6603,
+          "lng": -101.3946
+        }
+      },
+      "contact": {
+        "name": "Contact 39",
+        "title": "Environmental Manager",
+        "email": "contact39@conocophillipsrefineryborger.com",
+        "phone": "(713) 555-2039"
+      },
+      "waste_stream": {
+        "material": "Petcoke",
+        "category": "Refinery Byproduct",
+        "quantity_tons_year": 10000,
+        "availability": "Continuous",
+        "composition": {
+          "Carbon": 85,
+          "Sulfur": 5,
+          "Ash": 8,
+          "Volatiles": 2
+        },
+        "physical_properties": {
+          "state": "Solid/granular",
+          "color": "Black",
+          "particle_size": "1-6mm",
+          "moisture_content": "<5%"
+        },
+        "current_disposal": {
+          "method": "Commodity sale",
+          "cost_per_ton": 25,
+          "annual_cost": 250000,
+          "hauling_distance_miles": 60
+        },
+        "certifications": [
+          "Industrial grade"
+        ],
+        "description": "Byproduct from ConocoPhillips Refinery - Borger's refining operations."
+      }
+    },
+    {
+      "id": 40,
+      "name": "Cemex USA - Balcones Plant",
+      "type": "producer",
+      "industry": "Cement Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 40",
+        "city": "New Braunfels",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.7531,
+          "lng": -98.1843
+        }
+      },
+      "contact": {
+        "name": "Contact 40",
+        "title": "Environmental Manager",
+        "email": "contact40@cemexusabalconesplant.com",
+        "phone": "(713) 555-2040"
+      },
+      "waste_stream": {
+        "material": "Metal Scrap/Slag",
+        "category": "Industrial Byproduct",
+        "quantity_tons_year": 8000,
+        "availability": "Continuous",
+        "composition": {
+          "Metals": 85,
+          "Other": 15
+        },
+        "physical_properties": {
+          "state": "Solid",
+          "color": "Silver/gray",
+          "particle_size": "1-50mm",
+          "moisture_content": "<2%"
+        },
+        "current_disposal": {
+          "method": "Recycling",
+          "cost_per_ton": 0,
+          "annual_cost": 0,
+          "hauling_distance_miles": 25
+        },
+        "certifications": [
+          "Non-hazardous"
+        ],
+        "description": "Manufacturing scrap from Cemex USA - Balcones Plant."
+      }
+    },
+    {
+      "id": 41,
+      "name": "Amazon Fulfillment Center - San Marcos",
+      "type": "producer",
+      "industry": "Logistics & Distribution",
+      "location": {
+        "address": "Main Plant Rd 41",
+        "city": "San Marcos",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.8833,
+          "lng": -97.9414
+        }
+      },
+      "contact": {
+        "name": "Contact 41",
+        "title": "Environmental Manager",
+        "email": "contact41@amazonfulfillmentcentersanmarcos.com",
+        "phone": "(713) 555-2041"
+      },
+      "waste_stream": {
+        "material": "Mixed Industrial Waste",
+        "category": "Industrial Byproduct",
+        "quantity_tons_year": 3000,
+        "availability": "Continuous",
+        "composition": {
+          "Metals": 40,
+          "Plastics": 30,
+          "Other": 30
+        },
+        "physical_properties": {
+          "state": "Mixed solids",
+          "color": "Varied",
+          "particle_size": "variable",
+          "moisture_content": "<5%"
+        },
+        "current_disposal": {
+          "method": "Processing",
+          "cost_per_ton": 75,
+          "annual_cost": 225000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": [
+          "Non-hazardous"
+        ],
+        "description": "General industrial residues from Amazon Fulfillment Center - San Marcos."
+      }
+    },
+    {
+      "id": 42,
+      "name": "Koch Fertilizer - Enid (OK)",
+      "type": "producer",
+      "industry": "Fertilizer Production",
+      "location": {
+        "address": "Main Plant Rd 42",
+        "city": "Enid",
+        "state": "OK",
+        "zip": "",
+        "coordinates": {
+          "lat": 36.4013,
+          "lng": -97.8784
+        }
+      },
+      "contact": {
+        "name": "Contact 42",
+        "title": "Environmental Manager",
+        "email": "contact42@kochfertilizerenid(ok).com",
+        "phone": "(713) 555-2042"
+      },
+      "waste_stream": {
+        "material": "Mixed Industrial Waste",
+        "category": "Industrial Byproduct",
+        "quantity_tons_year": 3000,
+        "availability": "Continuous",
+        "composition": {
+          "Metals": 40,
+          "Plastics": 30,
+          "Other": 30
+        },
+        "physical_properties": {
+          "state": "Mixed solids",
+          "color": "Varied",
+          "particle_size": "variable",
+          "moisture_content": "<5%"
+        },
+        "current_disposal": {
+          "method": "Processing",
+          "cost_per_ton": 75,
+          "annual_cost": 225000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": [
+          "Non-hazardous"
+        ],
+        "description": "General industrial residues from Koch Fertilizer - Enid (OK)."
+      }
+    },
+    {
+      "id": 43,
+      "name": "Praxair (Linde) - Houston",
+      "type": "producer",
+      "industry": "Industrial Gases",
+      "location": {
+        "address": "Main Plant Rd 43",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.7757,
+          "lng": -95.277
+        }
+      },
+      "contact": {
+        "name": "Contact 43",
+        "title": "Environmental Manager",
+        "email": "contact43@praxair(linde)houston.com",
+        "phone": "(713) 555-2043"
+      },
+      "waste_stream": {
+        "material": "Process Sludge",
+        "category": "Chemical Byproduct",
+        "quantity_tons_year": 5000,
+        "availability": "Monthly",
+        "composition": {
+          "Water": 50,
+          "Organics": 30,
+          "Inorganics": 20
+        },
+        "physical_properties": {
+          "state": "Wet sludge",
+          "color": "Gray",
+          "particle_size": "slurry",
+          "moisture_content": "40-60%"
+        },
+        "current_disposal": {
+          "method": "Treatment",
+          "cost_per_ton": 200,
+          "annual_cost": 1000000,
+          "hauling_distance_miles": 50
+        },
+        "certifications": [
+          "RCRA non-hazardous"
+        ],
+        "description": "Process residues generated at Praxair (Linde) - Houston."
+      }
+    },
+    {
+      "id": 44,
+      "name": "Smithfield Foods - Tar Heel (NC)",
+      "type": "producer",
+      "industry": "Food Processing",
+      "location": {
+        "address": "Main Plant Rd 44",
+        "city": "Tar Heel",
+        "state": "NC",
+        "zip": "",
+        "coordinates": {
+          "lat": 34.8312,
+          "lng": -78.06
+        }
+      },
+      "contact": {
+        "name": "Contact 44",
+        "title": "Environmental Manager",
+        "email": "contact44@smithfieldfoodstarheel(nc).com",
+        "phone": "(713) 555-2044"
+      },
+      "waste_stream": {
+        "material": "Spent Grain/Organic Waste",
+        "category": "Organic Byproduct",
+        "quantity_tons_year": 4000,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 25,
+          "Fiber": 45,
+          "Moisture": 30
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Brown",
+          "particle_size": "grain-sized",
+          "moisture_content": "70%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/compost",
+          "cost_per_ton": 15,
+          "annual_cost": 60000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": [
+          "Food-grade"
+        ],
+        "description": "Organic byproducts from food processing at Smithfield Foods - Tar Heel (NC)."
+      }
+    },
+    {
+      "id": 45,
+      "name": "CalPortland Cement - Floresville",
+      "type": "consumer",
+      "industry": "Cement Production",
+      "location": {
+        "address": "Main Plant Rd 45",
+        "city": "Floresville",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.1626,
+          "lng": -98.1593
+        }
+      },
+      "contact": {
+        "name": "Contact 45",
+        "title": "Environmental Manager",
+        "email": "contact45@calportlandcementfloresville.com",
+        "phone": "(713) 555-2045"
+      },
+      "material_needs": {
+        "material": "High-BTU Waste Fuels",
+        "category": "Alternative Fuel",
+        "quantity_tons_year": 20000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "BTU_content": "8000+",
+          "Moisture": "<25%",
+          "Ash": "<30%"
+        },
+        "specifications": {
+          "form": "Shredded/pelletized",
+          "particle_size": "<50mm",
+          "contamination": "No metals or hazmat"
+        },
+        "current_sourcing": {
+          "primary_source": "Coal and petcoke",
+          "cost_per_ton": 95,
+          "annual_cost": 1900000,
+          "transport_distance_miles": 150
+        },
+        "certifications_required": [
+          "EPA approved"
+        ],
+        "description": "Seeks high-energy waste materials at CalPortland Cement - Floresville."
+      }
+    },
+    {
+      "id": 46,
+      "name": "Gulf Coast Biofuels - Pasadena (site)",
+      "type": "consumer",
+      "industry": "Biofuel Production",
+      "location": {
+        "address": "Main Plant Rd 46",
+        "city": "Pasadena",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.6558,
+          "lng": -95.1619
+        }
+      },
+      "contact": {
+        "name": "Contact 46",
+        "title": "Environmental Manager",
+        "email": "contact46@gulfcoastbiofuelspasadena(site).com",
+        "phone": "(713) 555-2046"
+      },
+      "material_needs": {
+        "material": "Mixed Industrial Waste",
+        "category": "Processing Feedstock",
+        "quantity_tons_year": 8000,
+        "frequency": "Daily intake",
+        "composition_needed": {
+          "Metals": 30,
+          "Plastics": 25,
+          "Paper": 20,
+          "Organics": 15
+        },
+        "specifications": {
+          "form": "Mixed solid waste",
+          "contamination": "<20%",
+          "particle_size": "Variable",
+          "quality_standard": "Industrial processing"
+        },
+        "current_sourcing": {
+          "primary_source": "Local manufacturers",
+          "cost_per_ton": 75,
+          "annual_cost": 600000,
+          "transport_distance_miles": 25
+        },
+        "certifications_required": [
+          "Non-hazardous"
+        ],
+        "description": "General processing demand at Gulf Coast Biofuels - Pasadena (site)."
+      }
+    },
+    {
+      "id": 47,
+      "name": "Houston Materials Recovery (site)",
+      "type": "consumer",
+      "industry": "Waste Processing & Recovery",
+      "location": {
+        "address": "Main Plant Rd 47",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.7752,
+          "lng": -95.3103
+        }
+      },
+      "contact": {
+        "name": "Contact 47",
+        "title": "Environmental Manager",
+        "email": "contact47@houstonmaterialsrecovery(site).com",
+        "phone": "(713) 555-2047"
+      },
+      "material_needs": {
+        "material": "Organic Waste Feedstock",
+        "category": "Composting Input",
+        "quantity_tons_year": 10000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "Carbon_rich": 40,
+          "Nitrogen_rich": 30,
+          "Moisture": 30
+        },
+        "specifications": {
+          "form": "Food/yard/agricultural",
+          "contamination": "<5% non-organics",
+          "particle_size": "chipped/shredded preferred",
+          "quality_standard": "USCC certified"
+        },
+        "current_sourcing": {
+          "primary_source": "Municipal collection",
+          "cost_per_ton": 150,
+          "annual_cost": 1500000,
+          "transport_distance_miles": 30
+        },
+        "certifications_required": [
+          "Organic",
+          "Non-hazardous"
+        ],
+        "description": "Material demand from Houston Materials Recovery (site)."
+      }
+    },
+    {
+      "id": 48,
+      "name": "Gulf Coast Recycling - Houston",
+      "type": "consumer",
+      "industry": "Waste Management & Recycling",
+      "location": {
+        "address": "Main Plant Rd 48",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.9283,
+          "lng": -95.4692
+        }
+      },
+      "contact": {
+        "name": "Contact 48",
+        "title": "Environmental Manager",
+        "email": "contact48@gulfcoastrecyclinghouston.com",
+        "phone": "(713) 555-2048"
+      },
+      "material_needs": {
+        "material": "Mixed Recyclable Plastics",
+        "category": "Recycling Feedstock",
+        "quantity_tons_year": 10000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "HDPE": 30,
+          "PET": 25,
+          "PP": 25,
+          "Mixed": 20
+        },
+        "specifications": {
+          "form": "Baled or loose",
+          "purity_minimum": "85%",
+          "contamination": "<15%",
+          "quality_standard": "APR standards"
+        },
+        "current_sourcing": {
+          "primary_source": "Municipal collection",
+          "cost_per_ton": 150,
+          "annual_cost": 1500000,
+          "transport_distance_miles": 30
+        },
+        "certifications_required": [
+          "Clean",
+          "Sorted by resin"
+        ],
+        "description": "Material demand from Gulf Coast Recycling - Houston."
+      }
+    },
+    {
+      "id": 49,
+      "name": "Lehigh Hanson - Houston Terminal",
+      "type": "consumer",
+      "industry": "Cement & Aggregates",
+      "location": {
+        "address": "Main Plant Rd 49",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.7875,
+          "lng": -95.2009
+        }
+      },
+      "contact": {
+        "name": "Contact 49",
+        "title": "Environmental Manager",
+        "email": "contact49@lehighhansonhoustonterminal.com",
+        "phone": "(713) 555-2049"
+      },
+      "material_needs": {
+        "material": "High-BTU Waste Fuels",
+        "category": "Alternative Fuel",
+        "quantity_tons_year": 20000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "BTU_content": "8000+",
+          "Moisture": "<25%",
+          "Ash": "<30%"
+        },
+        "specifications": {
+          "form": "Shredded/pelletized",
+          "particle_size": "<50mm",
+          "contamination": "No metals or hazmat"
+        },
+        "current_sourcing": {
+          "primary_source": "Coal and petcoke",
+          "cost_per_ton": 95,
+          "annual_cost": 1900000,
+          "transport_distance_miles": 150
+        },
+        "certifications_required": [
+          "EPA approved"
+        ],
+        "description": "Seeks high-energy waste materials at Lehigh Hanson - Houston Terminal."
+      }
+    },
+    {
+      "id": 50,
+      "name": "Cemex USA - San Antonio Aggregates",
+      "type": "consumer",
+      "industry": "Cement Production",
+      "location": {
+        "address": "Main Plant Rd 50",
+        "city": "San Antonio",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.4724,
+          "lng": -98.5251
+        }
+      },
+      "contact": {
+        "name": "Contact 50",
+        "title": "Environmental Manager",
+        "email": "contact50@cemexusasanantonioaggregates.com",
+        "phone": "(713) 555-2050"
+      },
+      "material_needs": {
+        "material": "High-BTU Waste Fuels",
+        "category": "Alternative Fuel",
+        "quantity_tons_year": 20000,
+        "frequency": "Continuous",
+        "composition_needed": {
+          "BTU_content": "8000+",
+          "Moisture": "<25%",
+          "Ash": "<30%"
+        },
+        "specifications": {
+          "form": "Shredded/pelletized",
+          "particle_size": "<50mm",
+          "contamination": "No metals or hazmat"
+        },
+        "current_sourcing": {
+          "primary_source": "Coal and petcoke",
+          "cost_per_ton": 95,
+          "annual_cost": 1900000,
+          "transport_distance_miles": 150
+        },
+        "certifications_required": [
+          "EPA approved"
+        ],
+        "description": "Seeks high-energy waste materials at Cemex USA - San Antonio Aggregates."
+      }
+    },
+    {
+      "id": 51,
+      "name": "Kraft Heinz - Houston Distribution",
+      "type": "producer",
+      "industry": "Food & Beverage Manufacturing",
+      "location": {
+        "address": "Main Plant Rd 51",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.7821,
+          "lng": -95.2275
+        }
+      },
+      "contact": {
+        "name": "Contact 51",
+        "title": "Environmental Manager",
+        "email": "contact51@kraftheinzhoustondistribution.com",
+        "phone": "(713) 555-2051"
+      },
+      "waste_stream": {
+        "material": "Spent Grain/Organic Waste",
+        "category": "Organic Byproduct",
+        "quantity_tons_year": 4000,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 25,
+          "Fiber": 45,
+          "Moisture": 30
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Brown",
+          "particle_size": "grain-sized",
+          "moisture_content": "70%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/compost",
+          "cost_per_ton": 15,
+          "annual_cost": 60000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": [
+          "Food-grade"
+        ],
+        "description": "Organic byproducts from food processing at Kraft Heinz - Houston Distribution."
+      }
+    },
+    {
+      "id": 52,
+      "name": "Archer Daniels Midland - Galveston",
+      "type": "producer",
+      "industry": "Agribusiness Processing",
+      "location": {
+        "address": "Main Plant Rd 52",
+        "city": "Galveston",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.3013,
+          "lng": -94.7977
+        }
+      },
+      "contact": {
+        "name": "Contact 52",
+        "title": "Environmental Manager",
+        "email": "contact52@archerdanielsmidlandgalveston.com",
+        "phone": "(713) 555-2052"
+      },
+      "waste_stream": {
+        "material": "Spent Grain/Organic Waste",
+        "category": "Organic Byproduct",
+        "quantity_tons_year": 4000,
+        "availability": "Daily",
+        "composition": {
+          "Protein": 25,
+          "Fiber": 45,
+          "Moisture": 30
+        },
+        "physical_properties": {
+          "state": "Wet solid",
+          "color": "Brown",
+          "particle_size": "grain-sized",
+          "moisture_content": "70%"
+        },
+        "current_disposal": {
+          "method": "Animal feed/compost",
+          "cost_per_ton": 15,
+          "annual_cost": 60000,
+          "hauling_distance_miles": 30
+        },
+        "certifications": [
+          "Food-grade"
+        ],
+        "description": "Organic byproducts from food processing at Archer Daniels Midland - Galveston."
+      }
+    },
+    {
+      "id": 53,
+      "name": "Kinder Morgan - Houston Terminal",
+      "type": "consumer",
+      "industry": "Energy Logistics & Storage",
+      "location": {
+        "address": "Main Plant Rd 53",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77001",
+        "coordinates": {
+          "lat": 29.7604,
+          "lng": -95.3698
+        }
+      },
+      "contact": {
+        "name": "Contact 53",
+        "title": "Environmental Manager",
+        "email": "contact53@kindermorganhoustonterminal.com",
+        "phone": "(713) 555-2053"
+      },
+      "material_needs": {
+        "material": "Recovered Hydrocarbon Solvents",
+        "category": "Industrial Feedstock",
+        "quantity_tons_year": 6000,
+        "frequency": "Monthly",
+        "composition_needed": {
+          "Light_hydrocarbons": 70,
+          "Heavy": 30
+        },
+        "specifications": {
+          "form": "Liquid",
+          "purity_minimum": "80%",
+          "water_content": "<10%"
+        },
+        "current_sourcing": {
+          "primary_source": "Refineries/chemical plants",
+          "cost_per_ton": 700,
+          "annual_cost": 4200000,
+          "transport_distance_miles": 60
+        },
+        "certifications_required": [
+          "COA"
+        ],
+        "description": "Recovered solvents for blending/storage at Kinder Morgan - Houston Terminal."
       }
     }
   ]
