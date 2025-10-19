@@ -1,7 +1,9 @@
 "use client"
 
-import { Sparkles } from "lucide-react"
+import { Sparkles, LayoutDashboard } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export function Navigation() {
   return (
@@ -14,6 +16,13 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center gap-4">
+            <Link href="/dashboard">
+              <Button variant="outline" size="sm" className="gap-2 border-primary/20 bg-primary/5 hover:bg-primary/10">
+                <LayoutDashboard className="h-4 w-4" />
+                <span className="hidden sm:inline">Dashboard</span>
+              </Button>
+            </Link>
+
             <div className="hidden items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 md:flex">
               <Sparkles className="h-4 w-4 text-primary" aria-hidden="true" />
               <span className="text-sm font-medium text-primary">Powered by Gemini</span>
