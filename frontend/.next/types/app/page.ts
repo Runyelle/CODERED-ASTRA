@@ -1,4 +1,4 @@
-// File: /Users/runyell_/Documents/CODERED-ASTRA/frontend/app/page.tsx
+// File: /Users/henrypham/Desktop/CODERED-ASTRA/frontend/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
