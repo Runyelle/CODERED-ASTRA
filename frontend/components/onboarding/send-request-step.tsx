@@ -6,6 +6,8 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, CheckCircle2, Send } from "lucide-react"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import { saveSellerListing, saveBuyerListing } from "@/lib/data-storage"
+import { createNotification, addNotification } from "@/components/notifications"
 
 interface SendRequestStepProps {
   formData: any
@@ -17,12 +19,97 @@ export function SendRequestStep({ formData, prevStep }: SendRequestStepProps) {
   const router = useRouter()
 
   const handleSubmit = () => {
-    // Here you would send the data to your backend
-    console.log("[v0] Submitting onboarding data:", formData)
-    setSubmitted(true)
+    try {
+      // Determine if this is a sell or buy request based on the URL or form data
+      const isSellRequest = window.location.pathname.includes('/sell')
+      
+      // Debug location data
+      console.log('Form data location fields:', {
+        city: formData.city,
+        state: formData.state,
+        location: formData.location
+      })
+      
+      if (isSellRequest) {
+        // Save as seller listing
+        const sellerData = {
+          type: 'seller' as const,
+          companyName: formData.companyName || 'ConocoPhillips',
+          contactName: formData.contactName || '',
+          email: formData.email || '',
+          phone: formData.phone || '',
+          location: formData.city && formData.state ? `${formData.city}, ${formData.state}` : (formData.location || ''),
+          wasteType: formData.wasteTypes ? formData.wasteTypes.join(', ') : '',
+          wasteDescription: '', // We removed this field
+          chemicalComposition: formData.chemicalComposition || [],
+          quantity: formData.quantity || '',
+          unit: formData.unit || 'tons',
+          frequency: formData.frequency || '',
+          currentDisposal: formData.currentDisposal || '',
+          disposalCost: formData.disposalCost || '',
+          selectedCompanies: formData.selectedCompanies || [],
+          agreementFile: formData.agreementFile,
+          agreementFileName: formData.agreementFileName
+        }
+        
+        console.log("Final seller location:", sellerData.location)
+        const savedListing = saveSellerListing(sellerData)
+        console.log("Seller listing saved:", savedListing)
+        
+        // Create notification for new listing
+        const notification = createNotification(
+          'new_listing',
+          'New Sell Listing Created',
+          `Your waste listing for ${savedListing.wasteType} has been created and is now available for buyers.`,
+          savedListing.id,
+          'seller'
+        )
+        addNotification(notification)
+      } else {
+        // Save as buyer listing
+        const buyerData = {
+          type: 'buyer' as const,
+          companyName: formData.companyName || 'ConocoPhillips',
+          contactName: formData.contactName || '',
+          email: formData.email || '',
+          phone: formData.phone || '',
+          location: formData.city && formData.state ? `${formData.city}, ${formData.state}` : (formData.location || ''),
+          materialType: formData.materialType || '',
+          materialDescription: '', // We removed this field
+          materialSpecs: formData.materialSpecs || [],
+          quantity: formData.quantity || '',
+          unit: formData.unit || 'tons',
+          frequency: formData.frequency || '',
+          currentSourcing: formData.currentSourcing || '',
+          sourcingCost: formData.sourcingCost || '',
+          selectedSuppliers: formData.selectedSuppliers || []
+        }
+        
+        console.log("Final buyer location:", buyerData.location)
+        const savedListing = saveBuyerListing(buyerData)
+        console.log("Buyer listing saved:", savedListing)
+        
+        // Create notification for new listing
+        const notification = createNotification(
+          'new_listing',
+          'New Buy Listing Created',
+          `Your material request for ${savedListing.materialType} has been created and is now available for sellers.`,
+          savedListing.id,
+          'buyer'
+        )
+        addNotification(notification)
+      }
+      
+      setSubmitted(true)
+    } catch (error) {
+      console.error("Error saving listing:", error)
+      alert("There was an error saving your listing. Please try again.")
+    }
   }
 
   const handleReturnToDashboard = () => {
+    // Trigger a custom event to refresh dashboard data
+    window.dispatchEvent(new CustomEvent('listingAdded'))
     router.push("/dashboard")
   }
 

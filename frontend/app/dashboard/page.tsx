@@ -41,6 +41,7 @@ import {
   type SellerListing,
   type BuyerListing
 } from "@/lib/data-storage"
+import { Notifications } from "@/components/notifications"
 
 export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState("overview")
@@ -55,17 +56,43 @@ export default function DashboardPage() {
   const [availableLocations, setAvailableLocations] = useState<string[]>([])
   const [apiConnected, setApiConnected] = useState<boolean | null>(null)
 
-  // Load data on component mount
+  // Load data on component mount and when returning from onboarding
   useEffect(() => {
     // Only run on client side
     if (typeof window === 'undefined') return
 
-    const sellers = getSellerListings()
-    const buyers = getBuyerListings()
-    setSellerListings(sellers)
-    setBuyerListings(buyers)
+    const loadData = () => {
+      const sellers = getSellerListings()
+      const buyers = getBuyerListings()
+      setSellerListings(sellers)
+      setBuyerListings(buyers)
+    }
     
-    // Test API connection and initialize search
+    loadData()
+    
+    // Listen for storage changes to refresh data when new listings are added
+    const handleStorageChange = () => {
+      loadData()
+    }
+    
+    // Listen for custom event when new listing is added
+    const handleListingAdded = () => {
+      loadData()
+    }
+    
+    window.addEventListener('storage', handleStorageChange)
+    window.addEventListener('focus', loadData)
+    window.addEventListener('listingAdded', handleListingAdded)
+    
+    return () => {
+      window.removeEventListener('storage', handleStorageChange)
+      window.removeEventListener('focus', loadData)
+      window.removeEventListener('listingAdded', handleListingAdded)
+    }
+  }, [])
+
+  // Test API connection and initialize search
+  useEffect(() => {
     const initializeSearch = async () => {
       try {
         // Test API connection first
@@ -210,6 +237,24 @@ export default function DashboardPage() {
           </div>
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
+              <Button 
+                onClick={() => {
+                  const sellers = getSellerListings()
+                  const buyers = getBuyerListings()
+                  setSellerListings(sellers)
+                  setBuyerListings(buyers)
+                }}
+                variant="outline"
+                size="sm"
+              >
+                Refresh
+              </Button>
+              <Button asChild variant="outline" size="sm">
+                <Link href="/orders">
+                  <Package className="h-4 w-4 mr-2" />
+                  Orders
+                </Link>
+              </Button>
               <Button asChild>
                 <Link href="/dashboard">
                   <LayoutDashboard className="h-4 w-4 mr-2" />
@@ -281,6 +326,7 @@ export default function DashboardPage() {
 
             {/* Recent Activity */}
             <div className="grid gap-4 lg:grid-cols-2">
+              <Notifications />
               <Card className="glass-card border-border/40">
                 <CardHeader>
                   <CardTitle>Recent Submissions</CardTitle>
@@ -441,7 +487,7 @@ export default function DashboardPage() {
                       <div className="grid grid-cols-2 gap-4 text-sm">
                         <div className="flex items-center gap-2">
                           <MapPin className="h-4 w-4 text-muted-foreground" />
-                          <span>{listing.location}</span>
+                          <span>{listing.location || 'Location not specified'}</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <Calendar className="h-4 w-4 text-muted-foreground" />
@@ -457,6 +503,16 @@ export default function DashboardPage() {
                         </div>
                       </div>
                       <div className="flex gap-2">
+                        <Button size="sm" variant="outline" asChild>
+                          <Link href={`/agreement/${listing.id}`}>
+                            View Agreement
+                          </Link>
+                        </Button>
+                        <Button size="sm" variant="default" asChild>
+                          <Link href={`/orders/create/${listing.id}`}>
+                            Create Order
+                          </Link>
+                        </Button>
                         <Button 
                           size="sm" 
                           variant="outline"
@@ -472,8 +528,8 @@ export default function DashboardPage() {
                           disabled={listing.status === 'declined'}
                         >
                           Decline
-                            </Button>
-                </div>
+                        </Button>
+                      </div>
               </CardContent>
             </Card>
                 ))
@@ -534,7 +590,7 @@ export default function DashboardPage() {
                       <div className="grid grid-cols-2 gap-4 text-sm">
                         <div className="flex items-center gap-2">
                           <MapPin className="h-4 w-4 text-muted-foreground" />
-                          <span>{listing.location}</span>
+                          <span>{listing.location || 'Location not specified'}</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <Calendar className="h-4 w-4 text-muted-foreground" />
@@ -550,6 +606,16 @@ export default function DashboardPage() {
                     </div>
                       </div>
                       <div className="flex gap-2">
+                        <Button size="sm" variant="outline" asChild>
+                          <Link href={`/agreement/${listing.id}`}>
+                            View Agreement
+                          </Link>
+                        </Button>
+                        <Button size="sm" variant="default" asChild>
+                          <Link href={`/orders/create/${listing.id}`}>
+                            Create Order
+                          </Link>
+                        </Button>
                         <Button 
                           size="sm" 
                           variant="outline"
@@ -756,7 +822,7 @@ export default function DashboardPage() {
                         <div className="grid grid-cols-2 gap-4 text-sm">
                           <div className="flex items-center gap-2">
                             <MapPin className="h-4 w-4 text-muted-foreground" />
-                            <span>{listing.location}</span>
+                            <span>{listing.location || 'Location not specified'}</span>
                           </div>
                           <div className="flex items-center gap-2">
                             <Calendar className="h-4 w-4 text-muted-foreground" />
@@ -777,14 +843,18 @@ export default function DashboardPage() {
                           </div>
                         </div>
                         <div className="flex gap-2">
-                          <Button size="sm" variant="outline">
-                            View Details
+                          <Button size="sm" variant="outline" asChild>
+                            <Link href={`/agreement/${listing.id}`}>
+                              View Agreement
+                            </Link>
+                          </Button>
+                          <Button size="sm" variant="default" asChild>
+                            <Link href={`/orders/create/${listing.id}`}>
+                              Create Order
+                            </Link>
                           </Button>
                           <Button size="sm" variant="outline">
                             Contact Company
-                          </Button>
-                          <Button size="sm" variant="outline">
-                            Request Quote
                           </Button>
                         </div>
                   </CardContent>
