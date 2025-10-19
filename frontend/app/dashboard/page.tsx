@@ -22,9 +22,6 @@ import {
   Upload,
   MapPin,
   Calendar,
-  Droplets,
-  Zap,
-  TreePine,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -44,8 +41,6 @@ import {
   type SellerListing,
   type BuyerListing
 } from "@/lib/data-storage"
-import { useEnvironmentalImpact } from "@/hooks/use-environmental-impact"
-import { formatNumber } from "@/lib/gemini-service"
 
 export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState("overview")
@@ -59,17 +54,6 @@ export default function DashboardPage() {
   const [availableMaterials, setAvailableMaterials] = useState<string[]>([])
   const [availableLocations, setAvailableLocations] = useState<string[]>([])
   const [apiConnected, setApiConnected] = useState<boolean | null>(null)
-
-  // Environmental impact data for ConocoPhillips
-  const companyData = {
-    companyName: "ConocoPhillips",
-    industry: "Oil & Gas",
-    size: "enterprise" as const,
-    operations: ["Upstream Operations", "Downstream Processing", "Environmental Management", "Waste Management"],
-    sustainabilityGoals: ["50-60% GHG emissions reduction by 2030", "Near-zero methane emissions", "Waste reduction and recycling"]
-  }
-
-  const { impact, loading: impactLoading, error: impactError } = useEnvironmentalImpact(companyData, 'monthly')
 
   // Load data on component mount
   useEffect(() => {
@@ -252,88 +236,9 @@ export default function DashboardPage() {
           <div className="space-y-8 max-w-6xl mx-auto">
             {/* Welcome Section */}
             <div>
-              <h1 className="text-3xl font-bold mb-2">Welcome back, ConocoPhillips</h1>
-              <p className="text-muted-foreground">Here's your environmental impact and waste management overview.</p>
+              <h1 className="text-3xl font-bold mb-2">Welcome back, Acme Corp</h1>
+              <p className="text-muted-foreground">Here's what's happening with your waste management today.</p>
             </div>
-
-            {/* Environmental Impact Section */}
-            {impact && (
-              <div className="space-y-6">
-                <div>
-                  <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-                    <TreePine className="h-6 w-6 text-green-600" />
-                    Environmental Impact This Month
-                  </h2>
-                  <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                    <Card>
-                      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">Waste Processed</CardTitle>
-                        <Recycle className="h-4 w-4 text-muted-foreground" />
-                      </CardHeader>
-                      <CardContent>
-                        <div className="text-2xl font-bold">{formatNumber(impact.wasteProcessed.total)}</div>
-                        <p className="text-xs text-muted-foreground">{impact.wasteProcessed.unit}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{impact.wasteProcessed.description}</p>
-                      </CardContent>
-                    </Card>
-                    
-                    <Card>
-                      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">CO₂ Reduced</CardTitle>
-                        <Leaf className="h-4 w-4 text-green-600" />
-                      </CardHeader>
-                      <CardContent>
-                        <div className="text-2xl font-bold text-green-600">{formatNumber(impact.co2Reduced.total)}</div>
-                        <p className="text-xs text-muted-foreground">{impact.co2Reduced.unit}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{impact.co2Reduced.description}</p>
-                      </CardContent>
-                    </Card>
-                    
-                    <Card>
-                      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">Energy Saved</CardTitle>
-                        <Zap className="h-4 w-4 text-yellow-600" />
-                      </CardHeader>
-                      <CardContent>
-                        <div className="text-2xl font-bold text-yellow-600">{formatNumber(impact.energySaved.total)}</div>
-                        <p className="text-xs text-muted-foreground">{impact.energySaved.unit}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{impact.energySaved.description}</p>
-                      </CardContent>
-                    </Card>
-                    
-                    <Card>
-                      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">Water Saved</CardTitle>
-                        <Droplets className="h-4 w-4 text-blue-600" />
-                      </CardHeader>
-                      <CardContent>
-                        <div className="text-2xl font-bold text-blue-600">{formatNumber(impact.waterSaved.total)}</div>
-                        <p className="text-xs text-muted-foreground">{impact.waterSaved.unit}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{impact.waterSaved.description}</p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {impactLoading && (
-              <div className="flex items-center justify-center py-8">
-                <div className="flex items-center gap-2">
-                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent"></div>
-                  <span className="text-sm text-muted-foreground">Calculating environmental impact...</span>
-                </div>
-              </div>
-            )}
-
-            {impactError && (
-              <div className="flex items-center justify-center py-8">
-                <div className="flex items-center gap-2 text-destructive">
-                  <AlertCircle className="h-4 w-4" />
-                  <span className="text-sm">Failed to load environmental data</span>
-                </div>
-              </div>
-            )}
 
             {/* Stats Grid */}
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
